@@ -7,8 +7,8 @@ Repository-Namen
 -   [DNS](./DNS.md)
 -   [Dokumentation](./DOCUMENTATION.md)
 -   [Glossar](./GLOSSARY.md)
--   [Hosts](./HOSTS.md)
--   [Images](./IMAGES.md)
+-   [Gastgeber](./HOSTS.md)
+-   [Bilder](./IMAGES.md)
 -   [Subman](./PODMAN.md)
 -   [Referenzen](./REFERENCES.md)
 -   [Anforderungen](./REQUIREMENTS.md)
@@ -26,7 +26,7 @@ Sehen[README.md](./100/README.md)
 
 ## 200 - Anforderungen
 
-See [README.md](./200/README.md)
+Sehen[README.md](./200/README.md)
 
 ## 300 - Aufbau unserer Bewerbung
 
