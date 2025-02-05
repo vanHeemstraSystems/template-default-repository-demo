@@ -6,7 +6,7 @@ repository-name
 
 -   [DNS](./DNS.md)
 -   [文档](./DOCUMENTATION.md)
--   [Glossary](./GLOSSARY.md)
+-   [词汇表](./GLOSSARY.md)
 -   [主持人](./HOSTS.md)
 -   [图像](./IMAGES.md)
 -   [Subman](./PODMAN.md)
@@ -18,7 +18,7 @@ repository-name
 
 文本
 
-生成[Rytr](https://app.rytr.me)
+生成[ritr](https://app.rytr.me)
 
 ## 100-简介
 
@@ -30,7 +30,7 @@ repository-name
 
 ## 300-构建我们的应用程序
 
-看[README.md](./300/README.md)
+See [README.md](./300/README.md)
 
 ## 400-结论
 
