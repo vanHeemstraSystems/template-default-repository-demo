@@ -1,0 +1,9 @@
+{
+  "name": "hatch_project-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/hatch_project-e2e/src",
+  "implicitDependencies": ["hatch_project"],
+  "// targets": "to see all targets run: nx show project hatch_project-e2e --web",
+  "targets": {}
+}

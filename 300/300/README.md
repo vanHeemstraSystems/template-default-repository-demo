@@ -3,8 +3,8 @@
 Create a new React monorepo with the following command:
 
 ```
-$ cd src # navigate to the 'src' sub-directory, previously created by hatch
-$ npx create-nx-workspace@latest react-monorepo --preset=react-monorepo
+$ cd hatch-project/src # navigate to the 'hatch-project/src' sub-directory, previously created by hatch
+$ npx create-nx-workspace@latest hatch_project --preset=react-monorepo
 ```
 
 When prompted, provide the following answers:
