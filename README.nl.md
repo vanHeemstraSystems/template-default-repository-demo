@@ -16,7 +16,7 @@ repository-naam
 
 **Uitvoerende samenvatting**
 
-Tekst
+Text
 
 Gegenereerd met[Ritr](https://app.rytr.me)
 
