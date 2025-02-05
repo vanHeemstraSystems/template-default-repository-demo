@@ -1,22 +1,22 @@
 اسم المستودع
 
-# اسم المستودع
+# Repository Name
 
 > Slugline
 
 -   [DNS](./DNS.md)
 -   [الوثائق](./DOCUMENTATION.md)
 -   [مسرد](./GLOSSARY.md)
--   [Hosts](./HOSTS.md)
--   [الصور](./IMAGES.md)
+-   [المضيفين](./HOSTS.md)
+-   [Images](./IMAGES.md)
 -   [رجل فرعي](./PODMAN.md)
 -   [مراجع](./REFERENCES.md)
 -   [متطلبات](./REQUIREMENTS.md)
 -   [القياس عن بعد](./TELEMETRY.md)
 
-**ملخص تنفيذي**
+**Executive Summary**
 
-نص
+Text
 
 ولدت مع[ريتر](https://app.rytr.me)
 
@@ -34,4 +34,4 @@
 
 ## 400 - الخلاصة
 
-يرى[README.md](./400/README.md)
+See [README.md](./400/README.md)
