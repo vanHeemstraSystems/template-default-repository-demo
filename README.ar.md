@@ -7,7 +7,7 @@
 -   [DNS](./DNS.md)
 -   [الوثائق](./DOCUMENTATION.md)
 -   [مسرد](./GLOSSARY.md)
--   [المضيفين](./HOSTS.md)
+-   [Hosts](./HOSTS.md)
 -   [الصور](./IMAGES.md)
 -   [رجل فرعي](./PODMAN.md)
 -   [مراجع](./REFERENCES.md)
@@ -28,7 +28,7 @@
 
 يرى[README.md](./200/README.md)
 
-## 300 - Building Our Application
+## 300 - بناء تطبيقنا
 
 يرى[README.md](./300/README.md)
 
