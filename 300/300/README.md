@@ -183,6 +183,91 @@ $ cd /hatch-project/src/hatch_project
 $ nx build hatch_project
 ```
 
+**Important**: 
+
+If you don't have `workspace.json` or `project.json`, and instead have `tsconfig.base.json`, you can adjust your setup as follows:
+
+* Option: Single Application: **Create a `workspace.json`**: If your project is a single application, you can create a `workspace.json` file in the `hatch_project` directory. Here’s a basic example:
+
+   ```json
+   {
+     "version": 1,
+     "projects": {
+       "hatch_project": {
+         "root": "src/hatch_project",
+         "sourceRoot": "src/hatch_project/src",
+         "projectType": "application"
+       }
+     }
+   }
+   ```
+
+* Option: Multiple Applications: If your Nx workspace contains multiple applications, you should structure your `workspace.json` (or `project.json`) to reflect each application. Here’s how to set it up:
+
+### Example `workspace.json`
+
+Create a `workspace.json` file in the `hatch_project` directory with the following structure:
+
+```json
+{
+  "version": 1,
+  "projects": {
+    "app1": {
+      "root": "src/hatch_project/app1",
+      "sourceRoot": "src/hatch_project/app1/src",
+      "projectType": "application"
+    },
+    "app2": {
+      "root": "src/hatch_project/app2",
+      "sourceRoot": "src/hatch_project/app2/src",
+      "projectType": "application"
+    },
+    "hatch_project": {
+      "root": "src/hatch_project",
+      "sourceRoot": "src/hatch_project/src",
+      "projectType": "application"
+    }
+  }
+}
+```
+
+### Key Points:
+- **Project Names**: Replace `app1`, `app2`, etc., with meaningful names for your applications.
+- **Root and Source Root**: Adjust the `root` and `sourceRoot` paths to match the actual structure of your applications within the `hatch_project` directory.
+
+### Additional Considerations:
+- **Dependencies**: If applications depend on shared libraries or each other, ensure to define those dependencies in the `nx.json` file.
+- **Configuration Files**: Each application may also have its own `tsconfig.json` if needed, or you can use a shared `tsconfig.base.json` for common settings.
+
+### Example Directory Structure
+Your directory structure might look like this:
+
+```
+/
+└── hatch-project/
+    └── src/
+        └── hatch_project/
+            ├── nx.json
+            ├── workspace.json
+            ├── tsconfig.base.json
+            ├── app1/
+            │   └── src/
+            │       └── main.tsx
+            ├── app2/
+            │   └── src/
+            │       └── main.tsx
+```
+
+### Running Commands
+After setting up `workspace.json`, you can run commands like:
+
+```bash
+nx build app1
+nx build app2
+```
+
+This structure will help Nx Cloud recognize and manage multiple applications effectively.
+
 This structure should allow Nx Cloud to detect the workspace properly.
 
 Run the command to **connect** your workspace to Nx Cloud from the root directory of the nx monorepo `hatch project`, specifically:
