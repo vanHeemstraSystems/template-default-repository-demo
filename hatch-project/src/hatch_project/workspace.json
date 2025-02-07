@@ -1,0 +1,10 @@
+{
+    "version": 1,
+    "projects": {
+        "hatch_project": {
+            "root": "src/hatch_project",
+            "sourceRoot": "src/hatch_project/src",
+            "projectType": "application"
+        }
+    }
+}
