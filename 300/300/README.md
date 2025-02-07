@@ -177,8 +177,9 @@ If you were to use the absolute path `hatch-project/src/hatch_project`, it would
 
 Adjust paths and options as necessary to fit your specific project structure. This configuration will help Nx Cloud identify and manage your workspace correctly.
 
-Make sure to run the **build** command from the `/hatch-project/src` directory to ensure it recognizes the workspace correctly:
+Make sure to run the **build** command from the `/hatch-project/src/hatch_project` directory - which contains the ```nx.json``` file - to ensure it recognizes the workspace correctly:
 ```
+$ cd /hatch-project/src/hatch_project
 $ nx build hatch_project
 ```
 
