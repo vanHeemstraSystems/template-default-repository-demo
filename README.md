@@ -8,6 +8,7 @@ repository-name
 - [Glossary](./GLOSSARY.md)
 - [Hosts](./HOSTS.md)
 - [Images](./IMAGES.md)
+- [Nx](./NX.md)
 - [Podman](./PODMAN.md)
 - [References](./REFERENCES.md)
 - [Requirements](./REQUIREMENTS.md)
