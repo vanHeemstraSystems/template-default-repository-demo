@@ -29,7 +29,7 @@ repository-name
 
 看[README.md](./200/README.md)
 
-## 300-構建我們的應用程序
+## 300 - Building Our Application
 
 看[README.md](./300/README.md)
 
