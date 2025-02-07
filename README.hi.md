@@ -4,18 +4,18 @@
 
 > स्लगलाइन
 
--   [DNS](./DNS.md)
+-   [डीएनएस](./DNS.md)
 -   [प्रलेखन](./DOCUMENTATION.md)
 -   [शब्दकोष](./GLOSSARY.md)
 -   [मेजबान](./HOSTS.md)
 -   [इमेजिस](./IMAGES.md)
--   [नोकदार](./NX.md)
+-   [Nx](./NX.md)
 -   [सबमैन](./PODMAN.md)
--   [संदर्भ](./REFERENCES.md)
+-   [References](./REFERENCES.md)
 -   [आवश्यकताएं](./REQUIREMENTS.md)
 -   [टेलीमेटरी](./TELEMETRY.md)
 
-**कार्यकारी सारांश**
+**Executive Summary**
 
 मूलपाठ
 
