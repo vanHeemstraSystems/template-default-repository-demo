@@ -15,7 +15,7 @@ NX   Let's create a new workspace [https://nx.dev/getting-started/intro]
 
 ```
 
-This will generate the following file and directory structure underneath the ```src``` directory:
+This will generate the following file and directory structure underneath the ```/hatch-project/src``` directory:
 
 ```
 └─ hatch-project
