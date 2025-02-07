@@ -9,6 +9,7 @@ repository-naam
 -   [Glossarium](./GLOSSARY.md)
 -   [Gastheren](./HOSTS.md)
 -   [Beelden](./IMAGES.md)
+-   [Nx](./NX.md)
 -   [Subman](./PODMAN.md)
 -   [Referenties](./REFERENCES.md)
 -   [Vereisten](./REQUIREMENTS.md)
@@ -16,7 +17,7 @@ repository-naam
 
 **Uitvoerende samenvatting**
 
-Text
+Tekst
 
 Gegenereerd met[Ritr](https://app.rytr.me)
 
