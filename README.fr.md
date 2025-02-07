@@ -10,9 +10,9 @@ nom de référentiel
 -   [Hôtes](./HOSTS.md)
 -   [Images](./IMAGES.md)
 -   [Nx](./NX.md)
--   [Podman](./PODMAN.md)
+-   [Sous-homme](./PODMAN.md)
 -   [Références](./REFERENCES.md)
--   [Requirements](./REQUIREMENTS.md)
+-   [Exigences](./REQUIREMENTS.md)
 -   [Télémétrie](./TELEMETRY.md)
 
 **Résumé exécutif**
@@ -23,7 +23,7 @@ Généré avec[Ritr](https://app.rytr.me)
 
 ## 100 - Introduction
 
-See [README.md](./100/README.md)
+Voir[README.md](./100/README.md)
 
 ## 200 - exigences
 
