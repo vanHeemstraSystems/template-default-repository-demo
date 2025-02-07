@@ -18,32 +18,34 @@ NX   Let's create a new workspace [https://nx.dev/getting-started/intro]
 This will generate the following file and directory structure underneath the ```src``` directory:
 
 ```
-└─ hatch_project
-   ├─ ...
-   ├─ apps
-   │  ├─ react-store
-   │  │  ├─ public
-   │  │  │  └─ ...
-   │  │  ├─ src
-   │  │  │  ├─ app
-   │  │  │  │  ├─ app.module.css
-   │  │  │  │  ├─ app.spec.tsx
-   │  │  │  │  ├─ app.tsx
-   │  │  │  │  └─ nx-welcome.tsx
-   │  │  │  ├─ assets
-   │  │  │  ├─ main.tsx
-   │  │  │  └─ styles.css
-   │  │  ├─ index.html
-   │  │  ├─ project.json
-   │  │  ├─ tsconfig.app.json
-   │  │  ├─ tsconfig.json
-   │  │  ├─ tsconfig.spec.json
-   │  │  └─ vite.config.ts
-   │  └─ react-store-e2e
-   │     └─ ...
-   ├─ nx.json
-   ├─ tsconfig.base.json
-   └─ package.json
+└─ hatch-project
+               └─ src
+                    └─ hatch_project
+                                   ├─ ...
+                                   ├─ apps
+                                   │  ├─ react-store
+                                   │  │  ├─ public
+                                   │  │  │  └─ ...
+                                   │  │  ├─ src
+                                   │  │  │  ├─ app
+                                   │  │  │  │  ├─ app.module.css
+                                   │  │  │  │  ├─ app.spec.tsx
+                                   │  │  │  │  ├─ app.tsx
+                                   │  │  │  │  └─ nx-welcome.tsx
+                                   │  │  │  ├─ assets
+                                   │  │  │  ├─ main.tsx
+                                   │  │  │  └─ styles.css
+                                   │  │  ├─ index.html
+                                   │  │  ├─ project.json
+                                   │  │  ├─ tsconfig.app.json
+                                   │  │  ├─ tsconfig.json
+                                   │  │  ├─ tsconfig.spec.json
+                                   │  │  └─ vite.config.ts
+                                   │  └─ react-store-e2e
+                                   │     └─ ...
+                                   ├─ nx.json
+                                   ├─ tsconfig.base.json
+                                   └─ package.json
 ```
 
 **Important**: Move all files previously in ```original_hatch_project``` to ```hatch_project``` and delete ```original_hatch_project```!
