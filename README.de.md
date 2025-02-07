@@ -8,7 +8,7 @@ Repository-Namen
 -   [Dokumentation](./DOCUMENTATION.md)
 -   [Glossar](./GLOSSARY.md)
 -   [Gastgeber](./HOSTS.md)
--   [Bilder](./IMAGES.md)
+-   [Images](./IMAGES.md)
 -   [NX](./NX.md)
 -   [Subman](./PODMAN.md)
 -   [Referenzen](./REFERENCES.md)
