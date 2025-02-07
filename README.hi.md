@@ -9,13 +9,13 @@
 -   [शब्दकोष](./GLOSSARY.md)
 -   [मेजबान](./HOSTS.md)
 -   [इमेजिस](./IMAGES.md)
--   [Nx](./NX.md)
+-   [नोकदार](./NX.md)
 -   [सबमैन](./PODMAN.md)
--   [References](./REFERENCES.md)
+-   [संदर्भ](./REFERENCES.md)
 -   [आवश्यकताएं](./REQUIREMENTS.md)
 -   [टेलीमेटरी](./TELEMETRY.md)
 
-**Executive Summary**
+**कार्यकारी सारांश**
 
 मूलपाठ
 
