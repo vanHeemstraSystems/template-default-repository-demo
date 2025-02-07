@@ -1,6 +1,6 @@
 भंडार-नाम
 
-# भंडार नाम
+# Repository Name
 
 > स्लगलाइन
 
@@ -15,7 +15,7 @@
 -   [आवश्यकताएं](./REQUIREMENTS.md)
 -   [टेलीमेटरी](./TELEMETRY.md)
 
-**कार्यकारी सारांश**
+**Executive Summary**
 
 मूलपाठ
 
