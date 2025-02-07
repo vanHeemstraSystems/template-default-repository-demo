@@ -15,7 +15,7 @@ repositorio
 -   [Requisitos](./REQUIREMENTS.md)
 -   [Telemetría](./TELEMETRY.md)
 
-**Resumen ejecutivo**
+**Executive Summary**
 
 Texto
 
