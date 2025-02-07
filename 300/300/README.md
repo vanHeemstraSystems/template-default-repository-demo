@@ -160,6 +160,15 @@ This configuration will help Nx Cloud properly identify and manage your nested w
 
 Notice that it prepends paths with ```src/``` (e.g., ```"root": "src/hatch_project",```) to allow for our **nested** directory structure.
 
+The path for `root` in the `projects` section should be specified relative to the workspace root, which is typically the directory where your `nx.json` file is located. 
+
+Since your `nx.json` is at `repository-name/hatch-project/src/hatch_project/nx.json`, the paths are relative to the `src/hatch_project` directory. Thus:
+
+- **`root`**: Should be `"src/hatch_project"` because it indicates the base directory for the project relative to the workspace's root.
+- **`sourceRoot`**: Should be `"src/hatch_project/src"` for the same reason.
+
+If you were to use the absolute path `hatch-project/src/hatch_project`, it would not be correct in the context of how Nx expects paths to be defined. Nx uses paths relative to the workspace root to maintain consistency across different environments and setups.
+
 ### Key Sections:
 - **`npmScope`**: Defines the scope for your packages.
 - **`affected.defaultBase`**: Specifies the default branch for determining affected projects.
