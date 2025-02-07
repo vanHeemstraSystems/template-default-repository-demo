@@ -2,7 +2,7 @@ repository-name
 
 # 存储库名称
 
-> Slugline
+> 板条
 
 -   [DNS](./DNS.md)
 -   [文档](./DOCUMENTATION.md)
@@ -23,7 +23,7 @@ repository-name
 
 ## 100-简介
 
-See [README.md](./100/README.md)
+看[README.md](./100/README.md)
 
 ## 200-要求
 
