@@ -4,7 +4,7 @@
 
 > स्लगलाइन
 
--   [डीएनएस](./DNS.md)
+-   [DNS](./DNS.md)
 -   [प्रलेखन](./DOCUMENTATION.md)
 -   [शब्दकोष](./GLOSSARY.md)
 -   [मेजबान](./HOSTS.md)
@@ -19,11 +19,11 @@
 
 मूलपाठ
 
-के साथ उत्पन्न[रिट्र](https://app.rytr.me)
+के साथ उत्पन्न[Rytr](https://app.rytr.me)
 
 ## 100 - परिचय
 
-देखना[README.md](./100/README.md)
+See [README.md](./100/README.md)
 
 ## 200 - आवश्यकताएँ
 
