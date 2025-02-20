@@ -1,12 +1,12 @@
 اسم المستودع
 
-# اسم المستودع
+# Repository Name
 
-> خط الصرخ
+> Slugline
 
 -   [DNS](./DNS.md)
 -   [الوثائق](./DOCUMENTATION.md)
--   [Glossary](./GLOSSARY.md)
+-   [مسرد](./GLOSSARY.md)
 -   [المضيفين](./HOSTS.md)
 -   [الصور](./IMAGES.md)
 -   [NX](./NX.md)
