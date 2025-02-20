@@ -281,7 +281,11 @@ $ npm init -y # If no package.json exists
 # Go through the initialization steps
 $ npm install -g nx@latest # If not already installed
 $ npm install --save-dev nx @nrwl/workspace
+$ npm install --save-dev @nx/webpack
+$ npm install --save-dev @nx/react @nx/eslint @nx/playwright @nx/jest
 ```
+
+Now commit these changes to GitHub repository before continuing!
 
 The command to connect to Nx Cloud is:
 
@@ -291,7 +295,43 @@ $ nx connect-to-nx-cloud
 
 This will initiate the configuration process for Nx Cloud within your workspace.
 
-Finish the CI setup by visiting: https://cloud.nx.app/connect/lvaFjW0bDV # **Note**: the URL will differ per creation. See [Enable GitHub PR Integration](https://nx.dev/ci/recipes/source-control-integration/github) and/or watch [PNPM-CI: Connect Your Workspace to Nx Cloud for Enhanced Collaboration](https://www.youtube.com/watch?v=8mqHXYIl_qI).
+You will be prompted as follows:
+
+```
+ NX   ✔ This workspace already has Nx Cloud set up
+
+If you have not done so already, connect your workspace to your Nx Cloud account with the following URL:
+
+https://cloud.nx.app/connect/Ehf8PFoDWR
+```
+
+Finish the CI setup by visiting: https://cloud.nx.app/connect/eXwFUcpdBt # **Note**: the URL will differ per creation. See [Enable GitHub PR Integration](https://nx.dev/ci/recipes/source-control-integration/github) and/or watch [PNPM-CI: Connect Your Workspace to Nx Cloud for Enhanced Collaboration](https://www.youtube.com/watch?v=8mqHXYIl_qI).
+
+
+The message "A workspace has already been assigned to this Nx Cloud connection" means that:
+
+1. Your workspace is already configured with an Nx Cloud ID
+2. That ID is already in use by another workspace
+
+To fix this:
+
+1. Check your current nx.json for the existing nxCloudId:
+  - Look for a line like: "nxCloudId": "67a3783761d0514ff26bf202"
+  - This ID needs to be unique for each workspace
+
+2. Generate a new connection:
+
+```
+$ nx generate @nx/workspace:disconnect-cloud
+$ nx connect-to-nx-cloud
+```
+
+This will:
+  - Remove the existing cloud connection
+  - Generate a new, unique connection
+  - Provide you with a fresh URL to connect
+
+
 
 ## Nested app directories
 
@@ -307,3 +347,16 @@ For example to ignore any files in ```.next```:
 .next
 ```
 .nxignore
+
+
+Now to run a build, run the following command from the root of the repository:
+
+```
+npx nx run-many -t build
+```
+
+To run a build for all applications, run the following command from the root of the repository:
+
+```
+npx nx run-many -t build --all
+```
