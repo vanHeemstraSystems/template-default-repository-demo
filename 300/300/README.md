@@ -245,6 +245,7 @@ Your directory structure might look like this:
 ```
 /
 ├── hatch-project/
+|    ├── tsconfig.base.json
 │    └── src/
 │        └── hatch_project/
 │            ├── REMOVE: nx.json
@@ -258,7 +259,6 @@ Your directory structure might look like this:
 │            │       └── main.tsx
 ├── nx.json
 ├── workspace.json
-├── tsconfig.base.json
 ```
 
 ### Running Commands
