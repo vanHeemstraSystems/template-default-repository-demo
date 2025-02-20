@@ -7,12 +7,12 @@ repository-name
 -   [DNS](./DNS.md)
 -   [文件](./DOCUMENTATION.md)
 -   [詞彙表](./GLOSSARY.md)
--   [主持人](./HOSTS.md)
+-   [Hosts](./HOSTS.md)
 -   [圖像](./IMAGES.md)
 -   [nx](./NX.md)
--   [Podman](./PODMAN.md)
--   [參考](./REFERENCES.md)
--   [Requirements](./REQUIREMENTS.md)
+-   [Subman](./PODMAN.md)
+-   [References](./REFERENCES.md)
+-   [要求](./REQUIREMENTS.md)
 -   [遙測](./TELEMETRY.md)
 
 **執行摘要**
