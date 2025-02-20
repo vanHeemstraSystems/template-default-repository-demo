@@ -42,8 +42,16 @@ jobs:
         with:
           node-version: 20
           cache: 'npm'
+      - run: npm cache clean --force
       - run: npm ci
-      - run: npx nx run-many -t build
+      - run: npm install -g @nrwl/cli
+      - run: |
+          npm install --save-dev @swc-node/register @swc/core \
+          @nx/webpack webpack-cli \
+          @nx/eslint-plugin eslint-plugin-playwright \
+          @playwright/test jest \
+          @nx/jest @nx/react @nx/eslint @nx/playwright
+      - run: npx nx run-many -t build --verbose
       - run: npx nx run-many -t test
 ```
 .github/workflows/ci.yml
