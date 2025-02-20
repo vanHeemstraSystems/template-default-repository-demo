@@ -15,9 +15,9 @@ nom de référentiel
 -   [Exigences](./REQUIREMENTS.md)
 -   [Télémétrie](./TELEMETRY.md)
 
-**Résumé exécutif**
+**Executive Summary**
 
-Texte
+Text
 
 Généré avec[Ritr](https://app.rytr.me)
 
@@ -27,7 +27,7 @@ Voir[README.md](./100/README.md)
 
 ## 200 - exigences
 
-Voir[README.md](./200/README.md)
+See [README.md](./200/README.md)
 
 ## 300 - Construire notre application
 
