@@ -7,7 +7,7 @@
 -   [डीएनएस](./DNS.md)
 -   [प्रलेखन](./DOCUMENTATION.md)
 -   [शब्दकोष](./GLOSSARY.md)
--   [Hosts](./HOSTS.md)
+-   [मेजबान](./HOSTS.md)
 -   [इमेजिस](./IMAGES.md)
 -   [नोकदार](./NX.md)
 -   [सबमैन](./PODMAN.md)
@@ -17,11 +17,11 @@
 
 **कार्यकारी सारांश**
 
-Text
+मूलपाठ
 
-Generated with [रिट्र](https://app.rytr.me)
+के साथ उत्पन्न[रिट्र](https://app.rytr.me)
 
-## 100 - Introduction
+## 100 - परिचय
 
 देखना[README.md](./100/README.md)
 
@@ -31,7 +31,7 @@ Generated with [रिट्र](https://app.rytr.me)
 
 ## 300 - हमारे आवेदन का निर्माण
 
-देखना[README.md](./300/README.md)
+See [README.md](./300/README.md)
 
 ## 400 - निष्कर्ष
 
