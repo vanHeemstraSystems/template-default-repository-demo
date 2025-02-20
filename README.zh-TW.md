@@ -2,7 +2,7 @@ repository-name
 
 # 存儲庫名稱
 
-> Slugline
+> 板條
 
 -   [DNS](./DNS.md)
 -   [文件](./DOCUMENTATION.md)
@@ -12,14 +12,14 @@ repository-name
 -   [nx](./NX.md)
 -   [Subman](./PODMAN.md)
 -   [參考](./REFERENCES.md)
--   [Requirements](./REQUIREMENTS.md)
+-   [要求](./REQUIREMENTS.md)
 -   [遙測](./TELEMETRY.md)
 
 **執行摘要**
 
-Text
+文字
 
-Generated with [ritr](https://app.rytr.me)
+生成[ritr](https://app.rytr.me)
 
 ## 100-簡介
 
