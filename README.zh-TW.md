@@ -23,7 +23,7 @@ repository-name
 
 ## 100-簡介
 
-看[README.md](./100/README.md)
+See [README.md](./100/README.md)
 
 ## 200-要求
 
@@ -35,4 +35,4 @@ repository-name
 
 ## 400-結論
 
-看[README.md](./400/README.md)
+See [README.md](./400/README.md)
