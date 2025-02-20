@@ -307,6 +307,32 @@ https://cloud.nx.app/connect/Ehf8PFoDWR
 
 Finish the CI setup by visiting: https://cloud.nx.app/connect/eXwFUcpdBt # **Note**: the URL will differ per creation. See [Enable GitHub PR Integration](https://nx.dev/ci/recipes/source-control-integration/github) and/or watch [PNPM-CI: Connect Your Workspace to Nx Cloud for Enhanced Collaboration](https://www.youtube.com/watch?v=8mqHXYIl_qI).
 
+
+The message "A workspace has already been assigned to this Nx Cloud connection" means that:
+
+1. Your workspace is already configured with an Nx Cloud ID
+2. That ID is already in use by another workspace
+
+To fix this:
+
+1. Check your current nx.json for the existing nxCloudId:
+  - Look for a line like: "nxCloudId": "67a3783761d0514ff26bf202"
+  - This ID needs to be unique for each workspace
+
+2. Generate a new connection:
+
+```
+$ nx generate @nx/workspace:disconnect-cloud
+$ nx connect-to-nx-cloud
+```
+
+This will:
+  - Remove the existing cloud connection
+  - Generate a new, unique connection
+  - Provide you with a fresh URL to connect
+
+
+
 ## Nested app directories
 
 You can have nested folders, no problems. 👍 Here's a [live example](https://github.com/codyslexia/nexa/tree/main/apps/graphql). You can see that apps/graphql/users is a nested directory where users is the actual project. There's also this [other example](https://github.com/nrwl/nx-incremental-large-repo/tree/master/libs/app0/lib1) from the ```nrwl``` family.

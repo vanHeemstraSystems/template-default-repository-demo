@@ -35,276 +35,52 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": ".github/CODEOWNERS",
-        "hash": "2069709117154544826"
-      },
-      {
-        "file": ".github/CODE_OF_CONDUCT.md",
-        "hash": "3718232670419233410"
+        "file": ".gitpod.yml",
+        "hash": "16273613246686780781"
       },
       {
         "file": ".github/CONTRIBUTING.md",
         "hash": "11164768895169716651"
       },
       {
-        "file": ".github/ISSUE_TEMPLATE/bug_report.md",
-        "hash": "10753603097820489125"
-      },
-      {
-        "file": ".github/ISSUE_TEMPLATE/feature_request.md",
-        "hash": "7335114847464643603"
-      },
-      {
-        "file": ".github/workflows/documentation.yml",
-        "hash": "3107259259687493292"
-      },
-      {
-        "file": ".github/workflows/readme.yml",
-        "hash": "13873986058263057730"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "7541599169389815340"
-      },
-      {
-        "file": ".gitpod.yml",
-        "hash": "16273613246686780781"
-      },
-      {
-        "file": ".readthedocs.yaml",
-        "hash": "7212880637373718762"
-      },
-      {
-        "file": ".threagile/live-templates.txt",
-        "hash": "4157020844957009476"
-      },
-      {
-        "file": ".threagile/openapi.yaml",
-        "hash": "1757816430409140504"
-      },
-      {
-        "file": ".threagile/schema.json",
-        "hash": "11343960323215976794"
-      },
-      {
-        "file": ".vscode/extensions.json",
-        "hash": "13156002767763178473"
-      },
-      {
-        "file": "100/README.md",
-        "hash": "891361785194193450"
-      },
-      {
-        "file": "200/README.md",
-        "hash": "17628691975283599769"
-      },
-      {
-        "file": "300/100/README.md",
-        "hash": "5608554756722919995"
-      },
-      {
-        "file": "300/200/README.md",
-        "hash": "5916738362346926627"
-      },
-      {
-        "file": "300/300/README.md",
-        "hash": "5254908449307913479"
+        "file": "PODMAN.md",
+        "hash": "13947151049402687906"
       },
       {
         "file": "300/README.md",
         "hash": "4403658995812889845"
       },
       {
-        "file": "400/README.md",
-        "hash": "15877077422970881353"
+        "file": "docs/requirements.txt",
+        "hash": "12462742231086633348"
       },
       {
-        "file": "DNS.md",
-        "hash": "8275518628828650408"
-      },
-      {
-        "file": "DOCUMENTATION.md",
-        "hash": "15181046251086332012"
-      },
-      {
-        "file": "GLOSSARY.md",
-        "hash": "1101586937567855291"
-      },
-      {
-        "file": "HOSTS.md",
-        "hash": "14329470646415051730"
-      },
-      {
-        "file": "IMAGES.md",
-        "hash": "1520273640451367239"
-      },
-      {
-        "file": "LICENSE",
-        "hash": "8378750027574592263"
-      },
-      {
-        "file": "NX.md",
-        "hash": "6497747020789179340"
-      },
-      {
-        "file": "PODMAN.md",
-        "hash": "13947151049402687906"
-      },
-      {
-        "file": "README.ar.md",
-        "hash": "12686894751710847892"
-      },
-      {
-        "file": "README.de.md",
-        "hash": "6644861252444353460"
-      },
-      {
-        "file": "README.es.md",
-        "hash": "7917296014936860038"
+        "file": ".github/ISSUE_TEMPLATE/feature_request.md",
+        "hash": "7335114847464643603"
       },
       {
         "file": "README.fr.md",
-        "hash": "16085896957043514073"
-      },
-      {
-        "file": "README.hi.md",
-        "hash": "14273603840590087332"
+        "hash": "5899569215638700391"
       },
       {
         "file": "README.md",
         "hash": "6935780207933680138"
       },
       {
-        "file": "README.nl.md",
-        "hash": "884685817211961467"
-      },
-      {
-        "file": "README.rst",
-        "hash": "15298768806158370927"
-      },
-      {
-        "file": "README.zh-CN.md",
-        "hash": "15500197973583657377"
-      },
-      {
-        "file": "README.zh-TW.md",
-        "hash": "4243672423956418917"
-      },
-      {
-        "file": "REFERENCES.md",
-        "hash": "1801559854357073754"
-      },
-      {
-        "file": "REQUIREMENTS.md",
-        "hash": "11240171680333442066"
-      },
-      {
-        "file": "TELEMETRY.md",
-        "hash": "16062215751853269349"
-      },
-      {
-        "file": "docs/Makefile",
-        "hash": "11007041392796436312"
-      },
-      {
-        "file": "docs/make.bat",
-        "hash": "18238850546568760375"
-      },
-      {
-        "file": "docs/requirements.txt",
-        "hash": "12462742231086633348"
-      },
-      {
-        "file": "docs/source/api.rst",
-        "hash": "9332953195776377599"
-      },
-      {
-        "file": "docs/source/conf.py",
-        "hash": "73765878874957627"
-      },
-      {
-        "file": "docs/source/index.rst",
-        "hash": "9610670194367195800"
-      },
-      {
-        "file": "docs/source/usage.rst",
-        "hash": "17993281448202830929"
+        "file": "workspace.json",
+        "hash": "9141835268453811547"
       },
       {
         "file": "hatch-project/DELETE-nx.json",
         "hash": "7283871247141239017"
       },
       {
-        "file": "hatch-project/LICENSE.txt",
-        "hash": "17868595725554817591"
-      },
-      {
         "file": "hatch-project/README.md",
         "hash": "11632924646378695673"
       },
       {
-        "file": "hatch-project/pyproject.toml",
-        "hash": "4631761576336130377"
-      },
-      {
-        "file": "hatch-project/src/hatch_project/.editorconfig",
-        "hash": "11532813898455409296"
-      },
-      {
-        "file": "hatch-project/src/hatch_project/.github/workflows/ci.yml",
-        "hash": "5766085213226935940"
-      },
-      {
-        "file": "hatch-project/src/hatch_project/.gitignore",
-        "hash": "883878744508669645"
-      },
-      {
-        "file": "hatch-project/src/hatch_project/.prettierignore",
-        "hash": "17085498363870782104"
-      },
-      {
-        "file": "hatch-project/src/hatch_project/.prettierrc",
-        "hash": "6820402234827505055"
-      },
-      {
-        "file": "hatch-project/src/hatch_project/.vscode/extensions.json",
-        "hash": "5837262799529507717"
-      },
-      {
-        "file": "hatch-project/src/hatch_project/ORIGINAL-nx.json",
-        "hash": "7381207466982406989"
-      },
-      {
-        "file": "hatch-project/src/hatch_project/README.md",
-        "hash": "284299166482275762"
-      },
-      {
-        "file": "hatch-project/src/hatch_project/__about__.py",
-        "hash": "12767325394795716398"
-      },
-      {
-        "file": "hatch-project/src/hatch_project/__init__.py",
-        "hash": "11690963411200796738"
-      },
-      {
-        "file": "hatch-project/src/hatch_project/eslint.config.mjs",
-        "hash": "6173048074701645129"
-      },
-      {
-        "file": "hatch-project/src/hatch_project/jest.config.ts",
-        "hash": "7544409015863045561"
-      },
-      {
-        "file": "hatch-project/src/hatch_project/jest.preset.js",
-        "hash": "7473220183190921152"
-      },
-      {
-        "file": "hatch-project/src/hatch_project/package-lock.json",
-        "hash": "15043937153061898787"
-      },
-      {
-        "file": "hatch-project/src/hatch_project/package.json",
-        "hash": "8115555883175382351"
+        "file": "docs/source/conf.py",
+        "hash": "73765878874957627"
       },
       {
         "file": "hatch-project/tests/__init__.py",
@@ -312,43 +88,207 @@
       },
       {
         "file": "nx.json",
-        "hash": "1991353827554920242"
+        "hash": "6252137087257166887"
       },
       {
-        "file": "package-lock.json",
-        "hash": "11900817797716982569"
+        "file": "TELEMETRY.md",
+        "hash": "16062215751853269349"
       },
       {
-        "file": "package.json",
-        "hash": "7986495856669047271"
-      },
-      {
-        "file": "pyproject.toml",
-        "hash": "1572202407438371425"
-      },
-      {
-        "file": "schemas/.schemastore",
-        "hash": "7557585364515346385"
-      },
-      {
-        "file": "threagile.bat",
-        "hash": "1988977376155347134"
+        "file": ".github/CODEOWNERS",
+        "hash": "2069709117154544826"
       },
       {
         "file": "threagile.sh",
         "hash": "3884412318220894976"
       },
       {
+        "file": "200/README.md",
+        "hash": "17628691975283599769"
+      },
+      {
+        "file": "docs/source/index.rst",
+        "hash": "9610670194367195800"
+      },
+      {
+        "file": "REQUIREMENTS.md",
+        "hash": "11240171680333442066"
+      },
+      {
+        "file": "docs/Makefile",
+        "hash": "11007041392796436312"
+      },
+      {
+        "file": "NX.md",
+        "hash": "6497747020789179340"
+      },
+      {
+        "file": "README.rst",
+        "hash": "15298768806158370927"
+      },
+      {
+        "file": "DNS.md",
+        "hash": "8275518628828650408"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "7541599169389815340"
+      },
+      {
+        "file": "300/100/README.md",
+        "hash": "5608554756722919995"
+      },
+      {
+        "file": "hatch-project/pyproject.toml",
+        "hash": "4631761576336130377"
+      },
+      {
+        "file": ".threagile/schema.json",
+        "hash": "11343960323215976794"
+      },
+      {
+        "file": "LICENSE",
+        "hash": "8378750027574592263"
+      },
+      {
+        "file": ".github/workflows/documentation.yml",
+        "hash": "3107259259687493292"
+      },
+      {
+        "file": "docs/source/usage.rst",
+        "hash": "17993281448202830929"
+      },
+      {
         "file": "threagile.yaml",
         "hash": "10157112753324932639"
+      },
+      {
+        "file": "100/README.md",
+        "hash": "891361785194193450"
+      },
+      {
+        "file": "HOSTS.md",
+        "hash": "14329470646415051730"
+      },
+      {
+        "file": ".threagile/openapi.yaml",
+        "hash": "1757816430409140504"
+      },
+      {
+        "file": "README.hi.md",
+        "hash": "14273603840590087332"
+      },
+      {
+        "file": "300/300/README.md",
+        "hash": "6927547372426691162"
+      },
+      {
+        "file": "IMAGES.md",
+        "hash": "1520273640451367239"
+      },
+      {
+        "file": "README.zh-TW.md",
+        "hash": "12217367361613222434"
+      },
+      {
+        "file": "README.zh-CN.md",
+        "hash": "6508217314573457305"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "3351480012587520236"
+      },
+      {
+        "file": ".github/CODE_OF_CONDUCT.md",
+        "hash": "3718232670419233410"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "13156002767763178473"
+      },
+      {
+        "file": ".readthedocs.yaml",
+        "hash": "7212880637373718762"
+      },
+      {
+        "file": ".github/ISSUE_TEMPLATE/bug_report.md",
+        "hash": "10753603097820489125"
+      },
+      {
+        "file": "threagile.bat",
+        "hash": "1988977376155347134"
+      },
+      {
+        "file": "docs/make.bat",
+        "hash": "18238850546568760375"
+      },
+      {
+        "file": ".github/workflows/readme.yml",
+        "hash": "13873986058263057730"
+      },
+      {
+        "file": "README.de.md",
+        "hash": "6644861252444353460"
+      },
+      {
+        "file": "hatch-project/LICENSE.txt",
+        "hash": "17868595725554817591"
+      },
+      {
+        "file": "README.ar.md",
+        "hash": "17131791000117381087"
+      },
+      {
+        "file": "README.es.md",
+        "hash": "7917296014936860038"
+      },
+      {
+        "file": "docs/source/api.rst",
+        "hash": "9332953195776377599"
+      },
+      {
+        "file": "300/200/README.md",
+        "hash": "5916738362346926627"
+      },
+      {
+        "file": "schemas/.schemastore",
+        "hash": "7557585364515346385"
+      },
+      {
+        "file": "400/README.md",
+        "hash": "15877077422970881353"
+      },
+      {
+        "file": "package.json",
+        "hash": "16068938242794862542"
+      },
+      {
+        "file": "DOCUMENTATION.md",
+        "hash": "15181046251086332012"
+      },
+      {
+        "file": "pyproject.toml",
+        "hash": "1572202407438371425"
       },
       {
         "file": "tsconfig.base.json",
         "hash": "12471885200579325840"
       },
       {
-        "file": "workspace.json",
-        "hash": "9141835268453811547"
+        "file": "GLOSSARY.md",
+        "hash": "1101586937567855291"
+      },
+      {
+        "file": ".threagile/live-templates.txt",
+        "hash": "4157020844957009476"
+      },
+      {
+        "file": "README.nl.md",
+        "hash": "11116816290272419740"
+      },
+      {
+        "file": "REFERENCES.md",
+        "hash": "1801559854357073754"
       }
     ],
     "projectFileMap": {
@@ -359,7 +299,10 @@
         },
         {
           "file": "hatch-project/src/hatch_project/apps/hatch_project/eslint.config.mjs",
-          "hash": "15438479497919083559"
+          "hash": "15438479497919083559",
+          "deps": [
+            "@hatch-project/source"
+          ]
         },
         {
           "file": "hatch-project/src/hatch_project/apps/hatch_project/jest.config.ts",
@@ -399,7 +342,11 @@
         },
         {
           "file": "hatch-project/src/hatch_project/apps/hatch_project/src/main.tsx",
-          "hash": "17031623790071076628"
+          "hash": "17031623790071076628",
+          "deps": [
+            "npm:react",
+            "npm:react-dom"
+          ]
         },
         {
           "file": "hatch-project/src/hatch_project/apps/hatch_project/src/styles.css",
@@ -407,7 +354,10 @@
         },
         {
           "file": "hatch-project/src/hatch_project/apps/hatch_project/tailwind.config.js",
-          "hash": "16449474197544728623"
+          "hash": "16449474197544728623",
+          "deps": [
+            "npm:@nx/react"
+          ]
         },
         {
           "file": "hatch-project/src/hatch_project/apps/hatch_project/tsconfig.app.json",
@@ -423,17 +373,122 @@
         },
         {
           "file": "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-          "hash": "9891730713314057410"
+          "hash": "9891730713314057410",
+          "deps": [
+            "npm:@nx/webpack",
+            "npm:@nx/react"
+          ]
+        }
+      ],
+      "@hatch-project/source": [
+        {
+          "file": "hatch-project/src/hatch_project/.editorconfig",
+          "hash": "11532813898455409296"
+        },
+        {
+          "file": "hatch-project/src/hatch_project/.github/workflows/ci.yml",
+          "hash": "5766085213226935940"
+        },
+        {
+          "file": "hatch-project/src/hatch_project/.gitignore",
+          "hash": "883878744508669645"
+        },
+        {
+          "file": "hatch-project/src/hatch_project/.prettierignore",
+          "hash": "17085498363870782104"
+        },
+        {
+          "file": "hatch-project/src/hatch_project/.prettierrc",
+          "hash": "6820402234827505055"
+        },
+        {
+          "file": "hatch-project/src/hatch_project/.vscode/extensions.json",
+          "hash": "5837262799529507717"
+        },
+        {
+          "file": "hatch-project/src/hatch_project/ORIGINAL-nx.json",
+          "hash": "7381207466982406989"
+        },
+        {
+          "file": "hatch-project/src/hatch_project/README.md",
+          "hash": "284299166482275762"
+        },
+        {
+          "file": "hatch-project/src/hatch_project/__about__.py",
+          "hash": "12767325394795716398"
+        },
+        {
+          "file": "hatch-project/src/hatch_project/__init__.py",
+          "hash": "11690963411200796738"
+        },
+        {
+          "file": "hatch-project/src/hatch_project/eslint.config.mjs",
+          "hash": "6173048074701645129"
+        },
+        {
+          "file": "hatch-project/src/hatch_project/jest.config.ts",
+          "hash": "7544409015863045561",
+          "deps": [
+            "npm:@nx/jest"
+          ]
+        },
+        {
+          "file": "hatch-project/src/hatch_project/jest.preset.js",
+          "hash": "7473220183190921152",
+          "deps": [
+            "npm:@nx/jest"
+          ]
+        },
+        {
+          "file": "hatch-project/src/hatch_project/package-lock.json",
+          "hash": "15043937153061898787"
+        },
+        {
+          "file": "hatch-project/src/hatch_project/package.json",
+          "hash": "8115555883175382351",
+          "deps": [
+            "npm:@babel/core",
+            "npm:@babel/preset-react",
+            "npm:@eslint/js",
+            "npm:@nx/devkit",
+            "npm:@nx/eslint",
+            "npm:@nx/jest",
+            "npm:@nx/js",
+            "npm:@nx/playwright",
+            "npm:@nx/react",
+            "npm:@nx/web",
+            "npm:@nx/webpack",
+            "npm:@nx/workspace",
+            "npm:@svgr/webpack",
+            "npm:@types/node",
+            "npm:autoprefixer",
+            "npm:babel-jest",
+            "npm:eslint",
+            "npm:nx",
+            "npm:postcss",
+            "npm:ts-node",
+            "npm:tslib",
+            "npm:typescript",
+            "npm:react",
+            "npm:react-dom"
+          ]
         }
       ],
       "hatch_project-e2e": [
         {
           "file": "hatch-project/src/hatch_project/apps/hatch_project-e2e/eslint.config.mjs",
-          "hash": "16243282764819368173"
+          "hash": "16243282764819368173",
+          "deps": [
+            "@hatch-project/source"
+          ]
         },
         {
           "file": "hatch-project/src/hatch_project/apps/hatch_project-e2e/playwright.config.ts",
-          "hash": "11988485940593190907"
+          "hash": "11988485940593190907",
+          "deps": [
+            "npm:@nx/playwright",
+            "npm:@nx/devkit"
+          ]
         },
         {
           "file": "hatch-project/src/hatch_project/apps/hatch_project-e2e/project.json",
