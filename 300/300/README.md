@@ -23,7 +23,7 @@ This will generate the following file and directory structure underneath the ```
                     └─ hatch_project
                                    ├─ ...
                                    ├─ apps
-                                   │  ├─ react-store
+                                   │  ├─ hatch_project
                                    │  │  ├─ public
                                    │  │  │  └─ ...
                                    │  │  ├─ src
@@ -41,7 +41,7 @@ This will generate the following file and directory structure underneath the ```
                                    │  │  ├─ tsconfig.json
                                    │  │  ├─ tsconfig.spec.json
                                    │  │  └─ vite.config.ts
-                                   │  └─ react-store-e2e
+                                   │  └─ hatch_project-e2e
                                    │     └─ ...
                                    ├─ nx.json
                                    ├─ tsconfig.base.json
