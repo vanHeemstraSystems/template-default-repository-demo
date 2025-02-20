@@ -1,6 +1,6 @@
-repository-name
+nom de référentiel
 
-# Repository Name
+# Nom de référentiel
 
 > Lisc
 
@@ -15,7 +15,7 @@ repository-name
 -   [Exigences](./REQUIREMENTS.md)
 -   [Télémétrie](./TELEMETRY.md)
 
-**Executive Summary**
+**Résumé exécutif**
 
 Texte
 
@@ -31,7 +31,7 @@ Voir[README.md](./200/README.md)
 
 ## 300 - Construire notre application
 
-See [README.md](./300/README.md)
+Voir[README.md](./300/README.md)
 
 ## 400 - Conclusion
 
