@@ -2,7 +2,7 @@
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "namedInputs": {
     "default": ["{projectRoot}/**/*", "sharedGlobals"],
-    "nxCloudId": ["67a3831acafec34e47159841", "67a5f32ffd8f8fb8d16dc5d6"],
+    "nxCloudId": ["67a3831acafec34e47159841"],
     "production": [
       "default",
       "!{projectRoot}/.eslintrc.json",
