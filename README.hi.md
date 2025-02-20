@@ -1,4 +1,4 @@
-भंडार-नाम
+repository-name
 
 # भंडार नाम
 
@@ -15,9 +15,9 @@
 -   [आवश्यकताएं](./REQUIREMENTS.md)
 -   [टेलीमेटरी](./TELEMETRY.md)
 
-**Executive Summary**
+**कार्यकारी सारांश**
 
-Text
+मूलपाठ
 
 के साथ उत्पन्न[रिट्र](https://app.rytr.me)
 
@@ -27,7 +27,7 @@ Text
 
 ## 200 - आवश्यकताएँ
 
-See [README.md](./200/README.md)
+देखना[README.md](./200/README.md)
 
 ## 300 - हमारे आवेदन का निर्माण
 
