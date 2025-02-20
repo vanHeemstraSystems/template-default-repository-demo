@@ -2,7 +2,7 @@ nom de référentiel
 
 # Nom de référentiel
 
-> Slugline
+> Lisc
 
 -   [DNS](./DNS.md)
 -   [Documentation](./DOCUMENTATION.md)
