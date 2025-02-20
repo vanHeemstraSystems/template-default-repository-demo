@@ -187,15 +187,15 @@ $ nx build hatch_project
 
 If you don't have `workspace.json` or `project.json`, and instead have `tsconfig.base.json`, you can adjust your setup as follows:
 
-* Option: Single Application: **Create a `workspace.json`**: If your project is a single application, you can create a `workspace.json` file in the `hatch_project` directory. Here’s a basic example:
+* Option: Single Application: **Create a `workspace.json`**: If your project is a single application, you can create a `workspace.json` file in the root of the repository. Here’s a basic example:
 
    ```json
    {
      "version": 1,
      "projects": {
        "hatch_project": {
-         "root": "src/hatch_project",
-         "sourceRoot": "src/hatch_project/src",
+         "root": "hatch-project/src/hatch_project",
+         "sourceRoot": "hatch-project/src/hatch_project/src",
          "projectType": "application"
        }
      }
@@ -206,25 +206,25 @@ If you don't have `workspace.json` or `project.json`, and instead have `tsconfig
 
 ### Example `workspace.json`
 
-Create a `workspace.json` file in the `hatch_project` directory with the following structure:
+Create a `workspace.json` file in the root of the repository with the following structure:
 
 ```json
 {
   "version": 1,
   "projects": {
     "app1": {
-      "root": "src/hatch_project/app1",
-      "sourceRoot": "src/hatch_project/app1/src",
+      "root": "hatch-project/src/hatch_project/app1",
+      "sourceRoot": "hatch-project/src/hatch_project/app1/src",
       "projectType": "application"
     },
     "app2": {
-      "root": "src/hatch_project/app2",
-      "sourceRoot": "src/hatch_project/app2/src",
+      "root": "hatch-project/src/hatch_project/app2",
+      "sourceRoot": "hatch-project/src/hatch_project/app2/src",
       "projectType": "application"
     },
     "hatch_project": {
-      "root": "src/hatch_project",
-      "sourceRoot": "src/hatch_project/src",
+      "root": "hatch-project/src/hatch_project",
+      "sourceRoot": "hatch-project/src/hatch_project/src",
       "projectType": "application"
     }
   }
@@ -244,18 +244,21 @@ Your directory structure might look like this:
 
 ```
 /
-└── hatch-project/
-    └── src/
-        └── hatch_project/
-            ├── nx.json
-            ├── workspace.json
-            ├── tsconfig.base.json
-            ├── app1/
-            │   └── src/
-            │       └── main.tsx
-            ├── app2/
-            │   └── src/
-            │       └── main.tsx
+├── hatch-project/
+│    └── src/
+│        └── hatch_project/
+│            ├── REMOVE: nx.json
+│            ├── REMOVE: workspace.json
+│            ├── REMOVE: tsconfig.base.json
+│            ├── app1/
+│            │   └── src/
+│            │       └── main.tsx
+│            ├── app2/
+│            │   └── src/
+│            │       └── main.tsx
+├── nx.json
+├── workspace.json
+├── tsconfig.base.json
 ```
 
 ### Running Commands
