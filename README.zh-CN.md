@@ -2,7 +2,7 @@ repository-name
 
 # 存储库名称
 
-> 板条
+> Slugline
 
 -   [DNS](./DNS.md)
 -   [文档](./DOCUMENTATION.md)
@@ -15,7 +15,7 @@ repository-name
 -   [要求](./REQUIREMENTS.md)
 -   [遥测](./TELEMETRY.md)
 
-**执行摘要**
+**Executive Summary**
 
 文本
 
