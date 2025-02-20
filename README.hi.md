@@ -12,14 +12,14 @@
 -   [नोकदार](./NX.md)
 -   [सबमैन](./PODMAN.md)
 -   [संदर्भ](./REFERENCES.md)
--   [Requirements](./REQUIREMENTS.md)
+-   [आवश्यकताएं](./REQUIREMENTS.md)
 -   [टेलीमेटरी](./TELEMETRY.md)
 
 **कार्यकारी सारांश**
 
 मूलपाठ
 
-Generated with [रिट्र](https://app.rytr.me)
+के साथ उत्पन्न[रिट्र](https://app.rytr.me)
 
 ## 100 - परिचय
 
