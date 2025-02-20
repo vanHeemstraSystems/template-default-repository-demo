@@ -1,0 +1,21 @@
+{
+  "run": {
+    "command": "nx run-many -t build",
+    "startTime": "2025-02-20T13:24:28.588Z",
+    "endTime": "2025-02-20T13:24:30.908Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "hatch_project:build",
+      "target": "build",
+      "projectName": "hatch_project",
+      "hash": "9157072692854006582",
+      "startTime": "2025-02-20T13:24:28.684Z",
+      "endTime": "2025-02-20T13:24:30.904Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    }
+  ]
+}

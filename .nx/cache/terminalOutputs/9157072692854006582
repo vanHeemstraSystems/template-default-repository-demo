@@ -1,0 +1,14 @@
+[2m> [22mwebpack-cli build --node-env=production
+
+[webpack-cli] [31mFailed to load '/usr/local/opt/code/template-default-repository-demo/hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js' config[39m
+[webpack-cli] [31mError: The /usr/local/opt/code/template-default-repository-demo/hatch-project/src/hatch_project/apps/hatch_project/src/favicon.ico asset path must start with the project source root: apps/hatch_project/src
+    at /usr/local/opt/code/template-default-repository-demo/hatch-project/src/hatch_project/node_modules/@nx/webpack/src/plugins/nx-webpack-plugin/lib/normalize-options.js:97:23
+    at Array.map (<anonymous>)
+    at normalizeAssets (/usr/local/opt/code/template-default-repository-demo/hatch-project/src/hatch_project/node_modules/@nx/webpack/src/plugins/nx-webpack-plugin/lib/normalize-options.js:91:19)
+    at normalizeOptions (/usr/local/opt/code/template-default-repository-demo/hatch-project/src/hatch_project/node_modules/@nx/webpack/src/plugins/nx-webpack-plugin/lib/normalize-options.js:58:15)
+    at new NxAppWebpackPlugin (/usr/local/opt/code/template-default-repository-demo/hatch-project/src/hatch_project/node_modules/@nx/webpack/src/plugins/nx-webpack-plugin/nx-app-webpack-plugin.js:22:69)
+    at Object.<anonymous> (/usr/local/opt/code/template-default-repository-demo/hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js:18:5)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)[39m

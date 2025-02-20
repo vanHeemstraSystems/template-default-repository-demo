@@ -1,456 +1,4 @@
 {
-  "hatch-project/src/hatch_project/apps/hatch_project": {
-    "root": [
-      "hatch-project/src/hatch_project/apps/hatch_project/project.json",
-      "nx/core/project-json"
-    ],
-    "projectType": [
-      "hatch-project/src/hatch_project/apps/hatch_project/project.json",
-      "nx/core/project-json"
-    ],
-    "targets": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.build": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.build.options": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.build.cache": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.build.dependsOn": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.build.inputs": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.build.outputs": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.build.metadata": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.build.executor": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.build.options.cwd": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.build.options.args": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.build.options.command": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.build.metadata.technologies": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.build.metadata.technologies.0": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.build.metadata.description": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.build.metadata.help": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.build.metadata.help.command": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.build.metadata.help.example": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.serve": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.serve.options": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.serve.metadata": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.serve.executor": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.serve.options.cwd": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.serve.options.args": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.serve.options.command": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.serve.metadata.technologies": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.serve.metadata.technologies.0": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.serve.metadata.description": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.serve.metadata.help": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.serve.metadata.help.command": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.serve.metadata.help.example": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.preview": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.preview.options": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.preview.metadata": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.preview.executor": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.preview.options.cwd": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.preview.options.args": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.preview.options.command": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.preview.metadata.technologies": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.preview.metadata.technologies.0": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.preview.metadata.description": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.preview.metadata.help": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.preview.metadata.help.command": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.preview.metadata.help.example": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.serve-static": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.serve-static.dependsOn": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.serve-static.executor": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.serve-static.options": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.serve-static.options.buildTarget": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.serve-static.options.spa": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.build-deps": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.build-deps.dependsOn": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.watch-deps": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.watch-deps.dependsOn": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.watch-deps.executor": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.watch-deps.options": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.watch-deps.options.command": [
-      "hatch-project/src/hatch_project/apps/hatch_project/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.lint": [
-      "hatch-project/src/hatch_project/apps/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.cache": [
-      "hatch-project/src/hatch_project/apps/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.options": [
-      "hatch-project/src/hatch_project/apps/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.inputs": [
-      "hatch-project/src/hatch_project/apps/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.outputs": [
-      "hatch-project/src/hatch_project/apps/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata": [
-      "hatch-project/src/hatch_project/apps/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.executor": [
-      "hatch-project/src/hatch_project/apps/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.options.cwd": [
-      "hatch-project/src/hatch_project/apps/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.options.command": [
-      "hatch-project/src/hatch_project/apps/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.technologies": [
-      "hatch-project/src/hatch_project/apps/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.technologies.0": [
-      "hatch-project/src/hatch_project/apps/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.description": [
-      "hatch-project/src/hatch_project/apps/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.help": [
-      "hatch-project/src/hatch_project/apps/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.help.command": [
-      "hatch-project/src/hatch_project/apps/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.help.example": [
-      "hatch-project/src/hatch_project/apps/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.test": [
-      "hatch-project/src/hatch_project/apps/hatch_project/jest.config.ts",
-      "@nx/jest/plugin"
-    ],
-    "targets.test.options": [
-      "hatch-project/src/hatch_project/apps/hatch_project/jest.config.ts",
-      "@nx/jest/plugin"
-    ],
-    "targets.test.metadata": [
-      "hatch-project/src/hatch_project/apps/hatch_project/jest.config.ts",
-      "@nx/jest/plugin"
-    ],
-    "targets.test.cache": [
-      "hatch-project/src/hatch_project/apps/hatch_project/jest.config.ts",
-      "@nx/jest/plugin"
-    ],
-    "targets.test.inputs": [
-      "hatch-project/src/hatch_project/apps/hatch_project/jest.config.ts",
-      "@nx/jest/plugin"
-    ],
-    "targets.test.outputs": [
-      "hatch-project/src/hatch_project/apps/hatch_project/jest.config.ts",
-      "@nx/jest/plugin"
-    ],
-    "targets.test.executor": [
-      "hatch-project/src/hatch_project/apps/hatch_project/jest.config.ts",
-      "@nx/jest/plugin"
-    ],
-    "targets.test.options.cwd": [
-      "hatch-project/src/hatch_project/apps/hatch_project/jest.config.ts",
-      "@nx/jest/plugin"
-    ],
-    "targets.test.options.env": [
-      "hatch-project/src/hatch_project/apps/hatch_project/jest.config.ts",
-      "@nx/jest/plugin"
-    ],
-    "targets.test.options.command": [
-      "hatch-project/src/hatch_project/apps/hatch_project/jest.config.ts",
-      "@nx/jest/plugin"
-    ],
-    "targets.test.metadata.technologies": [
-      "hatch-project/src/hatch_project/apps/hatch_project/jest.config.ts",
-      "@nx/jest/plugin"
-    ],
-    "targets.test.metadata.technologies.0": [
-      "hatch-project/src/hatch_project/apps/hatch_project/jest.config.ts",
-      "@nx/jest/plugin"
-    ],
-    "targets.test.metadata.description": [
-      "hatch-project/src/hatch_project/apps/hatch_project/jest.config.ts",
-      "@nx/jest/plugin"
-    ],
-    "targets.test.metadata.help": [
-      "hatch-project/src/hatch_project/apps/hatch_project/jest.config.ts",
-      "@nx/jest/plugin"
-    ],
-    "targets.test.metadata.help.command": [
-      "hatch-project/src/hatch_project/apps/hatch_project/jest.config.ts",
-      "@nx/jest/plugin"
-    ],
-    "targets.test.metadata.help.example": [
-      "hatch-project/src/hatch_project/apps/hatch_project/jest.config.ts",
-      "@nx/jest/plugin"
-    ],
-    "name": [
-      "hatch-project/src/hatch_project/apps/hatch_project/project.json",
-      "nx/core/project-json"
-    ],
-    "$schema": [
-      "hatch-project/src/hatch_project/apps/hatch_project/project.json",
-      "nx/core/project-json"
-    ],
-    "sourceRoot": [
-      "hatch-project/src/hatch_project/apps/hatch_project/project.json",
-      "nx/core/project-json"
-    ],
-    "// targets": [
-      "hatch-project/src/hatch_project/apps/hatch_project/project.json",
-      "nx/core/project-json"
-    ],
-    "tags": [
-      "hatch-project/src/hatch_project/apps/hatch_project/project.json",
-      "nx/core/project-json"
-    ]
-  },
-  "hatch-project/src/hatch_project": {
-    "root": [
-      "hatch-project/src/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets": [
-      "hatch-project/src/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint": [
-      "hatch-project/src/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.cache": [
-      "hatch-project/src/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.options": [
-      "hatch-project/src/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.inputs": [
-      "hatch-project/src/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.outputs": [
-      "hatch-project/src/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata": [
-      "hatch-project/src/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.executor": [
-      "hatch-project/src/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.options.cwd": [
-      "hatch-project/src/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.options.command": [
-      "hatch-project/src/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.technologies": [
-      "hatch-project/src/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.technologies.0": [
-      "hatch-project/src/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.description": [
-      "hatch-project/src/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.help": [
-      "hatch-project/src/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.help.command": [
-      "hatch-project/src/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.help.example": [
-      "hatch-project/src/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ]
-  },
   "hatch-project/src/hatch_project/apps/hatch_project-e2e": {
     "root": [
       "hatch-project/src/hatch_project/apps/hatch_project-e2e/project.json",
@@ -759,6 +307,234 @@
     "targets.e2e-ci--src/example.spec.ts.dependsOn": [
       "nx.json",
       "nx/target-defaults"
+    ]
+  },
+  "hatch-project/src/hatch_project/apps/hatch_project": {
+    "root": [
+      "hatch-project/src/hatch_project/apps/hatch_project/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "hatch-project/src/hatch_project/apps/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint": [
+      "hatch-project/src/hatch_project/apps/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.cache": [
+      "hatch-project/src/hatch_project/apps/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options": [
+      "hatch-project/src/hatch_project/apps/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.inputs": [
+      "hatch-project/src/hatch_project/apps/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.outputs": [
+      "hatch-project/src/hatch_project/apps/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata": [
+      "hatch-project/src/hatch_project/apps/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.executor": [
+      "hatch-project/src/hatch_project/apps/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options.cwd": [
+      "hatch-project/src/hatch_project/apps/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options.command": [
+      "hatch-project/src/hatch_project/apps/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.technologies": [
+      "hatch-project/src/hatch_project/apps/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.technologies.0": [
+      "hatch-project/src/hatch_project/apps/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.description": [
+      "hatch-project/src/hatch_project/apps/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help": [
+      "hatch-project/src/hatch_project/apps/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help.command": [
+      "hatch-project/src/hatch_project/apps/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help.example": [
+      "hatch-project/src/hatch_project/apps/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.test": [
+      "hatch-project/src/hatch_project/apps/hatch_project/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options": [
+      "hatch-project/src/hatch_project/apps/hatch_project/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata": [
+      "hatch-project/src/hatch_project/apps/hatch_project/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.cache": [
+      "hatch-project/src/hatch_project/apps/hatch_project/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.inputs": [
+      "hatch-project/src/hatch_project/apps/hatch_project/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.outputs": [
+      "hatch-project/src/hatch_project/apps/hatch_project/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.executor": [
+      "hatch-project/src/hatch_project/apps/hatch_project/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.cwd": [
+      "hatch-project/src/hatch_project/apps/hatch_project/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.env": [
+      "hatch-project/src/hatch_project/apps/hatch_project/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.command": [
+      "hatch-project/src/hatch_project/apps/hatch_project/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies": [
+      "hatch-project/src/hatch_project/apps/hatch_project/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies.0": [
+      "hatch-project/src/hatch_project/apps/hatch_project/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.description": [
+      "hatch-project/src/hatch_project/apps/hatch_project/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help": [
+      "hatch-project/src/hatch_project/apps/hatch_project/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.command": [
+      "hatch-project/src/hatch_project/apps/hatch_project/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.example": [
+      "hatch-project/src/hatch_project/apps/hatch_project/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "name": [
+      "hatch-project/src/hatch_project/apps/hatch_project/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "hatch-project/src/hatch_project/apps/hatch_project/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "hatch-project/src/hatch_project/apps/hatch_project/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "hatch-project/src/hatch_project/apps/hatch_project/project.json",
+      "nx/core/project-json"
+    ],
+    "// targets": [
+      "hatch-project/src/hatch_project/apps/hatch_project/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "hatch-project/src/hatch_project/apps/hatch_project/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "hatch-project/src/hatch_project": {
+    "root": [
+      "hatch-project/src/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets": [
+      "hatch-project/src/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint": [
+      "hatch-project/src/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.cache": [
+      "hatch-project/src/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options": [
+      "hatch-project/src/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.inputs": [
+      "hatch-project/src/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.outputs": [
+      "hatch-project/src/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata": [
+      "hatch-project/src/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.executor": [
+      "hatch-project/src/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options.cwd": [
+      "hatch-project/src/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options.command": [
+      "hatch-project/src/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.technologies": [
+      "hatch-project/src/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.technologies.0": [
+      "hatch-project/src/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.description": [
+      "hatch-project/src/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help": [
+      "hatch-project/src/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help.command": [
+      "hatch-project/src/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help.example": [
+      "hatch-project/src/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
     ]
   }
 }

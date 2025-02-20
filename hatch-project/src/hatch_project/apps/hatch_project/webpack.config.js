@@ -31,5 +31,16 @@ module.exports = {
       // See: https://react-svgr.com/
       // svgr: false
     }),
+    new nxWebpack.NxWebpackPlugin({
+      // Update the assets path to match your project structure
+      assets: [
+        {
+          glob: 'src/favicon.ico',
+          input: 'apps/hatch_project',
+          output: '.'
+        }
+      ],
+      // ... other plugin options ...
+    })
   ],
 };

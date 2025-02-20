@@ -39,5 +39,46 @@
         ]
       }
     }
+  },
+  "4224253314821781288": {
+    "targets": {
+      "test": {
+        "command": "jest",
+        "options": {
+          "cwd": "hatch-project/src/hatch_project/apps/hatch_project",
+          "env": {
+            "TS_NODE_COMPILER_OPTIONS": "{\"moduleResolution\":\"node10\"}"
+          }
+        },
+        "metadata": {
+          "technologies": [
+            "jest"
+          ],
+          "description": "Run Jest Tests",
+          "help": {
+            "command": "npx jest --help",
+            "example": {
+              "options": {
+                "coverage": true
+              }
+            }
+          }
+        },
+        "cache": true,
+        "inputs": [
+          "default",
+          "^production",
+          "{workspaceRoot}/hatch-project/src/hatch_project/jest.preset.js",
+          {
+            "externalDependencies": [
+              "jest"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/hatch-project/src/hatch_project/coverage/apps/hatch_project"
+        ]
+      }
+    }
   }
 }
