@@ -1,0 +1,74 @@
+{
+  "hatch-project/src/hatch_project/apps/hatch_project": {
+    "root": [
+      "hatch-project/src/hatch_project/apps/hatch_project/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "hatch-project/src/hatch_project/apps/hatch_project/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "hatch-project/src/hatch_project/apps/hatch_project/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "hatch-project/src/hatch_project/apps/hatch_project/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "hatch-project/src/hatch_project/apps/hatch_project/project.json",
+      "nx/core/project-json"
+    ],
+    "// targets": [
+      "hatch-project/src/hatch_project/apps/hatch_project/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "hatch-project/src/hatch_project/apps/hatch_project/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "hatch-project/src/hatch_project/apps/hatch_project/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "hatch-project/src/hatch_project/apps/hatch_project-e2e": {
+    "root": [
+      "hatch-project/src/hatch_project/apps/hatch_project-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "hatch-project/src/hatch_project/apps/hatch_project-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "hatch-project/src/hatch_project/apps/hatch_project-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "hatch-project/src/hatch_project/apps/hatch_project-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "hatch-project/src/hatch_project/apps/hatch_project-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "// targets": [
+      "hatch-project/src/hatch_project/apps/hatch_project-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "implicitDependencies": [
+      "hatch-project/src/hatch_project/apps/hatch_project-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "implicitDependencies.hatch_project": [
+      "hatch-project/src/hatch_project/apps/hatch_project-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "hatch-project/src/hatch_project/apps/hatch_project-e2e/project.json",
+      "nx/core/project-json"
+    ]
+  }
+}

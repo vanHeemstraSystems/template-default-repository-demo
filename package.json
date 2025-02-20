@@ -13,6 +13,11 @@
   "license": "ISC",
   "devDependencies": {
     "@nrwl/workspace": "^19.8.4",
+    "@nx/eslint": "^20.4.5",
+    "@nx/jest": "^20.4.5",
+    "@nx/playwright": "^20.4.5",
+    "@nx/react": "^20.4.5",
+    "@nx/webpack": "^20.4.5",
     "nx": "^20.4.5"
   }
 }
