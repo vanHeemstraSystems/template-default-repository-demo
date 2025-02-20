@@ -2,7 +2,7 @@
 
 # اسم المستودع
 
-> خط الصرخ
+> Slugline
 
 -   [DNS](./DNS.md)
 -   [الوثائق](./DOCUMENTATION.md)
@@ -31,7 +31,7 @@
 
 ## 300 - بناء تطبيقنا
 
-See [README.md](./300/README.md)
+يرى[README.md](./300/README.md)
 
 ## 400 - الخلاصة
 
