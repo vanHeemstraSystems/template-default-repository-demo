@@ -282,6 +282,7 @@ $ npm init -y # If no package.json exists
 $ npm install -g nx@latest # If not already installed
 $ npm install --save-dev nx @nrwl/workspace
 $ npm install --save-dev @nx/webpack
+$ npm install --save-dev webpack-cli
 $ npm install --save-dev @nx/react @nx/eslint @nx/playwright @nx/jest
 ```
 

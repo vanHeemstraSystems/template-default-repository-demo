@@ -1,12 +1,12 @@
 {
-  "1116355101468800310": {
-    "hatch-project/src/hatch_project": {
+  "9680344223450430537": {
+    "hatch-project/src/hatch_project/apps/hatch_project": {
       "targets": {
         "lint": {
           "command": "eslint .",
           "cache": true,
           "options": {
-            "cwd": "hatch-project/src/hatch_project"
+            "cwd": "hatch-project/src/hatch_project/apps/hatch_project"
           },
           "inputs": [
             "default",
@@ -40,14 +40,14 @@
       }
     }
   },
-  "9680344223450430537": {
-    "hatch-project/src/hatch_project/apps/hatch_project": {
+  "1116355101468800310": {
+    "hatch-project/src/hatch_project": {
       "targets": {
         "lint": {
           "command": "eslint .",
           "cache": true,
           "options": {
-            "cwd": "hatch-project/src/hatch_project/apps/hatch_project"
+            "cwd": "hatch-project/src/hatch_project"
           },
           "inputs": [
             "default",

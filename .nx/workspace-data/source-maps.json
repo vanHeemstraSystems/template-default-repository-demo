@@ -381,6 +381,76 @@
       "nx/core/project-json"
     ]
   },
+  "hatch-project/src/hatch_project": {
+    "root": [
+      "hatch-project/src/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets": [
+      "hatch-project/src/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint": [
+      "hatch-project/src/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.cache": [
+      "hatch-project/src/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options": [
+      "hatch-project/src/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.inputs": [
+      "hatch-project/src/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.outputs": [
+      "hatch-project/src/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata": [
+      "hatch-project/src/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.executor": [
+      "hatch-project/src/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options.cwd": [
+      "hatch-project/src/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options.command": [
+      "hatch-project/src/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.technologies": [
+      "hatch-project/src/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.technologies.0": [
+      "hatch-project/src/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.description": [
+      "hatch-project/src/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help": [
+      "hatch-project/src/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help.command": [
+      "hatch-project/src/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help.example": [
+      "hatch-project/src/hatch_project/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ]
+  },
   "hatch-project/src/hatch_project/apps/hatch_project-e2e": {
     "root": [
       "hatch-project/src/hatch_project/apps/hatch_project-e2e/project.json",
@@ -689,76 +759,6 @@
     "targets.e2e-ci--src/example.spec.ts.dependsOn": [
       "nx.json",
       "nx/target-defaults"
-    ]
-  },
-  "hatch-project/src/hatch_project": {
-    "root": [
-      "hatch-project/src/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets": [
-      "hatch-project/src/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint": [
-      "hatch-project/src/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.cache": [
-      "hatch-project/src/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.options": [
-      "hatch-project/src/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.inputs": [
-      "hatch-project/src/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.outputs": [
-      "hatch-project/src/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata": [
-      "hatch-project/src/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.executor": [
-      "hatch-project/src/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.options.cwd": [
-      "hatch-project/src/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.options.command": [
-      "hatch-project/src/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.technologies": [
-      "hatch-project/src/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.technologies.0": [
-      "hatch-project/src/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.description": [
-      "hatch-project/src/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.help": [
-      "hatch-project/src/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.help.command": [
-      "hatch-project/src/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.help.example": [
-      "hatch-project/src/hatch_project/eslint.config.mjs",
-      "@nx/eslint/plugin"
     ]
   }
 }

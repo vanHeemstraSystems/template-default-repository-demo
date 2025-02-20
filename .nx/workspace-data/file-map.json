@@ -160,15 +160,15 @@
       },
       {
         "file": "README.es.md",
-        "hash": "3103348212109195179"
+        "hash": "16726418795912636291"
       },
       {
         "file": "README.fr.md",
-        "hash": "4579647088523414747"
+        "hash": "6302002638833334015"
       },
       {
         "file": "README.hi.md",
-        "hash": "1649632498851457776"
+        "hash": "14273603840590087332"
       },
       {
         "file": "README.md",
@@ -184,11 +184,11 @@
       },
       {
         "file": "README.zh-CN.md",
-        "hash": "12297173920374562772"
+        "hash": "15500197973583657377"
       },
       {
         "file": "README.zh-TW.md",
-        "hash": "18215454421435524209"
+        "hash": "4243672423956418917"
       },
       {
         "file": "REFERENCES.md",
@@ -292,100 +292,6 @@
       }
     ],
     "projectFileMap": {
-      "@hatch-project/source": [
-        {
-          "file": "hatch-project/src/hatch_project/.editorconfig",
-          "hash": "11532813898455409296"
-        },
-        {
-          "file": "hatch-project/src/hatch_project/.github/workflows/ci.yml",
-          "hash": "5766085213226935940"
-        },
-        {
-          "file": "hatch-project/src/hatch_project/.gitignore",
-          "hash": "883878744508669645"
-        },
-        {
-          "file": "hatch-project/src/hatch_project/.prettierignore",
-          "hash": "17085498363870782104"
-        },
-        {
-          "file": "hatch-project/src/hatch_project/.prettierrc",
-          "hash": "6820402234827505055"
-        },
-        {
-          "file": "hatch-project/src/hatch_project/.vscode/extensions.json",
-          "hash": "5837262799529507717"
-        },
-        {
-          "file": "hatch-project/src/hatch_project/ORIGINAL-nx.json",
-          "hash": "7381207466982406989"
-        },
-        {
-          "file": "hatch-project/src/hatch_project/README.md",
-          "hash": "284299166482275762"
-        },
-        {
-          "file": "hatch-project/src/hatch_project/__about__.py",
-          "hash": "12767325394795716398"
-        },
-        {
-          "file": "hatch-project/src/hatch_project/__init__.py",
-          "hash": "11690963411200796738"
-        },
-        {
-          "file": "hatch-project/src/hatch_project/eslint.config.mjs",
-          "hash": "6173048074701645129"
-        },
-        {
-          "file": "hatch-project/src/hatch_project/jest.config.ts",
-          "hash": "7544409015863045561",
-          "deps": [
-            "npm:@nx/jest"
-          ]
-        },
-        {
-          "file": "hatch-project/src/hatch_project/jest.preset.js",
-          "hash": "7473220183190921152",
-          "deps": [
-            "npm:@nx/jest"
-          ]
-        },
-        {
-          "file": "hatch-project/src/hatch_project/package-lock.json",
-          "hash": "15043937153061898787"
-        },
-        {
-          "file": "hatch-project/src/hatch_project/package.json",
-          "hash": "8115555883175382351",
-          "deps": [
-            "npm:@babel/core",
-            "npm:@babel/preset-react",
-            "npm:@eslint/js",
-            "npm:@nx/devkit",
-            "npm:@nx/eslint",
-            "npm:@nx/jest",
-            "npm:@nx/js",
-            "npm:@nx/playwright",
-            "npm:@nx/react",
-            "npm:@nx/web",
-            "npm:@nx/webpack",
-            "npm:@nx/workspace",
-            "npm:@svgr/webpack",
-            "npm:@types/node",
-            "npm:autoprefixer",
-            "npm:babel-jest",
-            "npm:eslint",
-            "npm:nx",
-            "npm:postcss",
-            "npm:ts-node",
-            "npm:tslib",
-            "npm:typescript",
-            "npm:react",
-            "npm:react-dom"
-          ]
-        }
-      ],
       "hatch_project": [
         {
           "file": "hatch-project/src/hatch_project/apps/hatch_project/.babelrc",
@@ -501,6 +407,100 @@
         {
           "file": "hatch-project/src/hatch_project/apps/hatch_project-e2e/tsconfig.json",
           "hash": "3355828113018033400"
+        }
+      ],
+      "@hatch-project/source": [
+        {
+          "file": "hatch-project/src/hatch_project/.editorconfig",
+          "hash": "11532813898455409296"
+        },
+        {
+          "file": "hatch-project/src/hatch_project/.github/workflows/ci.yml",
+          "hash": "5766085213226935940"
+        },
+        {
+          "file": "hatch-project/src/hatch_project/.gitignore",
+          "hash": "883878744508669645"
+        },
+        {
+          "file": "hatch-project/src/hatch_project/.prettierignore",
+          "hash": "17085498363870782104"
+        },
+        {
+          "file": "hatch-project/src/hatch_project/.prettierrc",
+          "hash": "6820402234827505055"
+        },
+        {
+          "file": "hatch-project/src/hatch_project/.vscode/extensions.json",
+          "hash": "5837262799529507717"
+        },
+        {
+          "file": "hatch-project/src/hatch_project/ORIGINAL-nx.json",
+          "hash": "7381207466982406989"
+        },
+        {
+          "file": "hatch-project/src/hatch_project/README.md",
+          "hash": "284299166482275762"
+        },
+        {
+          "file": "hatch-project/src/hatch_project/__about__.py",
+          "hash": "12767325394795716398"
+        },
+        {
+          "file": "hatch-project/src/hatch_project/__init__.py",
+          "hash": "11690963411200796738"
+        },
+        {
+          "file": "hatch-project/src/hatch_project/eslint.config.mjs",
+          "hash": "6173048074701645129"
+        },
+        {
+          "file": "hatch-project/src/hatch_project/jest.config.ts",
+          "hash": "7544409015863045561",
+          "deps": [
+            "npm:@nx/jest"
+          ]
+        },
+        {
+          "file": "hatch-project/src/hatch_project/jest.preset.js",
+          "hash": "7473220183190921152",
+          "deps": [
+            "npm:@nx/jest"
+          ]
+        },
+        {
+          "file": "hatch-project/src/hatch_project/package-lock.json",
+          "hash": "15043937153061898787"
+        },
+        {
+          "file": "hatch-project/src/hatch_project/package.json",
+          "hash": "8115555883175382351",
+          "deps": [
+            "npm:@babel/core",
+            "npm:@babel/preset-react",
+            "npm:@eslint/js",
+            "npm:@nx/devkit",
+            "npm:@nx/eslint",
+            "npm:@nx/jest",
+            "npm:@nx/js",
+            "npm:@nx/playwright",
+            "npm:@nx/react",
+            "npm:@nx/web",
+            "npm:@nx/webpack",
+            "npm:@nx/workspace",
+            "npm:@svgr/webpack",
+            "npm:@types/node",
+            "npm:autoprefixer",
+            "npm:babel-jest",
+            "npm:eslint",
+            "npm:nx",
+            "npm:postcss",
+            "npm:ts-node",
+            "npm:tslib",
+            "npm:typescript",
+            "npm:react",
+            "npm:react-dom"
+          ]
         }
       ]
     }
