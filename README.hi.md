@@ -1,6 +1,6 @@
 भंडार-नाम
 
-# Repository Name
+# भंडार नाम
 
 > स्लगलाइन
 
@@ -9,7 +9,7 @@
 -   [शब्दकोष](./GLOSSARY.md)
 -   [मेजबान](./HOSTS.md)
 -   [इमेजिस](./IMAGES.md)
--   [नोकदार](./NX.md)
+-   [Nx](./NX.md)
 -   [सबमैन](./PODMAN.md)
 -   [संदर्भ](./REFERENCES.md)
 -   [आवश्यकताएं](./REQUIREMENTS.md)
@@ -21,7 +21,7 @@
 
 के साथ उत्पन्न[रिट्र](https://app.rytr.me)
 
-## 100 - Introduction
+## 100 - परिचय
 
 देखना[README.md](./100/README.md)
 
