@@ -11,15 +11,15 @@ repository-naam
 -   [Beelden](./IMAGES.md)
 -   [Nx](./NX.md)
 -   [Subman](./PODMAN.md)
--   [Referenties](./REFERENCES.md)
+-   [References](./REFERENCES.md)
 -   [Vereisten](./REQUIREMENTS.md)
--   [Telemetry](./TELEMETRY.md)
+-   [Telemetrie](./TELEMETRY.md)
 
 **Uitvoerende samenvatting**
 
-Text
+Tekst
 
-Gegenereerd met[Rytr](https://app.rytr.me)
+Gegenereerd met[Ritr](https://app.rytr.me)
 
 ## 100 - Inleiding
 
@@ -33,6 +33,6 @@ Zien[README.md](./200/README.md)
 
 Zien[README.md](./300/README.md)
 
-## 400 - Conclusion
+## 400 - Conclusie
 
 Zien[README.md](./400/README.md)
