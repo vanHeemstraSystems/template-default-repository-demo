@@ -1,10 +1,14 @@
 const { NxAppWebpackPlugin } = require('@nx/webpack/app-plugin');
 const { NxReactWebpackPlugin } = require('@nx/react/webpack-plugin');
-const { join } = require('path');
+const { NxWebpackPlugin } = require('@nx/webpack');
+const path = require('path');
+
+// Get the absolute path to the project root
+const projectRoot = path.resolve(__dirname, '../../../../..');
 
 module.exports = {
   output: {
-    path: join(__dirname, '../../dist/apps/hatch_project'),
+    path: __dirname + '/dist',
   },
   devServer: {
     port: 4200,
@@ -31,16 +35,21 @@ module.exports = {
       // See: https://react-svgr.com/
       // svgr: false
     }),
-    new nxWebpack.NxWebpackPlugin({
-      // Update the assets path to match your project structure
+    new NxWebpackPlugin({
       assets: [
         {
-          glob: 'src/favicon.ico',
-          input: 'apps/hatch_project',
+          glob: 'apps/hatch_project/src/favicon.ico',
+          input: projectRoot,  // Use absolute path to project root
           output: '.'
         }
       ],
-      // ... other plugin options ...
+      tsConfig: 'hatch-project/src/hatch_project/apps/hatch_project/tsconfig.app.json',
+      compiler: 'babel',
+      main: 'hatch-project/src/hatch_project/apps/hatch_project/src/main.tsx',
+      index: 'hatch-project/src/hatch_project/apps/hatch_project/src/index.html',
+      baseHref: '/',
+      outputPath: 'dist/apps/hatch_project',
+      target: 'web'
     })
   ],
 };
