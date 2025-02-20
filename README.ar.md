@@ -1,8 +1,8 @@
 اسم المستودع
 
-# Repository Name
+# اسم المستودع
 
-> Slugline
+> خط الصرخ
 
 -   [DNS](./DNS.md)
 -   [الوثائق](./DOCUMENTATION.md)
@@ -17,7 +17,7 @@
 
 **ملخص تنفيذي**
 
-Text
+نص
 
 ولدت مع[ريتر](https://app.rytr.me)
 
