@@ -19,5 +19,5 @@ jobs:
       - run: npm install -g @nrwl/cli
       - run: npm install --save-dev @swc-node/register @swc/core  # Add SWC dependencies
       - run: npm install --save-dev @nx/webpack webpack-cli  # Add webpack dependencies
-      - run: npx nx run-many -t build
+      - run: npx nx run-many -t build --verbose
       - run: npx nx run-many -t test
