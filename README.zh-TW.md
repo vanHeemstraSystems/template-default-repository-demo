@@ -1,12 +1,12 @@
 repository-name
 
-# 存儲庫名稱
+# Repository Name
 
 > 板條
 
 -   [DNS](./DNS.md)
 -   [文件](./DOCUMENTATION.md)
--   [Glossary](./GLOSSARY.md)
+-   [詞彙表](./GLOSSARY.md)
 -   [主持人](./HOSTS.md)
 -   [圖像](./IMAGES.md)
 -   [nx](./NX.md)
@@ -33,6 +33,6 @@ repository-name
 
 看[README.md](./300/README.md)
 
-## 400 - Conclusion
+## 400-結論
 
 看[README.md](./400/README.md)
