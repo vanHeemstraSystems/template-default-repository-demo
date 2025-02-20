@@ -273,10 +273,14 @@ This structure will help Nx Cloud recognize and manage multiple applications eff
 
 This structure should allow Nx Cloud to detect the workspace properly.
 
-Run the command to **connect** your workspace to Nx Cloud from the root directory of the nx monorepo `hatch project`, specifically:
+Run the command to **connect** your workspace to Nx Cloud from the root of the repository, specifically:
 
 ```
-$ cd /hatch-project/src/hatch_project/
+$ cd /../../../
+$ npm init -y # If no package.json exists
+# Go through the initialization steps
+$ npm install -g nx@latest # If not already installed
+$ npm install --save-dev nx @nrwl/workspace
 ```
 
 The command to connect to Nx Cloud is:
