@@ -1,18 +1,18 @@
-repositorio
+repository-name
 
-# Nombre de repositorio
+# Repository Name
 
-> Línea de babosa
+> Slugline
 
 -   [DNS](./DNS.md)
 -   [Documentación](./DOCUMENTATION.md)
 -   [Glosario](./GLOSSARY.md)
 -   [Anfitriones](./HOSTS.md)
--   [Images](./IMAGES.md)
+-   [Imágenes](./IMAGES.md)
 -   [Nx](./NX.md)
 -   [Submario](./PODMAN.md)
 -   [Referencias](./REFERENCES.md)
--   [Requisitos](./REQUIREMENTS.md)
+-   [Requirements](./REQUIREMENTS.md)
 -   [Telemetría](./TELEMETRY.md)
 
 **Resumen ejecutivo**
@@ -27,7 +27,7 @@ Ver[README.md](./100/README.md)
 
 ## 200 - Requisitos
 
-Ver[README.md](./200/README.md)
+See [README.md](./200/README.md)
 
 ## 300 - Construyendo nuestra aplicación
 
