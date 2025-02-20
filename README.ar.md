@@ -1,4 +1,4 @@
-repository-name
+اسم المستودع
 
 # اسم المستودع
 
@@ -17,7 +17,7 @@ repository-name
 
 **ملخص تنفيذي**
 
-Text
+نص
 
 ولدت مع[ريتر](https://app.rytr.me)
 
