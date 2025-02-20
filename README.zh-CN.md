@@ -12,14 +12,14 @@ repository-name
 -   [nx](./NX.md)
 -   [Subman](./PODMAN.md)
 -   [参考](./REFERENCES.md)
--   [要求](./REQUIREMENTS.md)
+-   [Requirements](./REQUIREMENTS.md)
 -   [遥测](./TELEMETRY.md)
 
 **执行摘要**
 
-文本
+Text
 
-生成[Rytr](https://app.rytr.me)
+生成[ritr](https://app.rytr.me)
 
 ## 100-简介
 
@@ -27,7 +27,7 @@ repository-name
 
 ## 200-要求
 
-看[README.md](./200/README.md)
+See [README.md](./200/README.md)
 
 ## 300-构建我们的应用程序
 
@@ -35,4 +35,4 @@ repository-name
 
 ## 400-结论
 
-看[README.md](./400/README.md)
+See [README.md](./400/README.md)
