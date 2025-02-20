@@ -1,8 +1,8 @@
 repository-name
 
-# 存储库名称
+# Repository Name
 
-> Slugline
+> 板条
 
 -   [DNS](./DNS.md)
 -   [文档](./DOCUMENTATION.md)
@@ -15,13 +15,13 @@ repository-name
 -   [要求](./REQUIREMENTS.md)
 -   [遥测](./TELEMETRY.md)
 
-**Executive Summary**
+**执行摘要**
 
 文本
 
 生成[ritr](https://app.rytr.me)
 
-## 100-简介
+## 100 - Introduction
 
 看[README.md](./100/README.md)
 
