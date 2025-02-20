@@ -10,22 +10,22 @@
 -   [المضيفين](./HOSTS.md)
 -   [الصور](./IMAGES.md)
 -   [NX](./NX.md)
--   [Podman](./PODMAN.md)
+-   [رجل فرعي](./PODMAN.md)
 -   [مراجع](./REFERENCES.md)
 -   [متطلبات](./REQUIREMENTS.md)
 -   [القياس عن بعد](./TELEMETRY.md)
 
 **ملخص تنفيذي**
 
-Text
+نص
 
 ولدت مع[ريتر](https://app.rytr.me)
 
 ## 100 - مقدمة
 
-See [README.md](./100/README.md)
+يرى[README.md](./100/README.md)
 
-## 200 - Requirements
+## 200 - المتطلبات
 
 يرى[README.md](./200/README.md)
 
