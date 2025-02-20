@@ -15,11 +15,11 @@
 -   [आवश्यकताएं](./REQUIREMENTS.md)
 -   [टेलीमेटरी](./TELEMETRY.md)
 
-**कार्यकारी सारांश**
+**Executive Summary**
 
 मूलपाठ
 
-Generated with [रिट्र](https://app.rytr.me)
+के साथ उत्पन्न[रिट्र](https://app.rytr.me)
 
 ## 100 - परिचय
 
