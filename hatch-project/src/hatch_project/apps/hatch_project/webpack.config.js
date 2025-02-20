@@ -38,15 +38,15 @@ module.exports = {
     new NxWebpackPlugin({
       assets: [
         {
-          glob: 'apps/hatch_project/src/favicon.ico',
-          input: projectRoot,  // Use absolute path to project root
+          glob: 'src/favicon.ico',  // Path relative to apps/hatch_project
+          input: path.resolve(__dirname),  // Current directory (apps/hatch_project)
           output: '.'
         }
       ],
-      tsConfig: 'hatch-project/src/hatch_project/apps/hatch_project/tsconfig.app.json',
+      tsConfig: path.resolve(__dirname, 'tsconfig.app.json'),
       compiler: 'babel',
-      main: 'hatch-project/src/hatch_project/apps/hatch_project/src/main.tsx',
-      index: 'hatch-project/src/hatch_project/apps/hatch_project/src/index.html',
+      main: path.resolve(__dirname, 'src/main.tsx'),
+      index: path.resolve(__dirname, 'src/index.html'),
       baseHref: '/',
       outputPath: 'dist/apps/hatch_project',
       target: 'web'
