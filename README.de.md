@@ -10,26 +10,26 @@ Repository-Namen
 -   [Gastgeber](./HOSTS.md)
 -   [Bilder](./IMAGES.md)
 -   [NX](./NX.md)
--   [Subman](./PODMAN.md)
+-   [Podman](./PODMAN.md)
 -   [Referenzen](./REFERENCES.md)
 -   [Anforderungen](./REQUIREMENTS.md)
 -   [Telemetrie](./TELEMETRY.md)
 
-**Zusammenfassung**
+**Executive Summary**
 
 Text
 
 Erzeugt mit[Ritr](https://app.rytr.me)
 
-## 100 - Einführung
+## 100 - Introduction
 
-Sehen[README.md](./100/README.md)
+See [README.md](./100/README.md)
 
-## 200 - Anforderungen
+## 200 - Requirements
 
-Sehen[README.md](./200/README.md)
+See [README.md](./200/README.md)
 
-## 300 - Aufbau unserer Bewerbung
+## 300 - Building Our Application
 
 Sehen[README.md](./300/README.md)
 
