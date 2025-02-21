@@ -245,6 +245,8 @@ Click **Confirm**.
 
 Grant the requested permissions to Spacelift.
 
+- **IMPORTANT**: Click **Trigger** for the ```template-default-repository-demo``` to force a lookup of the repository on GitHub.
+
 3. Configure Spacelift to use these files.
 
 - Spacelift will detect your stack.yml file.
@@ -271,7 +273,7 @@ Grant the requested permissions to Spacelift.
 To check if Spacelift has detected your configuration files:
 
 5.1. Go to your stack dashboard in Spacelift (template-default-repository-demo)
-5.2. Look for the "Code" tab or section in your stack's navigation menu
+5.2. Look for the "Source Code" tab or section in your stack's navigation menu
 5.3. Click on it to see the detected configuration files. You should see:
 - stack.yml
 - main.tf
