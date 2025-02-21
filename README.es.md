@@ -2,7 +2,7 @@ repositorio
 
 # Nombre de repositorio
 
-> Línea de babosa
+> Slugline
 
 -   [DNS](./DNS.md)
 -   [Documentación](./DOCUMENTATION.md)
