@@ -19,7 +19,7 @@ nom de référentiel
 
 Texte
 
-Généré avec[Ritr](https://app.rytr.me)
+Generated with [Ritr](https://app.rytr.me)
 
 ## 100 - Introduction
 
@@ -35,4 +35,4 @@ Voir[README.md](./300/README.md)
 
 ## 400 - Conclusion
 
-See [README.md](./400/README.md)
+Voir[README.md](./400/README.md)
