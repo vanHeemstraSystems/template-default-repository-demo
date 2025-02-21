@@ -6,7 +6,7 @@ nom de référentiel
 
 -   [DNS](./DNS.md)
 -   [Documentation](./DOCUMENTATION.md)
--   [Glossaire](./GLOSSARY.md)
+-   [Glossary](./GLOSSARY.md)
 -   [Hôtes](./HOSTS.md)
 -   [Images](./IMAGES.md)
 -   [Nx](./NX.md)
