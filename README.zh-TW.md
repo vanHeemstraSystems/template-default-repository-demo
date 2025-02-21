@@ -2,7 +2,7 @@ repository-name
 
 # 存儲庫名稱
 
-> 板條
+> Slugline
 
 -   [DNS](./DNS.md)
 -   [文件](./DOCUMENTATION.md)
@@ -15,13 +15,13 @@ repository-name
 -   [要求](./REQUIREMENTS.md)
 -   [遙測](./TELEMETRY.md)
 
-**Executive Summary**
+**執行摘要**
 
 文字
 
 生成[ritr](https://app.rytr.me)
 
-## 100 - Introduction
+## 100-簡介
 
 看[README.md](./100/README.md)
 
