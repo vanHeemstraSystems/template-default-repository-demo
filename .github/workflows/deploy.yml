@@ -34,18 +34,17 @@ jobs:
           eslint-plugin-import eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y \
           @testing-library/react @testing-library/jest-dom @testing-library/user-event
 
-      # Debug: Show current directory and files
+      # Debug: Show project structure before build
       - run: pwd
       - run: ls -la
-      
-      # Debug: Show project structure
       - run: npx nx list
       
       # Build for production with verbose output
       - run: npx nx build hatch_project --prod --verbose
       
-      # Debug: List all directories
-      - run: find . -type d
+      # Debug: Show build output structure
+      - run: ls -R dist || true
+      - run: find . -name "*.js" -o -name "*.html" -o -name "*.css"
       
       # Optional: Run tests before deploying
       - run: npx nx test hatch_project
@@ -55,4 +54,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist/hatch_project
+          publish_dir: ./dist/apps/hatch_project  # Try this path
+          # If that doesn't work, we'll try other variations like:
+          # publish_dir: ./dist/hatch_project
+          # publish_dir: ./dist
