@@ -1,4 +1,4 @@
-nom de référentiel
+repository-name
 
 # Nom de référentiel
 
