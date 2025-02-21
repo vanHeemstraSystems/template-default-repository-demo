@@ -2,7 +2,7 @@ nom de référentiel
 
 # Nom de référentiel
 
-> Lisc
+> Slugline
 
 -   [DNS](./DNS.md)
 -   [Documentation](./DOCUMENTATION.md)
@@ -10,14 +10,14 @@ nom de référentiel
 -   [Hôtes](./HOSTS.md)
 -   [Images](./IMAGES.md)
 -   [Nx](./NX.md)
--   [Sous-homme](./PODMAN.md)
+-   [Podman](./PODMAN.md)
 -   [Références](./REFERENCES.md)
 -   [Exigences](./REQUIREMENTS.md)
 -   [Télémétrie](./TELEMETRY.md)
 
 **Résumé exécutif**
 
-Texte
+Text
 
 Généré avec[Ritr](https://app.rytr.me)
 
