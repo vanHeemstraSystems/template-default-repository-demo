@@ -14,11 +14,13 @@ jobs:
         with:
           node-version: 20
       
-      # Install dependencies in stages
+      # Install Nx first
       - run: npm cache clean --force
       - run: rm -rf node_modules
-      - run: npm install --legacy-peer-deps  # Base install
-      - run: npm install -g nx@latest  # Latest stable version
+      - run: npm install -g nx@latest  # Install Nx globally first
+      
+      # Install dependencies with --no-optional
+      - run: npm install --no-optional --legacy-peer-deps
       
       # Install dev dependencies separately
       - run: npm install --save-dev @swc-node/register @swc/core
