@@ -64,20 +64,23 @@ jobs:
       # Install Nx first
       - run: npm cache clean --force
       - run: rm -rf node_modules
-      - run: npm install -g nx@latest  # Install Nx globally first
+      - run: npm install -g nx@latest
       
-      # Install dependencies with --no-optional
+      # Install React and its types first
+      - run: npm install react react-dom
+      - run: npm install --save-dev @types/react @types/react-dom
+      
+      # Install remaining dependencies
       - run: npm install --no-optional --legacy-peer-deps
-      
-      # Install dev dependencies separately
-      - run: npm install --save-dev @swc-node/register @swc/core
-      - run: npm install --save-dev @nx/webpack webpack-cli
-      - run: npm install --save-dev @nx/eslint-plugin eslint-plugin-playwright
-      - run: npm install --save-dev @playwright/test jest jest-environment-jsdom
-      - run: npm install --save-dev @nx/jest @nx/react @nx/eslint @nx/playwright
-      - run: npm install --save-dev typescript-eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
-      - run: npm install --save-dev eslint ts-jest
-      - run: npm install --save-dev eslint-plugin-import eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y
+      - run: |
+          npm install --save-dev @swc-node/register @swc/core \
+          @nx/webpack webpack-cli \
+          @nx/eslint-plugin eslint-plugin-playwright \
+          @playwright/test jest jest-environment-jsdom \
+          @nx/jest @nx/react @nx/eslint @nx/playwright \
+          typescript-eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin \
+          eslint ts-jest \
+          eslint-plugin-import eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y
 
       # Build for production
       - run: npx nx build hatch_project --prod
