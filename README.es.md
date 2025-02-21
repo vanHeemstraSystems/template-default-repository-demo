@@ -1,6 +1,6 @@
 repositorio
 
-# Nombre de repositorio
+# Repository Name
 
 > Línea de babosa
 
