@@ -7,7 +7,7 @@ repositorio
 -   [DNS](./DNS.md)
 -   [Documentación](./DOCUMENTATION.md)
 -   [Glosario](./GLOSSARY.md)
--   [Hosts](./HOSTS.md)
+-   [Anfitriones](./HOSTS.md)
 -   [Imágenes](./IMAGES.md)
 -   [Nx](./NX.md)
 -   [Submario](./PODMAN.md)
@@ -17,9 +17,9 @@ repositorio
 
 **Resumen ejecutivo**
 
-Text
+Texto
 
-Generado con[Ritro](https://app.rytr.me)
+Generated with [Ritro](https://app.rytr.me)
 
 ## 100 - Introducción
 
