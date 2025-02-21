@@ -25,7 +25,7 @@ Generado con[Ritro](https://app.rytr.me)
 
 Ver[README.md](./100/README.md)
 
-## 200 - Requisitos
+## 200 - Requirements
 
 Ver[README.md](./200/README.md)
 
