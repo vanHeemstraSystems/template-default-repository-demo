@@ -2,13 +2,13 @@ repository-name
 
 # 存儲庫名稱
 
-> Slugline
+> 板條
 
 -   [DNS](./DNS.md)
 -   [文件](./DOCUMENTATION.md)
 -   [詞彙表](./GLOSSARY.md)
 -   [主持人](./HOSTS.md)
--   [圖像](./IMAGES.md)
+-   [Images](./IMAGES.md)
 -   [nx](./NX.md)
 -   [Subman](./PODMAN.md)
 -   [參考](./REFERENCES.md)
@@ -23,7 +23,7 @@ repository-name
 
 ## 100-簡介
 
-See [README.md](./100/README.md)
+看[README.md](./100/README.md)
 
 ## 200-要求
 
@@ -35,4 +35,4 @@ See [README.md](./100/README.md)
 
 ## 400-結論
 
-See [README.md](./400/README.md)
+看[README.md](./400/README.md)
