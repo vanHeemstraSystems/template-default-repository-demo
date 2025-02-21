@@ -17,11 +17,11 @@ repository-name
 
 **執行摘要**
 
-文字
+Text
 
 生成[ritr](https://app.rytr.me)
 
-## 100-簡介
+## 100 - Introduction
 
 看[README.md](./100/README.md)
 
