@@ -1,6 +1,6 @@
 repository-naam
 
-# Repository -naam
+# Repository Name
 
 > Sluglijn
 
