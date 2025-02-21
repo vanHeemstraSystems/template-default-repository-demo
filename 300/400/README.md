@@ -66,5 +66,4 @@ jobs:
 ```
 .github/workflows/ci.yml
 
-
-MORE...
+Our GitHub Actions workflow is now set up and successfully running builds and tests.
