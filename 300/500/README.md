@@ -81,70 +81,74 @@ jobs:
           eslint-plugin-import eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y \
           @testing-library/react @testing-library/jest-dom @testing-library/user-event
 
-      # Debug: Show project configuration
+      # Debug: Show project structure
       - run: |
-          echo "Project configuration:"
+          echo "Project structure:"
+          ls -la
+          echo "Package.json contents:"
+          cat package.json || true
+          echo "Project.json contents:"
           cat project.json || true
-          cat workspace.json || true
+          echo "Nx.json contents:"
           cat nx.json || true
       
+      # Install project dependencies
+      - run: npm install
+      
       # Build for production with verbose output
-      - run: npx nx build hatch_project --prod --verbose
+      - run: |
+          echo "Running build command..."
+          npx nx build hatch_project --prod --verbose
+          
+          echo "Build command completed. Checking output..."
+          find . -type f -name "*.js" -o -name "*.html" -o -name "*.css"
       
       # Debug: Show build output structure
       - run: |
-          echo "Current working directory:"
-          pwd
-          echo "All files in current directory:"
-          ls -la
-          echo "All build files:"
-          find . -type f -not -path "./node_modules/*" -not -path "./.git/*"
-          echo "Contents of dist directory (if exists):"
-          ls -R dist/ || true
+          echo "Current working directory: $(pwd)"
+          echo "Directory structure:"
+          ls -R
       
       # Create the output directory
       - run: mkdir -p dist/apps/hatch_project
       
-      # Copy build files from the correct location
+      # Copy build files from all possible locations
       - run: |
-          # Search for build files first
-          echo "Searching for build files..."
-          BUILD_FILES=$(find . -type f \( \
-            -name "main.*.js" -o \
-            -name "runtime.*.js" -o \
-            -name "polyfills.*.js" -o \
-            -name "vendor.*.js" -o \
-            -name "styles.*.css" -o \
-            -name "index.html" \
-          \) -not -path "./node_modules/*" -not -path "./.git/*" -not -path "./dist/apps/hatch_project/*")
+          echo "Searching for build files in all possible locations..."
           
-          if [ -n "$BUILD_FILES" ]; then
-            echo "Found build files:"
-            echo "$BUILD_FILES"
-            for file in $BUILD_FILES; do
-              echo "Copying $file to dist/apps/hatch_project/"
-              cp "$file" dist/apps/hatch_project/
-            done
-          else
-            echo "No build files found in standard locations, checking alternate paths..."
-            
-            # Check alternate build locations
-            for dir in "dist" "dist/hatch_project" "apps/hatch_project/dist"; do
-              if [ -d "$dir" ] && [ "$(ls -A $dir)" ]; then
-                echo "Found files in $dir:"
-                ls -la "$dir"
-                echo "Copying files from $dir to dist/apps/hatch_project"
-                cp -r "$dir"/* dist/apps/hatch_project/ || true
-              fi
-            done
-          fi
+          # List of possible build directories
+          POSSIBLE_DIRS=(
+            "dist"
+            "dist/hatch_project"
+            "dist/apps/hatch_project"
+            "apps/hatch_project/dist"
+          )
+          
+          # List of possible file patterns
+          PATTERNS=(
+            "*.js"
+            "*.html"
+            "*.css"
+            "assets/*"
+          )
+          
+          # Search and copy files
+          for dir in "${POSSIBLE_DIRS[@]}"; do
+            if [ -d "$dir" ]; then
+              echo "Checking directory: $dir"
+              ls -la "$dir"
+              
+              for pattern in "${PATTERNS[@]}"; do
+                find "$dir" -type f -name "$pattern" -exec cp -v {} dist/apps/hatch_project/ \;
+              done
+            fi
+          done
       
       # Verify the output directory has files
       - run: |
           echo "Final contents of dist/apps/hatch_project:"
           ls -la dist/apps/hatch_project/
           
-          # Exit if directory is empty
           if [ -z "$(ls -A dist/apps/hatch_project/)" ]; then
             echo "Error: No files found in deployment directory!"
             exit 1
