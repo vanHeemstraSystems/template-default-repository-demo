@@ -2,7 +2,7 @@
 
 # اسم المستودع
 
-> Slugline
+> خط الصرخ
 
 -   [DNS](./DNS.md)
 -   [الوثائق](./DOCUMENTATION.md)
