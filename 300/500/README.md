@@ -92,6 +92,7 @@ jobs:
       # Debug: Show build output structure
       - run: ls -R dist || true
       - run: find . -name "*.js" -o -name "*.html" -o -name "*.css"
+      - run: pwd && ls -la && ls -la dist/ && ls -la dist/apps/ || true
       
       # Optional: Run tests before deploying
       - run: npx nx test hatch_project
@@ -101,9 +102,9 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist/apps/hatch_project  # Try this path
-          # If that doesn't work, we'll try other variations like:
-          # publish_dir: ./dist/hatch_project
-          # publish_dir: ./dist
+          publish_dir: ./dist/apps/hatch_project  # Keep this path for now
+          enable_jekyll: false
+          keep_files: true  # Keep existing files
+          force_orphan: false  # Don't force orphan branch
 ```
 .github/workflows/deploy.yml
