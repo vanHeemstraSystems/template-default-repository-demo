@@ -38,6 +38,10 @@ View logs and investigate cache misses at https://nx.app/runs/nrF7JPvJXE
 ```
 
 4. **Configure Deployment Pipeline**:
+
+- If not already existing, create a branch in your GitHub repository called "gh-pages".
+- In the **Settings** of the GitHub Repository choose **Pages**.
+- Under **Branch**, select "gh-pages" and "root". Click **Save**.
 - Create a new file: `.github/workflows/deploy.yml`
 - This will handle:
   - Building the application
