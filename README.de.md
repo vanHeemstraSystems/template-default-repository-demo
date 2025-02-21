@@ -13,7 +13,7 @@ Repository-Namen
 -   [Subman](./PODMAN.md)
 -   [Referenzen](./REFERENCES.md)
 -   [Anforderungen](./REQUIREMENTS.md)
--   [Telemetry](./TELEMETRY.md)
+-   [Telemetrie](./TELEMETRY.md)
 
 **Zusammenfassung**
 
