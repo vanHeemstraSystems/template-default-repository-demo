@@ -14,6 +14,15 @@ jobs:
         with:
           node-version: 20
       
+      # Clean up existing workspace
+      - run: |
+          echo "Cleaning up workspace..."
+          rm -rf hatch-project
+          rm -rf apps
+          rm -f nx.json
+          rm -f package.json
+          rm -f package-lock.json
+      
       # Create temporary directory for the new workspace
       - run: |
           echo "Creating temporary directory..."
@@ -47,26 +56,18 @@ jobs:
           echo "nx.json contents:"
           cat nx.json || true
       
-      # Build for production with verbose output
+      # Build for production
       - run: |
           echo "Running build command..."
-          set -x  # Enable command echo
           npx nx build hatch_project --configuration=production --verbose
-          set +x  # Disable command echo
-          
-          ls -R
+      
+      # Debug: Show build output
+      - run: |
+          echo "Build output structure:"
+          ls -R dist/ || true
           
           echo "Looking for build files:"
-          find . -type f \( -name "*.js" -o -name "*.html" -o -name "*.css" \) -not -path "./node_modules/*"
-      
-      # Create and populate the output directory
-      - run: |
-          # Create output directory
-          mkdir -p dist/apps/hatch_project
-          
-          # Find all build files
-          echo "Searching for build files..."
-          BUILD_FILES=$(find . -type f \( \
+          find . -type f \( \
             -name "*.js" -o \
             -name "*.html" -o \
             -name "*.css" -o \
@@ -74,35 +75,29 @@ jobs:
             -name "*.ico" -o \
             -name "*.png" -o \
             -name "*.svg" \
-          \) -not -path "./node_modules/*" -not -path "./.git/*" -not -path "./dist/apps/hatch_project/*")
+          \) -not -path "./node_modules/*" -not -path "./.git/*" -not -path "./dist/*"
+      
+      # Create deployment directory
+      - run: |
+          mkdir -p dist/apps/hatch_project
           
-          if [ -n "$BUILD_FILES" ]; then
-            echo "Found build files:"
-            echo "$BUILD_FILES"
-            
-            # Copy each file to the deployment directory
-            while IFS= read -r file; do
-              if [ -f "$file" ]; then
-                echo "Copying $file to dist/apps/hatch_project/"
-                cp "$file" dist/apps/hatch_project/
-              fi
-            done <<< "$BUILD_FILES"
+          if [ -d "dist/hatch_project" ]; then
+            echo "Copying from dist/hatch_project"
+            cp -r dist/hatch_project/* dist/apps/hatch_project/
+          elif [ -d "dist/apps/hatch_project" ]; then
+            echo "Build files already in correct location"
           else
-            echo "No build files found!"
-            echo "Contents of current directory:"
-            ls -la
-            echo "Contents of dist directory (if exists):"
-            ls -la dist/ || true
+            echo "Error: Could not find build output"
             exit 1
           fi
       
-      # Verify the output directory has files
+      # Verify deployment directory
       - run: |
-          echo "Final contents of dist/apps/hatch_project:"
+          echo "Deployment directory contents:"
           ls -la dist/apps/hatch_project/
           
           if [ -z "$(ls -A dist/apps/hatch_project/)" ]; then
-            echo "Error: No files found in deployment directory!"
+            echo "Error: Deployment directory is empty"
             exit 1
           fi
       
