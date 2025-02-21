@@ -2,7 +2,7 @@ repository-name
 
 # 存儲庫名稱
 
-> 板條
+> Slugline
 
 -   [DNS](./DNS.md)
 -   [文件](./DOCUMENTATION.md)
@@ -31,7 +31,7 @@ repository-name
 
 ## 300-構建我們的應用程序
 
-See [README.md](./300/README.md)
+看[README.md](./300/README.md)
 
 ## 400-結論
 
