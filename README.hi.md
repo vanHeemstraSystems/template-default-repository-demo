@@ -1,8 +1,8 @@
 भंडार-नाम
 
-# Repository Name
+# भंडार नाम
 
-> Slugline
+> स्लगलाइन
 
 -   [डीएनएस](./DNS.md)
 -   [प्रलेखन](./DOCUMENTATION.md)
