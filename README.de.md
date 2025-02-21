@@ -1,6 +1,6 @@
 Repository-Namen
 
-# Repository Name
+# Repository -Name
 
 > Slugline
 
@@ -9,13 +9,13 @@ Repository-Namen
 -   [Glossar](./GLOSSARY.md)
 -   [Gastgeber](./HOSTS.md)
 -   [Bilder](./IMAGES.md)
--   [Nx](./NX.md)
--   [Podman](./PODMAN.md)
+-   [NX](./NX.md)
+-   [Subman](./PODMAN.md)
 -   [Referenzen](./REFERENCES.md)
 -   [Anforderungen](./REQUIREMENTS.md)
 -   [Telemetrie](./TELEMETRY.md)
 
-**Executive Summary**
+**Zusammenfassung**
 
 Text
 
@@ -25,7 +25,7 @@ Erzeugt mit[Ritr](https://app.rytr.me)
 
 Sehen[README.md](./100/README.md)
 
-## 200 - Requirements
+## 200 - Anforderungen
 
 Sehen[README.md](./200/README.md)
 
