@@ -12,7 +12,7 @@ repositorio
 -   [Nx](./NX.md)
 -   [Submario](./PODMAN.md)
 -   [Referencias](./REFERENCES.md)
--   [Requisitos](./REQUIREMENTS.md)
+-   [Requirements](./REQUIREMENTS.md)
 -   [Telemetría](./TELEMETRY.md)
 
 **Resumen ejecutivo**
