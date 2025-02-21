@@ -188,7 +188,7 @@ To set this up:
 1. Create a [Spacelift](https://spacelift.io) account and connect it to your GitHub repository.
 
 - Go to [Spacelift](https://spacelift.io)
-- Sign up for an account: Click "Sign Up" or "Get Started". We have account ```[vanheemstrasystems.app.spacelift.io](https://vanheemstrasystems.app.spacelift.io/dashboard)```. Choose GitHub as your authentication method.
+- Sign up for an account: Click "Sign Up" or "Get Started". We have account [vanheemstrasystems.app.spacelift.io](https://vanheemstrasystems.app.spacelift.io/dashboard). Choose GitHub as your authentication method.
 - Connect it to your GitHub repository (e.g., template-default-repository-demo): After logging in, click "Add Stack". Select GitHub as your VCS provider. Choose the ```template-default-repository-demo``` repository. Grant the requested permissions to Spacelift.
 
 3. Configure Spacelift to use these files.
