@@ -1,6 +1,6 @@
 repository-naam
 
-# Repository Name
+# Repository -naam
 
 > Sluglijn
 
@@ -17,7 +17,7 @@ repository-naam
 
 **Uitvoerende samenvatting**
 
-Tekst
+Text
 
 Gegenereerd met[Ritr](https://app.rytr.me)
 
@@ -35,4 +35,4 @@ Zien[README.md](./300/README.md)
 
 ## 400 - Conclusie
 
-Zien[README.md](./400/README.md)
+See [README.md](./400/README.md)
