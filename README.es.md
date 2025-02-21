@@ -13,11 +13,11 @@ repositorio
 -   [Submario](./PODMAN.md)
 -   [Referencias](./REFERENCES.md)
 -   [Requisitos](./REQUIREMENTS.md)
--   [Telemetría](./TELEMETRY.md)
+-   [Telemetry](./TELEMETRY.md)
 
-**Resumen ejecutivo**
+**Executive Summary**
 
-Text
+Texto
 
 Generado con[Ritro](https://app.rytr.me)
 
