@@ -81,6 +81,13 @@ jobs:
           eslint-plugin-import eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y \
           @testing-library/react @testing-library/jest-dom @testing-library/user-event
 
+      # Debug: Show project configuration
+      - run: |
+          echo "Project configuration:"
+          cat project.json || true
+          cat workspace.json || true
+          cat nx.json || true
+      
       # Build for production with verbose output
       - run: npx nx build hatch_project --prod --verbose
       
@@ -94,17 +101,28 @@ jobs:
           find . -type f -not -path "./node_modules/*" -not -path "./.git/*"
           echo "Contents of dist directory (if exists):"
           ls -R dist/ || true
+          echo "Contents of apps directory (if exists):"
+          ls -R apps/ || true
       
       # Create the output directory
       - run: mkdir -p dist/apps/hatch_project
       
       # Copy build files from the correct location
       - run: |
+          # First, try to find the build output directory
+          BUILD_DIR=""
+          
           if [ -d "dist/hatch_project" ]; then
-            echo "Found build files in dist/hatch_project"
-            cp -r dist/hatch_project/* dist/apps/hatch_project/
+            BUILD_DIR="dist/hatch_project"
           elif [ -d "dist/apps/hatch_project" ]; then
-            echo "Build files already in correct location"
+            BUILD_DIR="dist/apps/hatch_project"
+          elif [ -d "apps/hatch_project/dist" ]; then
+            BUILD_DIR="apps/hatch_project/dist"
+          fi
+          
+          if [ -n "$BUILD_DIR" ]; then
+            echo "Found build directory: $BUILD_DIR"
+            cp -r "$BUILD_DIR"/* dist/apps/hatch_project/
           else
             echo "Searching for build files..."
             BUILD_FILES=$(find . -type f \( \
@@ -114,7 +132,7 @@ jobs:
               -name "vendor.*.js" -o \
               -name "styles.*.css" -o \
               -name "index.html" \
-            \) -not -path "./node_modules/*" -not -path "./.git/*")
+            \) -not -path "./node_modules/*" -not -path "./.git/*" -not -path "./dist/apps/hatch_project/*")
             
             if [ -n "$BUILD_FILES" ]; then
               echo "Found build files:"
