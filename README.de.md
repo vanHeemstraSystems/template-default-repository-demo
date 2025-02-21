@@ -1,6 +1,6 @@
 Repository-Namen
 
-# Repository Name
+# Repository -Name
 
 > Slugline
 
@@ -9,9 +9,9 @@ Repository-Namen
 -   [Glossar](./GLOSSARY.md)
 -   [Gastgeber](./HOSTS.md)
 -   [Bilder](./IMAGES.md)
--   [Nx](./NX.md)
--   [Subman](./PODMAN.md)
--   [Referenzen](./REFERENCES.md)
+-   [NX](./NX.md)
+-   [Podman](./PODMAN.md)
+-   [References](./REFERENCES.md)
 -   [Anforderungen](./REQUIREMENTS.md)
 -   [Telemetrie](./TELEMETRY.md)
 
@@ -35,4 +35,4 @@ Sehen[README.md](./300/README.md)
 
 ## 400 - Schlussfolgerung
 
-Sehen[README.md](./400/README.md)
+See [README.md](./400/README.md)
