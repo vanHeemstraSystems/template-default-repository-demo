@@ -7,13 +7,13 @@ nom de référentiel
 -   [DNS](./DNS.md)
 -   [Documentation](./DOCUMENTATION.md)
 -   [Glossaire](./GLOSSARY.md)
--   [Hosts](./HOSTS.md)
+-   [Hôtes](./HOSTS.md)
 -   [Images](./IMAGES.md)
 -   [Nx](./NX.md)
 -   [Sous-homme](./PODMAN.md)
 -   [Références](./REFERENCES.md)
 -   [Exigences](./REQUIREMENTS.md)
--   [Telemetry](./TELEMETRY.md)
+-   [Télémétrie](./TELEMETRY.md)
 
 **Résumé exécutif**
 
@@ -25,7 +25,7 @@ Généré avec[Ritr](https://app.rytr.me)
 
 Voir[README.md](./100/README.md)
 
-## 200 - exigences
+## 200 - Requirements
 
 Voir[README.md](./200/README.md)
 
