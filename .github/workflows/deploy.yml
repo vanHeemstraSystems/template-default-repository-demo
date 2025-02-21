@@ -17,18 +17,18 @@ jobs:
       # Install dependencies in stages
       - run: npm cache clean --force
       - run: rm -rf node_modules
-      - run: npm install --legacy-peer-deps  # Added legacy-peer-deps flag
-      - run: npm install -g nx  # Install nx instead of @nrwl/cli
-      - run: |
-          npm install --save-dev --legacy-peer-deps \
-          @swc-node/register @swc/core \
-          @nx/webpack webpack-cli \
-          @nx/eslint-plugin eslint-plugin-playwright \
-          @playwright/test jest jest-environment-jsdom \
-          @nx/jest @nx/react @nx/eslint @nx/playwright \
-          typescript-eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin \
-          eslint ts-jest \
-          eslint-plugin-import eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y  # Added ESLint plugins
+      - run: npm install --legacy-peer-deps  # Base install
+      - run: npm install -g nx@latest  # Latest stable version
+      
+      # Install dev dependencies separately
+      - run: npm install --save-dev @swc-node/register @swc/core
+      - run: npm install --save-dev @nx/webpack webpack-cli
+      - run: npm install --save-dev @nx/eslint-plugin eslint-plugin-playwright
+      - run: npm install --save-dev @playwright/test jest jest-environment-jsdom
+      - run: npm install --save-dev @nx/jest @nx/react @nx/eslint @nx/playwright
+      - run: npm install --save-dev typescript-eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
+      - run: npm install --save-dev eslint ts-jest
+      - run: npm install --save-dev eslint-plugin-import eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y
 
       # Build for production
       - run: npx nx build hatch_project --prod
