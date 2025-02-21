@@ -100,15 +100,22 @@ jobs:
           echo "Contents of dist directory (if exists):"
           ls -R dist/ || true
       
-      # Create the output directory and ensure it exists
-      - run: |
-          mkdir -p dist/apps/hatch_project
-          touch dist/apps/hatch_project/.gitkeep
+      # Create the output directory
+      - run: mkdir -p dist/apps/hatch_project
       
-      # Copy all build files to the correct location
+      # Copy only the necessary build files
       - run: |
-          # Try to find the build output
-          BUILD_FILES=$(find . -type f \( -name "*.js" -o -name "*.html" -o -name "*.css" \) -not -path "./node_modules/*")
+          # Find only the essential build files
+          BUILD_FILES=$(find . -type f \( \
+            -name "*.js" -not -name "webpack.config.js" \
+            -not -name "jest.preset.js" \
+            -not -name "postcss.config.js" \
+            -not -name "tailwind.config.js" \
+            -not -name "process-run-end.js" \
+            -not -name "heartbeat-process.js" \
+            -o -name "index.html" \
+            -o -name "styles.css" \
+          \) -not -path "./node_modules/*")
           
           if [ -n "$BUILD_FILES" ]; then
             echo "Found build files:"
