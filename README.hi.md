@@ -5,9 +5,9 @@
 > स्लगलाइन
 
 -   [डीएनएस](./DNS.md)
--   [प्रलेखन](./DOCUMENTATION.md)
+-   [Documentation](./DOCUMENTATION.md)
 -   [शब्दकोष](./GLOSSARY.md)
--   [Hosts](./HOSTS.md)
+-   [मेजबान](./HOSTS.md)
 -   [इमेजिस](./IMAGES.md)
 -   [नोकदार](./NX.md)
 -   [सबमैन](./PODMAN.md)
@@ -27,7 +27,7 @@ Generated with [रिट्र](https://app.rytr.me)
 
 ## 200 - आवश्यकताएँ
 
-See [README.md](./200/README.md)
+देखना[README.md](./200/README.md)
 
 ## 300 - हमारे आवेदन का निर्माण
 
