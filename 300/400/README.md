@@ -5,13 +5,22 @@
 First, let's serve the application:
 
 ```
-npx nx serve hatch_project
+$ cd / # Go to the root of the repository
+$ npx nx serve hatch_project
 ```
 
 This will:
 - Start a development server
 - Usually on http://localhost:4200
 - Auto-reload on changes
+
+Here is an example of what you will see as the landing page:
+
+![Image](https://github.com/user-attachments/assets/f49661fe-48dc-4e82-8a1d-a70fae1bae15)
+
+http://localhost:4200
+
+**TIP**: Install the [Nx Console for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=nrwl.angular-console&utm_source=nx-project).
 
 ## 200 - Set up Continuous Integration
 
@@ -20,7 +29,8 @@ To set up CI with GitHub Actions:
 a. Create the workflow file:
 
 ```
-mkdir -p .github/workflows
+$ cd / # Go to the root of the repository
+$ mkdir -p .github/workflows
 ```
 
 b. Create the CI configuration:
