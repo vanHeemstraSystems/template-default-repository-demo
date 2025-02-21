@@ -20,7 +20,7 @@ Here is an example of what you will see as the landing page:
 
 http://localhost:4200
 
-**TIP**: Install the [Nx Console for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=nrwl.angular-console&utm_source=nx-project).
+**TIP**: Install the [Nx Console for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=nrwl.angular-console&utm_source=nx-project). As we use **Cursor.io**, one can also install the same in Cursor from the Extensions Marketplace (look for ```Nx Console```).
 
 ## 200 - Set up Continuous Integration
 
