@@ -1,6 +1,6 @@
 repository-name
 
-# Repository Name
+# 存儲庫名稱
 
 > 板條
 
