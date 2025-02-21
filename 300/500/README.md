@@ -66,51 +66,80 @@ jobs:
       - run: rm -rf node_modules
       - run: npm install -g nx@latest
       
-      # Install all dependencies with --ignore-scripts
+      # Debug: Check if project exists
       - run: |
-          npm install --ignore-scripts --save react@18.2.0 react-dom@18.2.0 && \
-          npm install --ignore-scripts --save-dev \
-          @types/react@18.2.0 @types/react-dom@18.2.0 \
-          @swc-node/register @swc/core \
-          @nx/webpack webpack-cli \
-          @nx/eslint-plugin eslint-plugin-playwright \
-          @playwright/test jest jest-environment-jsdom \
-          @nx/jest @nx/react @nx/eslint @nx/playwright \
-          typescript-eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin \
-          eslint ts-jest \
-          eslint-plugin-import eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y \
-          @testing-library/react @testing-library/jest-dom @testing-library/user-event
-
-      # Install project dependencies
-      - run: npm install
+          echo "Checking project configuration..."
+          if [ -f "project.json" ]; then
+            echo "project.json exists:"
+            cat project.json
+          else
+            echo "project.json not found"
+          fi
+          
+          if [ -f "nx.json" ]; then
+            echo "nx.json exists:"
+            cat nx.json
+          else
+            echo "nx.json not found"
+          fi
+          
+          echo "Available projects:"
+          npx nx list
+      
+      # Install dependencies
+      - run: |
+          echo "Installing dependencies..."
+          npm install --save react@18.2.0 react-dom@18.2.0
+          npm install --save-dev \
+            @types/react@18.2.0 @types/react-dom@18.2.0 \
+            @swc-node/register @swc/core \
+            @nx/webpack webpack-cli \
+            @nx/eslint-plugin eslint-plugin-playwright \
+            @playwright/test jest jest-environment-jsdom \
+            @nx/jest @nx/react @nx/eslint @nx/playwright \
+            typescript-eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin \
+            eslint ts-jest \
+            eslint-plugin-import eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y \
+            @testing-library/react @testing-library/jest-dom @testing-library/user-event
+      
+      # Create Nx workspace if it doesn't exist
+      - run: |
+          if [ ! -f "nx.json" ]; then
+            echo "Creating Nx workspace..."
+            npx create-nx-workspace@latest hatch_project --preset=react --appName=hatch_project --style=css --nx-cloud=false --packageManager=npm
+            cp -r hatch_project/* .
+            cp -r hatch_project/.* .
+            rm -rf hatch_project
+          fi
       
       # Build for production
       - run: |
           echo "Running build command..."
-          npx nx build hatch_project --configuration=production
+          npx nx build hatch_project --configuration=production --verbose
       
       # Debug: Show build output
       - run: |
-          echo "Build output structure:"
-          ls -R dist/
+          echo "Current directory structure:"
+          ls -la
+          echo "Looking for dist directory:"
+          find . -name "dist" -type d
+          echo "All files in workspace:"
+          find . -type f -not -path "./node_modules/*" -not -path "./.git/*"
       
-      # Copy build files to deployment directory
+      # Create and verify deployment directory
       - run: |
-          # Ensure target directory exists
           mkdir -p dist/apps/hatch_project
           
-          # Look for build output in common locations
-          if [ -d "dist/hatch_project" ]; then
-            echo "Found build output in dist/hatch_project"
-            cp -r dist/hatch_project/* dist/apps/hatch_project/
-          elif [ -d "dist/apps/hatch_project" ]; then
-            echo "Build output already in correct location"
-          else
-            echo "Error: Could not find build output"
-            echo "Contents of dist directory:"
-            ls -R dist/
-            exit 1
-          fi
+          # Look for build files in all possible locations
+          for dir in $(find . -name "dist" -type d); do
+            echo "Checking directory: $dir"
+            if [ -d "$dir" ]; then
+              echo "Contents of $dir:"
+              ls -la "$dir"
+              echo "Copying files from $dir to dist/apps/hatch_project/"
+              cp -r "$dir"/* dist/apps/hatch_project/ || true
+            fi
+          done
       
       # Verify deployment directory
       - run: |
