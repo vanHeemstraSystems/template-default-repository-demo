@@ -239,7 +239,9 @@ Click **Continue**.
 
 Click **Continue**.
 
-MORE ...
+- Summary
+
+Click **Confirm**.
 
 Grant the requested permissions to Spacelift.
 
