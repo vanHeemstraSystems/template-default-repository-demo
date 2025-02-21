@@ -54,56 +54,54 @@ jobs:
           find . -type f -not -path "./node_modules/*" -not -path "./.git/*"
           echo "Contents of dist directory (if exists):"
           ls -R dist/ || true
-          echo "Contents of apps directory (if exists):"
-          ls -R apps/ || true
       
       # Create the output directory
       - run: mkdir -p dist/apps/hatch_project
       
       # Copy build files from the correct location
       - run: |
-          # First, try to find the build output directory
-          BUILD_DIR=""
+          # Search for build files first
+          echo "Searching for build files..."
+          BUILD_FILES=$(find . -type f \( \
+            -name "main.*.js" -o \
+            -name "runtime.*.js" -o \
+            -name "polyfills.*.js" -o \
+            -name "vendor.*.js" -o \
+            -name "styles.*.css" -o \
+            -name "index.html" \
+          \) -not -path "./node_modules/*" -not -path "./.git/*" -not -path "./dist/apps/hatch_project/*")
           
-          if [ -d "dist/hatch_project" ]; then
-            BUILD_DIR="dist/hatch_project"
-          elif [ -d "dist/apps/hatch_project" ]; then
-            BUILD_DIR="dist/apps/hatch_project"
-          elif [ -d "apps/hatch_project/dist" ]; then
-            BUILD_DIR="apps/hatch_project/dist"
-          fi
-          
-          if [ -n "$BUILD_DIR" ]; then
-            echo "Found build directory: $BUILD_DIR"
-            cp -r "$BUILD_DIR"/* dist/apps/hatch_project/
+          if [ -n "$BUILD_FILES" ]; then
+            echo "Found build files:"
+            echo "$BUILD_FILES"
+            for file in $BUILD_FILES; do
+              echo "Copying $file to dist/apps/hatch_project/"
+              cp "$file" dist/apps/hatch_project/
+            done
           else
-            echo "Searching for build files..."
-            BUILD_FILES=$(find . -type f \( \
-              -name "main.*.js" -o \
-              -name "runtime.*.js" -o \
-              -name "polyfills.*.js" -o \
-              -name "vendor.*.js" -o \
-              -name "styles.*.css" -o \
-              -name "index.html" \
-            \) -not -path "./node_modules/*" -not -path "./.git/*" -not -path "./dist/apps/hatch_project/*")
+            echo "No build files found in standard locations, checking alternate paths..."
             
-            if [ -n "$BUILD_FILES" ]; then
-              echo "Found build files:"
-              echo "$BUILD_FILES"
-              for file in $BUILD_FILES; do
-                echo "Copying $file to dist/apps/hatch_project/"
-                cp "$file" dist/apps/hatch_project/
-              done
-            else
-              echo "No build files found!"
-              exit 1
-            fi
+            # Check alternate build locations
+            for dir in "dist" "dist/hatch_project" "apps/hatch_project/dist"; do
+              if [ -d "$dir" ] && [ "$(ls -A $dir)" ]; then
+                echo "Found files in $dir:"
+                ls -la "$dir"
+                echo "Copying files from $dir to dist/apps/hatch_project"
+                cp -r "$dir"/* dist/apps/hatch_project/ || true
+              fi
+            done
           fi
       
       # Verify the output directory has files
       - run: |
           echo "Final contents of dist/apps/hatch_project:"
           ls -la dist/apps/hatch_project/
+          
+          # Exit if directory is empty
+          if [ -z "$(ls -A dist/apps/hatch_project/)" ]; then
+            echo "Error: No files found in deployment directory!"
+            exit 1
+          fi
       
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
