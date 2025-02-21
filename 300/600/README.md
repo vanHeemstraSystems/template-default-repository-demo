@@ -249,6 +249,29 @@ Click **Confirm**.
 
 Grant the requested permissions to Spacelift.
 
+
+
+
+
+We need to configure the Spacelift provider with credentials. You'll need:
+
+- Get your Spacelift API credentials:
+<br/>- Go to your Spacelift dashboard
+<br/>- Click on your profile icon (top right)
+<br/>- Select "API Keys"
+<br/>- Create a new API key if you don't have one
+
+- Set environment variables:
+```
+export SPACELIFT_API_KEY_ENDPOINT="https://vanheemstrasystems.app.spacelift.io"
+export SPACELIFT_API_KEY_ID="your-api-key-id"
+export SPACELIFT_API_KEY_SECRET="your-api-key-secret"
+```
+
+
+
+
+
 - **IMPORTANT**: Click **Trigger** for the ```template-default-repository-demo``` to force a lookup of the repository on GitHub.
 
 3. Configure Spacelift to use these files.
