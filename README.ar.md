@@ -15,7 +15,7 @@
 -   [متطلبات](./REQUIREMENTS.md)
 -   [القياس عن بعد](./TELEMETRY.md)
 
-**ملخص تنفيذي**
+**Executive Summary**
 
 نص
 
@@ -27,12 +27,12 @@
 
 ## 200 - المتطلبات
 
-See [README.md](./200/README.md)
+يرى[README.md](./200/README.md)
 
 ## 300 - بناء تطبيقنا
 
 يرى[README.md](./300/README.md)
 
-## 400 - الخلاصة
+## 400 - Conclusion
 
 يرى[README.md](./400/README.md)
