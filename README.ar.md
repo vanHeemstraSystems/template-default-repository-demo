@@ -1,4 +1,4 @@
-اسم المستودع
+repository-name
 
 # اسم المستودع
 
@@ -10,12 +10,12 @@
 -   [المضيفين](./HOSTS.md)
 -   [الصور](./IMAGES.md)
 -   [NX](./NX.md)
--   [رجل فرعي](./PODMAN.md)
+-   [Podman](./PODMAN.md)
 -   [مراجع](./REFERENCES.md)
 -   [متطلبات](./REQUIREMENTS.md)
 -   [القياس عن بعد](./TELEMETRY.md)
 
-**ملخص تنفيذي**
+**Executive Summary**
 
 نص
 
