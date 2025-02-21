@@ -235,7 +235,9 @@ Click **Continue**.
 
 Click **Continue**.
 
-- 
+- Attach contexts (optional)
+
+Click **Continue**.
 
 MORE ...
 
