@@ -5,7 +5,7 @@ repository-name
 > 板條
 
 -   [DNS](./DNS.md)
--   [文件](./DOCUMENTATION.md)
+-   [Documentation](./DOCUMENTATION.md)
 -   [詞彙表](./GLOSSARY.md)
 -   [主持人](./HOSTS.md)
 -   [圖像](./IMAGES.md)
@@ -27,7 +27,7 @@ repository-name
 
 ## 200-要求
 
-看[README.md](./200/README.md)
+See [README.md](./200/README.md)
 
 ## 300-構建我們的應用程序
 
