@@ -88,12 +88,13 @@ terraform {
       source = "spacelift-io/spacelift"
     }
   }
+
+  # Add required version constraint
+  required_version = ">= 1.0.0"
 }
 
 # Configure the Spacelift provider
-provider "spacelift" {
-  # Configuration options will be provided by Spacelift
-}
+provider "spacelift" {}
 
 # Create the stack
 resource "spacelift_stack" "main" {
@@ -106,6 +107,9 @@ resource "spacelift_stack" "main" {
   
   administrative = true
   autodeploy     = true
+  
+  # Remove worker_pool_id completely as it might be managed by the UI
+  # worker_pool_id = "public-worker-pool"
 
   labels = [
     "react",
