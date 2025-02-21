@@ -14,7 +14,7 @@ stack:
   description: React application deployment stack
   repository: template-default-repository-demo
   branch: main
-  administrative: false
+  administrative: true
   autodeploy: true
   worker_pool: default
 
@@ -98,7 +98,7 @@ resource "spacelift_stack" "main" {
 
   runner_image = "node:20"
   
-  administrative = false
+  administrative = true
   autodeploy     = true
   
   worker_pool_id = "default"
@@ -219,7 +219,7 @@ Click **Continue**.
 
 - Define behavior (optional): Define additional stack settings
 
-Of all choices, make sure to set **Autodeploy** and **Enable secrets masking** to Yes. Leave all others at their default setting.
+Of all choices, make sure to set **Administrative**, **Autodeploy** and **Enable secrets masking** to Yes. Leave all others at their default setting.
 
 Click **Continue**.
 

@@ -3,7 +3,7 @@ stack:
   description: React application deployment stack
   repository: template-default-repository-demo
   branch: main
-  administrative: false
+  administrative: true
   autodeploy: true
   worker_pool: default
 

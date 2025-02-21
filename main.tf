@@ -20,7 +20,7 @@ resource "spacelift_stack" "main" {
 
   runner_image = "node:20"
   
-  administrative = false
+  administrative = true
   autodeploy     = true
   
   worker_pool_id = "default"
