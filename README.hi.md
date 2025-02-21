@@ -11,7 +11,7 @@
 -   [इमेजिस](./IMAGES.md)
 -   [नोकदार](./NX.md)
 -   [सबमैन](./PODMAN.md)
--   [References](./REFERENCES.md)
+-   [संदर्भ](./REFERENCES.md)
 -   [आवश्यकताएं](./REQUIREMENTS.md)
 -   [टेलीमेटरी](./TELEMETRY.md)
 
@@ -25,9 +25,9 @@
 
 देखना[README.md](./100/README.md)
 
-## 200 - Requirements
+## 200 - आवश्यकताएँ
 
-See [README.md](./200/README.md)
+देखना[README.md](./200/README.md)
 
 ## 300 - हमारे आवेदन का निर्माण
 
