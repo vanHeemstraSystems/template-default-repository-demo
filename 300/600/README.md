@@ -268,7 +268,28 @@ Grant the requested permissions to Spacelift.
 - The Terraform configuration in ```main.tf``` will manage your Spacelift resources
 - The deployment process will follow ```.spacelift/config.yml```.
 
+To check if Spacelift has detected your configuration files:
+
+5.1. Go to your stack dashboard in Spacelift (template-default-repository-demo)
+5.2. Look for the "Code" tab or section in your stack's navigation menu
+5.3. Click on it to see the detected configuration files. You should see:
+- stack.yml
+- main.tf
+- main.rego
+- .spacelift/config.yml
+5.4. You can also check the "Settings" tab, which should reflect the configurations from these files
+
+If you don't see these files or their configurations aren't being applied, you might need to:
+
+5.5. Verify the files are in the correct locations in your repository
+5.6. Check if Spacelift has the proper permissions to access these files
+5.7. Trigger a refresh of your stack configuration
+
 6. Set up any necessary environment variables in Spacelift.
+
+6.1. Go to your stack dashboard in Spacelift (template-default-repository-demo)
+6.2. Look for the "Environment" tab or section in your stack's navigation menu
+6.3. If not already present, create the following new Environment variables (use ```Plain```, or ```Secret```for confidential values):
 
 - NODE_ENV=production
 - PUBLIC_URL=/template-default-repository-demo
