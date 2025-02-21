@@ -2,7 +2,7 @@ repository-naam
 
 # Repository -naam
 
-> Sluglijn
+> Slugline
 
 -   [DNS](./DNS.md)
 -   [Documentatie](./DOCUMENTATION.md)
@@ -12,7 +12,7 @@ repository-naam
 -   [Nx](./NX.md)
 -   [Subman](./PODMAN.md)
 -   [Referenties](./REFERENCES.md)
--   [Requirements](./REQUIREMENTS.md)
+-   [Vereisten](./REQUIREMENTS.md)
 -   [Telemetrie](./TELEMETRY.md)
 
 **Uitvoerende samenvatting**
