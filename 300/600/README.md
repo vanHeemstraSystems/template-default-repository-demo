@@ -91,6 +91,12 @@ terraform {
 
   # Add required version constraint
   required_version = ">= 1.0.0"
+
+  # Add explicit backend configuration
+  backend "remote" {
+    hostname = "vanheemstrasystems.app.spacelift.io"
+    organization = "template-default-repository-demo"
+  }
 }
 
 # Configure the Spacelift provider
