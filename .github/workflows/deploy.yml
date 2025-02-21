@@ -15,33 +15,27 @@ jobs:
           node-version: 20
       
       # Clean install
-      - run: npm cache clean --force
-      - run: rm -rf node_modules
-      - run: npm install -g nx@latest
-      
-      # Debug: Check if project exists
       - run: |
-          echo "Checking project configuration..."
-          if [ -f "project.json" ]; then
-            echo "project.json exists:"
-            cat project.json
-          else
-            echo "project.json not found"
-          fi
-          
-          if [ -f "nx.json" ]; then
-            echo "nx.json exists:"
-            cat nx.json
-          else
-            echo "nx.json not found"
-          fi
-          
-          echo "Available projects:"
-          npx nx list
+          npm cache clean --force
+          rm -rf node_modules
+          rm -f package-lock.json
+          rm -f nx.json
+          rm -f project.json
       
-      # Install dependencies
+      # Create new Nx workspace
       - run: |
-          echo "Installing dependencies..."
+          echo "Creating new Nx workspace..."
+          npx create-nx-workspace@latest . \
+            --preset=react \
+            --appName=hatch_project \
+            --style=css \
+            --nx-cloud=false \
+            --packageManager=npm \
+            --no-interactive
+      
+      # Install additional dependencies
+      - run: |
+          echo "Installing additional dependencies..."
           npm install --save react@18.2.0 react-dom@18.2.0
           npm install --save-dev \
             @types/react@18.2.0 @types/react-dom@18.2.0 \
@@ -55,15 +49,14 @@ jobs:
             eslint-plugin-import eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y \
             @testing-library/react @testing-library/jest-dom @testing-library/user-event
       
-      # Create Nx workspace if it doesn't exist
+      # Debug: Show project structure
       - run: |
-          if [ ! -f "nx.json" ]; then
-            echo "Creating Nx workspace..."
-            npx create-nx-workspace@latest hatch_project --preset=react --appName=hatch_project --style=css --nx-cloud=false --packageManager=npm
-            cp -r hatch_project/* .
-            cp -r hatch_project/.* .
-            rm -rf hatch_project
-          fi
+          echo "Project structure:"
+          ls -la
+          echo "nx.json contents:"
+          cat nx.json
+          echo "Available projects:"
+          npx nx list
       
       # Build for production
       - run: |
@@ -72,27 +65,24 @@ jobs:
       
       # Debug: Show build output
       - run: |
-          echo "Current directory structure:"
-          ls -la
-          echo "Looking for dist directory:"
-          find . -name "dist" -type d
+          echo "Build output structure:"
+          ls -R dist/ || true
           echo "All files in workspace:"
           find . -type f -not -path "./node_modules/*" -not -path "./.git/*"
       
-      # Create and verify deployment directory
+      # Create deployment directory
       - run: |
           mkdir -p dist/apps/hatch_project
           
-          # Look for build files in all possible locations
-          for dir in $(find . -name "dist" -type d); do
-            echo "Checking directory: $dir"
-            if [ -d "$dir" ]; then
-              echo "Contents of $dir:"
-              ls -la "$dir"
-              echo "Copying files from $dir to dist/apps/hatch_project/"
-              cp -r "$dir"/* dist/apps/hatch_project/ || true
-            fi
-          done
+          if [ -d "dist/hatch_project" ]; then
+            echo "Copying from dist/hatch_project"
+            cp -r dist/hatch_project/* dist/apps/hatch_project/
+          elif [ -d "dist/apps/hatch_project" ]; then
+            echo "Build files already in correct location"
+          else
+            echo "Error: Could not find build output"
+            exit 1
+          fi
       
       # Verify deployment directory
       - run: |
@@ -111,5 +101,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist/apps/hatch_project
           enable_jekyll: false
-          keep_files: false  # Changed to false to avoid keeping config files
-          force_orphan: true  # Changed to true to start fresh
+          keep_files: false
+          force_orphan: true
