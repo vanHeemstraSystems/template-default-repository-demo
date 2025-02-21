@@ -1,4 +1,4 @@
-repository-name
+nom de référentiel
 
 # Nom de référentiel
 
@@ -17,13 +17,13 @@ repository-name
 
 **Résumé exécutif**
 
-Text
+Texte
 
-Generated with [Ritr](https://app.rytr.me)
+Généré avec[Rytr](https://app.rytr.me)
 
 ## 100 - Introduction
 
-Voir[README.md](./100/README.md)
+See [README.md](./100/README.md)
 
 ## 200 - exigences
 
@@ -31,8 +31,8 @@ Voir[README.md](./200/README.md)
 
 ## 300 - Construire notre application
 
-See [README.md](./300/README.md)
+Voir[README.md](./300/README.md)
 
 ## 400 - Conclusion
 
-Voir[README.md](./400/README.md)
+See [README.md](./400/README.md)
