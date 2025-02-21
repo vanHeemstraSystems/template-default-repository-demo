@@ -4,7 +4,7 @@
 
 > स्लगलाइन
 
--   [डीएनएस](./DNS.md)
+-   [DNS](./DNS.md)
 -   [प्रलेखन](./DOCUMENTATION.md)
 -   [शब्दकोष](./GLOSSARY.md)
 -   [मेजबान](./HOSTS.md)
