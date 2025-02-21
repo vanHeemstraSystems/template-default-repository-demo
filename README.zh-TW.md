@@ -5,7 +5,7 @@ repository-name
 > 板條
 
 -   [DNS](./DNS.md)
--   [Documentation](./DOCUMENTATION.md)
+-   [文件](./DOCUMENTATION.md)
 -   [詞彙表](./GLOSSARY.md)
 -   [主持人](./HOSTS.md)
 -   [圖像](./IMAGES.md)
@@ -33,6 +33,6 @@ repository-name
 
 看[README.md](./300/README.md)
 
-## 400-結論
+## 400 - Conclusion
 
 看[README.md](./400/README.md)
