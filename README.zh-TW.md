@@ -12,16 +12,16 @@ repository-name
 -   [nx](./NX.md)
 -   [Subman](./PODMAN.md)
 -   [參考](./REFERENCES.md)
--   [要求](./REQUIREMENTS.md)
+-   [Requirements](./REQUIREMENTS.md)
 -   [遙測](./TELEMETRY.md)
 
 **執行摘要**
 
-Text
+文字
 
 生成[ritr](https://app.rytr.me)
 
-## 100 - Introduction
+## 100-簡介
 
 看[README.md](./100/README.md)
 
