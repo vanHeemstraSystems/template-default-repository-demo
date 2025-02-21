@@ -26,7 +26,8 @@ jobs:
           @nx/eslint-plugin eslint-plugin-playwright \
           @playwright/test jest jest-environment-jsdom \
           @nx/jest @nx/react @nx/eslint @nx/playwright \
-          typescript-eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
+          typescript-eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin \
+          eslint ts-jest  # Added missing dependencies
 
       # Build for production
       - run: npx nx build hatch_project --prod
