@@ -22,12 +22,13 @@ jobs:
           
           echo "Creating new Nx workspace..."
           npx create-nx-workspace@latest . \
-            --preset=react \
+            --preset=react-monorepo \
             --appName=hatch_project \
             --style=css \
             --nxCloud=skip \
             --packageManager=npm \
-            --no-interactive
+            --no-interactive \
+            --defaultBase=main
           
           echo "Workspace contents:"
           ls -la
