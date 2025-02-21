@@ -61,13 +61,14 @@ jobs:
         with:
           node-version: 20
       
-      # Install dependencies
+      # Install dependencies in stages
       - run: npm cache clean --force
-      - run: rm -rf node_modules  # Remove any existing modules
-      - run: npm install
-      - run: npm install -g @nrwl/cli
+      - run: rm -rf node_modules
+      - run: npm install --legacy-peer-deps  # Added legacy-peer-deps flag
+      - run: npm install -g nx  # Install nx instead of @nrwl/cli
       - run: |
-          npm install --save-dev @swc-node/register @swc/core \
+          npm install --save-dev --legacy-peer-deps \
+          @swc-node/register @swc/core \
           @nx/webpack webpack-cli \
           @nx/eslint-plugin eslint-plugin-playwright \
           @playwright/test jest jest-environment-jsdom \
