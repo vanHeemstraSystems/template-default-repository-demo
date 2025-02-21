@@ -6,11 +6,11 @@ Repository-Namen
 
 -   [DNS](./DNS.md)
 -   [Dokumentation](./DOCUMENTATION.md)
--   [Glossar](./GLOSSARY.md)
+-   [Glossary](./GLOSSARY.md)
 -   [Gastgeber](./HOSTS.md)
 -   [Bilder](./IMAGES.md)
 -   [NX](./NX.md)
--   [Subman](./PODMAN.md)
+-   [Podman](./PODMAN.md)
 -   [Referenzen](./REFERENCES.md)
 -   [Anforderungen](./REQUIREMENTS.md)
 -   [Telemetrie](./TELEMETRY.md)
@@ -21,7 +21,7 @@ Text
 
 Erzeugt mit[Ritr](https://app.rytr.me)
 
-## 100 - Einführung
+## 100 - Introduction
 
 Sehen[README.md](./100/README.md)
 
