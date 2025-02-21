@@ -1,6 +1,6 @@
 repository-name
 
-# 存儲庫名稱
+# Repository Name
 
 > 板條
 
@@ -13,11 +13,11 @@ repository-name
 -   [Subman](./PODMAN.md)
 -   [參考](./REFERENCES.md)
 -   [要求](./REQUIREMENTS.md)
--   [遙測](./TELEMETRY.md)
+-   [Telemetry](./TELEMETRY.md)
 
 **執行摘要**
 
-文字
+Text
 
 生成[ritr](https://app.rytr.me)
 
@@ -25,9 +25,9 @@ repository-name
 
 看[README.md](./100/README.md)
 
-## 200-要求
+## 200 - Requirements
 
-See [README.md](./200/README.md)
+看[README.md](./200/README.md)
 
 ## 300-構建我們的應用程序
 
