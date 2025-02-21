@@ -199,6 +199,20 @@ For your React application deployment, since we have a ```main.tf``` file that u
 
 This is the appropriate choice because, your main.tf file is written in Terraform/OpenTofu syntax. We're using the spacelift Terraform provider in the configuration. We need to manage Spacelift resources (stack, context, policies) using Infrastructure as Code
 
+- Workflowtool: OpenTofu
+
+- OpenTofu version: 1.9.0 (pick the latest)
+
+- Smart Sanitization (recommended): Yes
+
+- Manage State (recommended): Yes
+
+- External state access: No
+
+- Import existing state file: No
+
+Click **Create & Continue**.
+
 Grant the requested permissions to Spacelift.
 
 3. Configure Spacelift to use these files.
