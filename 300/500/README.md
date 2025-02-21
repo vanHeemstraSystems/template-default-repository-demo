@@ -94,6 +94,22 @@ jobs:
       - run: find . -name "*.js" -o -name "*.html" -o -name "*.css"
       - run: pwd && ls -la && ls -la dist/ && ls -la dist/apps/ || true
       
+      # Create the output directory if it doesn't exist
+      - run: mkdir -p dist/apps/hatch_project
+      
+      # Copy build files to the correct location
+      - run: |
+          if [ -d "dist" ]; then
+            echo "Contents of dist directory:"
+            ls -R dist/
+            if [ -d "dist/hatch_project" ]; then
+              echo "Moving files from dist/hatch_project to dist/apps/hatch_project"
+              mv dist/hatch_project/* dist/apps/hatch_project/
+            fi
+          else
+            echo "dist directory not found"
+          fi
+      
       # Optional: Run tests before deploying
       - run: npx nx test hatch_project
       
@@ -102,9 +118,9 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist/apps/hatch_project  # Keep this path for now
+          publish_dir: ./dist/apps/hatch_project
           enable_jekyll: false
-          keep_files: true  # Keep existing files
-          force_orphan: false  # Don't force orphan branch
+          keep_files: true
+          force_orphan: false
 ```
 .github/workflows/deploy.yml
