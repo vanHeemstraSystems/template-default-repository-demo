@@ -23,8 +23,9 @@ jobs:
           npm install --save-dev @swc-node/register @swc/core \
           @nx/webpack webpack-cli \
           @nx/eslint-plugin eslint-plugin-playwright \
-          @playwright/test jest \
-          @nx/jest @nx/react @nx/eslint @nx/playwright
+          @playwright/test jest jest-environment-jsdom \
+          @nx/jest @nx/react @nx/eslint @nx/playwright \
+          typescript-eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
 
       # Build for production
       - run: npx nx build hatch_project --prod
