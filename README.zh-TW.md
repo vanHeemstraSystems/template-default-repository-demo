@@ -1,6 +1,6 @@
 repository-name
 
-# 存儲庫名稱
+# Repository Name
 
 > 板條
 
@@ -19,7 +19,7 @@ repository-name
 
 文字
 
-Generated with [ritr](https://app.rytr.me)
+生成[ritr](https://app.rytr.me)
 
 ## 100-簡介
 
