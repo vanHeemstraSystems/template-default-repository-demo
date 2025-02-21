@@ -1,0 +1,32 @@
+stack:
+  name: template-default-repository-demo
+  description: React application deployment stack
+  repository: template-default-repository-demo
+  branch: main
+  administrative: false
+  autodeploy: true
+  worker_pool: default
+
+  # Define the runner image
+  runner_image: node:20
+
+  # Define before_init commands
+  before_init:
+    - npm install -g nx@latest
+
+  # Define before_apply commands
+  before_apply:
+    - npm ci
+    - npx nx build hatch_project --configuration=production
+
+  # Define the deployment commands
+  apply:
+    - echo "Deploying to production..."
+    # Add your deployment commands here
+
+  # Define environment variables
+  environment:
+    - name: NODE_ENV
+      value: production
+    - name: PUBLIC_URL
+      value: /template-default-repository-demo
