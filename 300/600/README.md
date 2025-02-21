@@ -231,6 +231,10 @@ Click **Continue**.
 
 Click **Continue**.
 
+- Attach policies (optional)
+
+Click **Continue**.
+
 - 
 
 MORE ...
