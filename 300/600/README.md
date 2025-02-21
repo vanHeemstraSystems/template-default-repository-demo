@@ -196,7 +196,6 @@ To set this up:
 - Spacelift will detect your stack.yml file.
 
 - Confirm the configuration:
-
 <br/>-- - Stack name: template-default-repository-demo
 <br/>-- - Branch: main
 <br/>-- - Runner image: node:20
