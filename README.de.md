@@ -1,6 +1,6 @@
 Repository-Namen
 
-# Repository Name
+# Repository -Name
 
 > Slugline
 
@@ -21,7 +21,7 @@ Text
 
 Erzeugt mit[Ritr](https://app.rytr.me)
 
-## 100 - Introduction
+## 100 - Einführung
 
 Sehen[README.md](./100/README.md)
 
