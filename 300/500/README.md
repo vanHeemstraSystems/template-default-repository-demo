@@ -84,6 +84,10 @@ jobs:
       # Build for production
       - run: npx nx build hatch_project --prod
       
+      # Debug: List build output directory
+      - run: ls -la dist/
+      - run: ls -la dist/apps/ || true
+      
       # Optional: Run tests before deploying
       - run: npx nx test hatch_project
       
@@ -92,6 +96,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist/apps/hatch_project
+          publish_dir: ./dist/hatch_project
 ```
 .github/workflows/deploy.yml
