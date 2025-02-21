@@ -60,10 +60,10 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 20
-          cache: 'npm'
       
       # Install dependencies
       - run: npm cache clean --force
+      - run: rm -rf node_modules  # Remove any existing modules
       - run: npm install
       - run: npm install -g @nrwl/cli
       - run: |
