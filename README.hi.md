@@ -19,7 +19,7 @@
 
 मूलपाठ
 
-Generated with [रिट्र](https://app.rytr.me)
+के साथ उत्पन्न[रिट्र](https://app.rytr.me)
 
 ## 100 - परिचय
 
@@ -29,7 +29,7 @@ Generated with [रिट्र](https://app.rytr.me)
 
 देखना[README.md](./200/README.md)
 
-## 300 - हमारे आवेदन का निर्माण
+## 300 - Building Our Application
 
 देखना[README.md](./300/README.md)
 
