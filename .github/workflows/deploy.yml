@@ -33,7 +33,8 @@ jobs:
           @nx/jest @nx/react @nx/eslint @nx/playwright \
           typescript-eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin \
           eslint ts-jest \
-          eslint-plugin-import eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y
+          eslint-plugin-import eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y \
+          @testing-library/react @testing-library/jest-dom @testing-library/user-event
 
       # Build for production
       - run: npx nx build hatch_project --prod
