@@ -34,9 +34,13 @@ jobs:
           eslint-plugin-import eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y \
           @testing-library/react @testing-library/jest-dom @testing-library/user-event
 
-      # Debug: Show project structure
+      # Install project dependencies
+      - run: npm install
+      
+      # Debug: Show project structure before build
       - run: |
-          echo "Project structure:"
+          echo "Project structure before build:"
+          pwd
           ls -la
           echo "Package.json contents:"
           cat package.json || true
@@ -45,57 +49,59 @@ jobs:
           echo "Nx.json contents:"
           cat nx.json || true
       
-      # Install project dependencies
-      - run: npm install
+      # List available Nx targets
+      - run: npx nx show project hatch_project --web
       
       # Build for production with verbose output
       - run: |
           echo "Running build command..."
+          set -x  # Enable command echo
           npx nx build hatch_project --prod --verbose
+          set +x  # Disable command echo
           
-          echo "Build command completed. Checking output..."
-          find . -type f -name "*.js" -o -name "*.html" -o -name "*.css"
-      
-      # Debug: Show build output structure
-      - run: |
-          echo "Current working directory: $(pwd)"
-          echo "Directory structure:"
+          echo "Build command completed. Checking for build files..."
+          echo "Current directory structure:"
           ls -R
+          
+          echo "Looking for build files:"
+          find . -type f \( -name "*.js" -o -name "*.html" -o -name "*.css" \) -not -path "./node_modules/*"
       
-      # Create the output directory
-      - run: mkdir -p dist/apps/hatch_project
-      
-      # Copy build files from all possible locations
+      # Create and populate the output directory
       - run: |
-          echo "Searching for build files in all possible locations..."
+          # Create output directory
+          mkdir -p dist/apps/hatch_project
           
-          # List of possible build directories
-          POSSIBLE_DIRS=(
-            "dist"
-            "dist/hatch_project"
-            "dist/apps/hatch_project"
-            "apps/hatch_project/dist"
-          )
+          # Find all build files
+          echo "Searching for build files..."
+          BUILD_FILES=$(find . -type f \( \
+            -name "*.js" -o \
+            -name "*.html" -o \
+            -name "*.css" -o \
+            -name "*.json" -o \
+            -name "*.ico" -o \
+            -name "*.png" -o \
+            -name "*.svg" \
+          \) -not -path "./node_modules/*" -not -path "./.git/*" -not -path "./dist/apps/hatch_project/*")
           
-          # List of possible file patterns
-          PATTERNS=(
-            "*.js"
-            "*.html"
-            "*.css"
-            "assets/*"
-          )
-          
-          # Search and copy files
-          for dir in "${POSSIBLE_DIRS[@]}"; do
-            if [ -d "$dir" ]; then
-              echo "Checking directory: $dir"
-              ls -la "$dir"
-              
-              for pattern in "${PATTERNS[@]}"; do
-                find "$dir" -type f -name "$pattern" -exec cp -v {} dist/apps/hatch_project/ \;
-              done
-            fi
-          done
+          if [ -n "$BUILD_FILES" ]; then
+            echo "Found build files:"
+            echo "$BUILD_FILES"
+            
+            # Copy each file to the deployment directory
+            while IFS= read -r file; do
+              if [ -f "$file" ]; then
+                echo "Copying $file to dist/apps/hatch_project/"
+                cp "$file" dist/apps/hatch_project/
+              fi
+            done <<< "$BUILD_FILES"
+          else
+            echo "No build files found!"
+            echo "Contents of current directory:"
+            ls -la
+            echo "Contents of dist directory (if exists):"
+            ls -la dist/ || true
+            exit 1
+          fi
       
       # Verify the output directory has files
       - run: |
