@@ -19,7 +19,22 @@ $ npx nx connect-to-nx-cloud
 
 ```bash
 $ cd / # Go to the root of the repository
-$ nx run-many -t build --parallel --distribute
+$ nx run-many -t build --parallel -- --mode=production
+```
+
+You will be prompted like below:
+
+```
+   ✔  nx run hatch_project:build (13s)
+
+—————————————————————————————————————————————————————————————————
+
+ NX   Successfully ran target build for project hatch_project (13s)
+
+      With additional flags:
+        --mode=production
+
+View logs and investigate cache misses at https://nx.app/runs/nrF7JPvJXE
 ```
 
 4. **Configure Deployment Pipeline**:
@@ -28,3 +43,47 @@ $ nx run-many -t build --parallel --distribute
   - Building the application
   - Running tests
   - Deploying to your chosen platform
+
+```
+name: Deploy
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          cache: 'npm'
+      
+      # Install dependencies
+      - run: npm cache clean --force
+      - run: npm ci
+      - run: npm install -g @nrwl/cli
+      - run: |
+          npm install --save-dev @swc-node/register @swc/core \
+          @nx/webpack webpack-cli \
+          @nx/eslint-plugin eslint-plugin-playwright \
+          @playwright/test jest \
+          @nx/jest @nx/react @nx/eslint @nx/playwright
+
+      # Build for production
+      - run: npx nx build hatch_project --prod
+      
+      # Optional: Run tests before deploying
+      - run: npx nx test hatch_project
+      
+      # Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist/apps/hatch_project
+```
+.github/workflows/deploy.yml
