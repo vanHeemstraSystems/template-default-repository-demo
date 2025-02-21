@@ -217,6 +217,18 @@ Click **Create & Continue**.
 
 Click **Continue**.
 
+- Define behavior (optional): Define additional stack settings
+
+Of all choices, make sure to set Enable secrets masking to Yes. Leave all others at their default setting.
+
+Click **Continue**.
+
+- Add hooks (optional)
+
+Click **Continue**.
+
+- 
+
 MORE ...
 
 Grant the requested permissions to Spacelift.
