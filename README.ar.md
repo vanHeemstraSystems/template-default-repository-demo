@@ -8,10 +8,10 @@
 -   [الوثائق](./DOCUMENTATION.md)
 -   [مسرد](./GLOSSARY.md)
 -   [المضيفين](./HOSTS.md)
--   [الصور](./IMAGES.md)
--   [NX](./NX.md)
+-   [Images](./IMAGES.md)
+-   [Nx](./NX.md)
 -   [رجل فرعي](./PODMAN.md)
--   [مراجع](./REFERENCES.md)
+-   [References](./REFERENCES.md)
 -   [متطلبات](./REQUIREMENTS.md)
 -   [القياس عن بعد](./TELEMETRY.md)
 
