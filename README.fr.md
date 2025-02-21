@@ -1,13 +1,13 @@
-nom de référentiel
+repository-name
 
-# Nom de référentiel
+# Repository Name
 
 > Lisc
 
 -   [DNS](./DNS.md)
 -   [Documentation](./DOCUMENTATION.md)
 -   [Glossaire](./GLOSSARY.md)
--   [Hôtes](./HOSTS.md)
+-   [Hosts](./HOSTS.md)
 -   [Images](./IMAGES.md)
 -   [Nx](./NX.md)
 -   [Sous-homme](./PODMAN.md)
