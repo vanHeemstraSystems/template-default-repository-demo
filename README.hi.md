@@ -19,7 +19,7 @@
 
 मूलपाठ
 
-के साथ उत्पन्न[रिट्र](https://app.rytr.me)
+Generated with [रिट्र](https://app.rytr.me)
 
 ## 100 - परिचय
 
