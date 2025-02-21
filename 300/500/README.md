@@ -159,3 +159,17 @@ jobs:
           force_orphan: true
 ```
 .github/workflows/deploy.yml
+
+Your React application should now be deployed and accessible at your GitHub Pages URL.
+
+You can access your GitHub Pages site at: https://vanheemstrasystems.github.io/template-default-repository-demo/
+
+To find this URL manually:
+
+1. Go to your repository settings (https://github.com/vanHeemstraSystems/template-default-repository-demo/settings)
+
+2. Click on "Pages" in the left sidebar
+
+3. Under "GitHub Pages", you should see your site's URL
+
+**Note**: It might take a few minutes for the changes to propagate after a deployment. If you see a 404 error, wait a few minutes and try again.
