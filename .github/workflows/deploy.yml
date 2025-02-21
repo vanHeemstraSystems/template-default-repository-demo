@@ -14,19 +14,17 @@ jobs:
         with:
           node-version: 20
       
-      # Install Nx first
+      # Clean install
       - run: npm cache clean --force
       - run: rm -rf node_modules
       - run: npm install -g nx@latest
       
-      # Install React and its types first
-      - run: npm install react react-dom
-      - run: npm install --save-dev @types/react @types/react-dom
-      
-      # Install remaining dependencies
-      - run: npm install --no-optional --legacy-peer-deps
+      # Install all dependencies at once with specific versions
       - run: |
-          npm install --save-dev @swc-node/register @swc/core \
+          npm install --save react@18.2.0 react-dom@18.2.0 && \
+          npm install --save-dev \
+          @types/react@18.2.0 @types/react-dom@18.2.0 \
+          @swc-node/register @swc/core \
           @nx/webpack webpack-cli \
           @nx/eslint-plugin eslint-plugin-playwright \
           @playwright/test jest jest-environment-jsdom \
