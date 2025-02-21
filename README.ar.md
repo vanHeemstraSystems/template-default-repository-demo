@@ -2,7 +2,7 @@
 
 # اسم المستودع
 
-> خط الصرخ
+> Slugline
 
 -   [DNS](./DNS.md)
 -   [الوثائق](./DOCUMENTATION.md)
@@ -12,7 +12,7 @@
 -   [NX](./NX.md)
 -   [رجل فرعي](./PODMAN.md)
 -   [مراجع](./REFERENCES.md)
--   [متطلبات](./REQUIREMENTS.md)
+-   [Requirements](./REQUIREMENTS.md)
 -   [القياس عن بعد](./TELEMETRY.md)
 
 **ملخص تنفيذي**
@@ -21,7 +21,7 @@
 
 ولدت مع[ريتر](https://app.rytr.me)
 
-## 100 - Introduction
+## 100 - مقدمة
 
 يرى[README.md](./100/README.md)
 
@@ -31,8 +31,8 @@
 
 ## 300 - بناء تطبيقنا
 
-See [README.md](./300/README.md)
+يرى[README.md](./300/README.md)
 
-## 400 - Conclusion
+## 400 - الخلاصة
 
 يرى[README.md](./400/README.md)
