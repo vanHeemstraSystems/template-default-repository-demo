@@ -15,7 +15,7 @@ Repository-Namen
 -   [Anforderungen](./REQUIREMENTS.md)
 -   [Telemetrie](./TELEMETRY.md)
 
-**Executive Summary**
+**Zusammenfassung**
 
 Text
 
@@ -25,7 +25,7 @@ Erzeugt mit[Ritr](https://app.rytr.me)
 
 Sehen[README.md](./100/README.md)
 
-## 200 - Requirements
+## 200 - Anforderungen
 
 Sehen[README.md](./200/README.md)
 
@@ -33,6 +33,6 @@ Sehen[README.md](./200/README.md)
 
 Sehen[README.md](./300/README.md)
 
-## 400 - Conclusion
+## 400 - Schlussfolgerung
 
-See [README.md](./400/README.md)
+Sehen[README.md](./400/README.md)
