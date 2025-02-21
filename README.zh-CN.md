@@ -5,11 +5,11 @@ repository-name
 > 板条
 
 -   [DNS](./DNS.md)
--   [Documentation](./DOCUMENTATION.md)
+-   [文档](./DOCUMENTATION.md)
 -   [词汇表](./GLOSSARY.md)
 -   [主持人](./HOSTS.md)
--   [Images](./IMAGES.md)
--   [Nx](./NX.md)
+-   [图像](./IMAGES.md)
+-   [nx](./NX.md)
 -   [Subman](./PODMAN.md)
 -   [参考](./REFERENCES.md)
 -   [要求](./REQUIREMENTS.md)
