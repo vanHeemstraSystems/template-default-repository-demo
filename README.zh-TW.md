@@ -17,7 +17,7 @@ repository-name
 
 **執行摘要**
 
-Text
+文字
 
 生成[ritr](https://app.rytr.me)
 
@@ -31,7 +31,7 @@ Text
 
 ## 300-構建我們的應用程序
 
-See [README.md](./300/README.md)
+看[README.md](./300/README.md)
 
 ## 400-結論
 
