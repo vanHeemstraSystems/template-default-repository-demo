@@ -12,7 +12,7 @@ nom de référentiel
 -   [Nx](./NX.md)
 -   [Sous-homme](./PODMAN.md)
 -   [Références](./REFERENCES.md)
--   [Exigences](./REQUIREMENTS.md)
+-   [Requirements](./REQUIREMENTS.md)
 -   [Télémétrie](./TELEMETRY.md)
 
 **Résumé exécutif**
