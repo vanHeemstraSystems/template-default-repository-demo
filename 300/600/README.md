@@ -165,6 +165,11 @@ workspace_configs:
     autoformat: true
     autodeploy: true
     
+    # Add state initialization settings
+    state:
+      backend: spacelift
+      auto_init: true
+      
     # Define the deployment process
     deployment:
       steps:
