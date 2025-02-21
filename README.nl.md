@@ -1,6 +1,6 @@
 repository-naam
 
-# Repository -naam
+# Repository Name
 
 > Sluglijn
 
@@ -31,7 +31,7 @@ Zien[README.md](./200/README.md)
 
 ## 300 - onze applicatie bouwen
 
-See [README.md](./300/README.md)
+Zien[README.md](./300/README.md)
 
 ## 400 - Conclusie
 
