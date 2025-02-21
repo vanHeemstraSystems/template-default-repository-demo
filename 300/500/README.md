@@ -81,11 +81,6 @@ jobs:
           eslint-plugin-import eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y \
           @testing-library/react @testing-library/jest-dom @testing-library/user-event
 
-      # Debug: Show project structure before build
-      - run: pwd
-      - run: ls -la
-      - run: npx nx list
-      
       # Build for production with verbose output
       - run: npx nx build hatch_project --prod --verbose
       
@@ -95,40 +90,43 @@ jobs:
           pwd
           echo "All files in current directory:"
           ls -la
-          echo "All JavaScript, HTML, and CSS files:"
-          find . -type f \( -name "*.js" -o -name "*.html" -o -name "*.css" \)
+          echo "All build files:"
+          find . -type f -not -path "./node_modules/*" -not -path "./.git/*"
           echo "Contents of dist directory (if exists):"
           ls -R dist/ || true
       
       # Create the output directory
       - run: mkdir -p dist/apps/hatch_project
       
-      # Copy only the necessary build files
+      # Copy build files from the correct location
       - run: |
-          # Find only the essential build files
-          BUILD_FILES=$(find . -type f \( \
-            -name "*.js" -not -name "webpack.config.js" \
-            -not -name "jest.preset.js" \
-            -not -name "postcss.config.js" \
-            -not -name "tailwind.config.js" \
-            -not -name "process-run-end.js" \
-            -not -name "heartbeat-process.js" \
-            -o -name "index.html" \
-            -o -name "styles.css" \
-          \) -not -path "./node_modules/*")
-          
-          if [ -n "$BUILD_FILES" ]; then
-            echo "Found build files:"
-            echo "$BUILD_FILES"
-            
-            # Copy each file to the deployment directory
-            for file in $BUILD_FILES; do
-              echo "Copying $file to dist/apps/hatch_project/"
-              cp "$file" dist/apps/hatch_project/ || true
-            done
+          if [ -d "dist/hatch_project" ]; then
+            echo "Found build files in dist/hatch_project"
+            cp -r dist/hatch_project/* dist/apps/hatch_project/
+          elif [ -d "dist/apps/hatch_project" ]; then
+            echo "Build files already in correct location"
           else
-            echo "No build files found!"
-            exit 1
+            echo "Searching for build files..."
+            BUILD_FILES=$(find . -type f \( \
+              -name "main.*.js" -o \
+              -name "runtime.*.js" -o \
+              -name "polyfills.*.js" -o \
+              -name "vendor.*.js" -o \
+              -name "styles.*.css" -o \
+              -name "index.html" \
+            \) -not -path "./node_modules/*" -not -path "./.git/*")
+            
+            if [ -n "$BUILD_FILES" ]; then
+              echo "Found build files:"
+              echo "$BUILD_FILES"
+              for file in $BUILD_FILES; do
+                echo "Copying $file to dist/apps/hatch_project/"
+                cp "$file" dist/apps/hatch_project/
+              done
+            else
+              echo "No build files found!"
+              exit 1
+            fi
           fi
       
       # Verify the output directory has files
