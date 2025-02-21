@@ -5,7 +5,7 @@ repository-name
 > 板條
 
 -   [DNS](./DNS.md)
--   [Documentation](./DOCUMENTATION.md)
+-   [文件](./DOCUMENTATION.md)
 -   [詞彙表](./GLOSSARY.md)
 -   [主持人](./HOSTS.md)
 -   [圖像](./IMAGES.md)
@@ -15,11 +15,11 @@ repository-name
 -   [要求](./REQUIREMENTS.md)
 -   [遙測](./TELEMETRY.md)
 
-**Executive Summary**
+**執行摘要**
 
 文字
 
-Generated with [ritr](https://app.rytr.me)
+生成[ritr](https://app.rytr.me)
 
 ## 100-簡介
 
@@ -29,7 +29,7 @@ Generated with [ritr](https://app.rytr.me)
 
 看[README.md](./200/README.md)
 
-## 300 - Building Our Application
+## 300-構建我們的應用程序
 
 看[README.md](./300/README.md)
 
