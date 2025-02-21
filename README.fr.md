@@ -1,31 +1,31 @@
 repository-name
 
-# Repository Name
+# Nom de référentiel
 
-> Lisc
+> Slugline
 
 -   [DNS](./DNS.md)
 -   [Documentation](./DOCUMENTATION.md)
--   [Glossaire](./GLOSSARY.md)
+-   [Glossary](./GLOSSARY.md)
 -   [Hosts](./HOSTS.md)
 -   [Images](./IMAGES.md)
 -   [Nx](./NX.md)
 -   [Sous-homme](./PODMAN.md)
--   [Références](./REFERENCES.md)
+-   [References](./REFERENCES.md)
 -   [Exigences](./REQUIREMENTS.md)
 -   [Télémétrie](./TELEMETRY.md)
 
-**Résumé exécutif**
+**Executive Summary**
 
 Texte
 
-Généré avec[Ritr](https://app.rytr.me)
+Généré avec[Rytr](https://app.rytr.me)
 
 ## 100 - Introduction
 
 Voir[README.md](./100/README.md)
 
-## 200 - exigences
+## 200 - Requirements
 
 Voir[README.md](./200/README.md)
 
@@ -35,4 +35,4 @@ Voir[README.md](./300/README.md)
 
 ## 400 - Conclusion
 
-Voir[README.md](./400/README.md)
+See [README.md](./400/README.md)
