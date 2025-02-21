@@ -2,7 +2,7 @@ repository-name
 
 # 存儲庫名稱
 
-> Slugline
+> 板條
 
 -   [DNS](./DNS.md)
 -   [文件](./DOCUMENTATION.md)
@@ -15,7 +15,7 @@ repository-name
 -   [要求](./REQUIREMENTS.md)
 -   [遙測](./TELEMETRY.md)
 
-**執行摘要**
+**Executive Summary**
 
 文字
 
