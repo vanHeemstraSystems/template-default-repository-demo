@@ -12,12 +12,12 @@ repository-name
 -   [nx](./NX.md)
 -   [Subman](./PODMAN.md)
 -   [参考](./REFERENCES.md)
--   [要求](./REQUIREMENTS.md)
+-   [Requirements](./REQUIREMENTS.md)
 -   [遥测](./TELEMETRY.md)
 
 **执行摘要**
 
-文本
+Text
 
 生成[ritr](https://app.rytr.me)
 
