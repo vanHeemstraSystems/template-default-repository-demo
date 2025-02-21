@@ -227,6 +227,10 @@ Click **Continue**.
 
 Click **Continue**.
 
+- Attach cloud integration (optional)
+
+Click **Continue**.
+
 - 
 
 MORE ...
