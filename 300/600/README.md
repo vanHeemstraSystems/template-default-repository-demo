@@ -44,7 +44,7 @@ stack:
 ```
 repository-name/stack.yml
 
-2. Let's create a policy file for Spacelift (```main.rego```) at the root of the repository:
+2. Let's create a policy file for Spacelift (```main.rego```) inside the ```policies``` directory at the root of the repository:
 
 ```
 package spacelift
@@ -71,7 +71,7 @@ allow_access[msg] {
     msg := "Admin access granted"
 }
 ```
-repository-name/main.rego
+repository-name/policies/main.rego
 
 3. Let's create a Terraform configuration to manage Spacelift resources (```main.tf```) at the root of the repository:
 
