@@ -213,6 +213,10 @@ This is the appropriate choice because, your main.tf file is written in Terrafor
 
 Click **Create & Continue**.
 
+- Stack created: Now you can make it even more powerful by adding hooks, attaching cloud, policies or contexts in the next steps!
+
+MORE ...
+
 Grant the requested permissions to Spacelift.
 
 3. Configure Spacelift to use these files.
