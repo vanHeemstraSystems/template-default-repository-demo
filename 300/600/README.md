@@ -215,6 +215,8 @@ Click **Create & Continue**.
 
 - Stack created: Now you can make it even more powerful by adding hooks, attaching cloud, policies or contexts in the next steps!
 
+Click **Continue**.
+
 MORE ...
 
 Grant the requested permissions to Spacelift.
