@@ -2,7 +2,7 @@ repository-name
 
 # 存儲庫名稱
 
-> 板條
+> Slugline
 
 -   [DNS](./DNS.md)
 -   [文件](./DOCUMENTATION.md)
