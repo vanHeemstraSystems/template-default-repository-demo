@@ -2,10 +2,10 @@ repository-name
 
 # 存储库名称
 
-> Slugline
+> 板条
 
 -   [DNS](./DNS.md)
--   [Documentation](./DOCUMENTATION.md)
+-   [文档](./DOCUMENTATION.md)
 -   [词汇表](./GLOSSARY.md)
 -   [主持人](./HOSTS.md)
 -   [图像](./IMAGES.md)
@@ -23,7 +23,7 @@ repository-name
 
 ## 100-简介
 
-See [README.md](./100/README.md)
+看[README.md](./100/README.md)
 
 ## 200-要求
 
@@ -33,6 +33,6 @@ See [README.md](./100/README.md)
 
 看[README.md](./300/README.md)
 
-## 400-结论
+## 400 - Conclusion
 
 看[README.md](./400/README.md)
