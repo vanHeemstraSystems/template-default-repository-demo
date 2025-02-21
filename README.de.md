@@ -7,8 +7,8 @@ Repository-Namen
 -   [DNS](./DNS.md)
 -   [Dokumentation](./DOCUMENTATION.md)
 -   [Glossar](./GLOSSARY.md)
--   [Gastgeber](./HOSTS.md)
--   [Images](./IMAGES.md)
+-   [Hosts](./HOSTS.md)
+-   [Bilder](./IMAGES.md)
 -   [NX](./NX.md)
 -   [Subman](./PODMAN.md)
 -   [Referenzen](./REFERENCES.md)
@@ -33,6 +33,6 @@ Sehen[README.md](./200/README.md)
 
 Sehen[README.md](./300/README.md)
 
-## 400 - Schlussfolgerung
+## 400 - Conclusion
 
 Sehen[README.md](./400/README.md)
