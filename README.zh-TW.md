@@ -5,9 +5,9 @@ repository-name
 > 板條
 
 -   [DNS](./DNS.md)
--   [Documentation](./DOCUMENTATION.md)
+-   [文件](./DOCUMENTATION.md)
 -   [詞彙表](./GLOSSARY.md)
--   [Hosts](./HOSTS.md)
+-   [主持人](./HOSTS.md)
 -   [圖像](./IMAGES.md)
 -   [nx](./NX.md)
 -   [Subman](./PODMAN.md)
