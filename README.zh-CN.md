@@ -9,7 +9,7 @@ repository-name
 -   [词汇表](./GLOSSARY.md)
 -   [主持人](./HOSTS.md)
 -   [图像](./IMAGES.md)
--   [Nx](./NX.md)
+-   [nx](./NX.md)
 -   [Subman](./PODMAN.md)
 -   [参考](./REFERENCES.md)
 -   [要求](./REQUIREMENTS.md)
@@ -29,10 +29,10 @@ repository-name
 
 看[README.md](./200/README.md)
 
-## 300 - Building Our Application
+## 300-构建我们的应用程序
 
 看[README.md](./300/README.md)
 
-## 400 - Conclusion
+## 400-结论
 
 看[README.md](./400/README.md)
