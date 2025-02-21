@@ -1,4 +1,4 @@
-repository-name
+repository-naam
 
 # Repository -naam
 
@@ -6,7 +6,7 @@ repository-name
 
 -   [DNS](./DNS.md)
 -   [Documentatie](./DOCUMENTATION.md)
--   [Glossary](./GLOSSARY.md)
+-   [Glossarium](./GLOSSARY.md)
 -   [Gastheren](./HOSTS.md)
 -   [Beelden](./IMAGES.md)
 -   [Nx](./NX.md)
@@ -15,7 +15,7 @@ repository-name
 -   [Vereisten](./REQUIREMENTS.md)
 -   [Telemetrie](./TELEMETRY.md)
 
-**Uitvoerende samenvatting**
+**Executive Summary**
 
 Tekst
 
