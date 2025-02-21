@@ -10,12 +10,12 @@ repository-naam
 -   [Gastheren](./HOSTS.md)
 -   [Beelden](./IMAGES.md)
 -   [Nx](./NX.md)
--   [Subman](./PODMAN.md)
+-   [Podman](./PODMAN.md)
 -   [Referenties](./REFERENCES.md)
 -   [Vereisten](./REQUIREMENTS.md)
 -   [Telemetrie](./TELEMETRY.md)
 
-**Executive Summary**
+**Uitvoerende samenvatting**
 
 Tekst
 
@@ -23,11 +23,11 @@ Gegenereerd met[Ritr](https://app.rytr.me)
 
 ## 100 - Inleiding
 
-See [README.md](./100/README.md)
+Zien[README.md](./100/README.md)
 
 ## 200 - Vereisten
 
-Zien[README.md](./200/README.md)
+See [README.md](./200/README.md)
 
 ## 300 - onze applicatie bouwen
 
