@@ -47,14 +47,37 @@ jobs:
           cp -r /tmp/nx-workspace/* .
           cp -r /tmp/nx-workspace/.* . 2>/dev/null || true
       
-      # Debug: Show project structure
+      # Configure base URL for GitHub Pages
       - run: |
-          echo "Project structure before build:"
-          ls -la
-          echo "Apps directory contents:"
-          ls -la apps/
-          echo "nx.json contents:"
-          cat nx.json || true
+          echo "Configuring base URL..."
+          REPO_NAME=$(echo "$GITHUB_REPOSITORY" | cut -d'/' -f2)
+          echo "Base URL will be: /$REPO_NAME/"
+          
+          # Update vite.config.ts
+          cat > apps/hatch_project/vite.config.ts << EOF
+          /// <reference types='vitest' />
+          import { defineConfig } from 'vite';
+          import react from '@vitejs/plugin-react';
+          import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
+
+          export default defineConfig({
+            root: __dirname,
+            base: '/$REPO_NAME/',
+            cacheDir: '../../node_modules/.vite/hatch_project',
+
+            plugins: [react(), nxViteTsPaths()],
+
+            // Vite options tailored for Vitest
+            test: {
+              globals: true,
+              cache: {
+                dir: '../../node_modules/.vitest',
+              },
+              environment: 'jsdom',
+              include: ['src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
+            },
+          });
+          EOF
       
       # Build for production
       - run: |
