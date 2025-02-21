@@ -163,28 +163,11 @@ jobs:
           echo "Contents of dist directory (if exists):"
           ls -la dist/ || true
       
-      # Create deployment directory and copy files
+      # Verify build output
       - run: |
-          echo "Setting up deployment directory..."
-          mkdir -p dist/apps/hatch_project
-          
-          echo "Looking for build output in possible locations..."
-          for dir in dist/hatch_project dist/apps/hatch_project apps/hatch_project/dist; do
-            if [ -d "$dir" ] && [ -n "$(ls -A $dir)" ]; then
-              echo "Found build files in $dir"
-              cp -r $dir/* dist/apps/hatch_project/
-              break
-            fi
-          done
-          
-          echo "Final deployment directory contents:"
-          ls -la dist/apps/hatch_project/
-      
-      # Verify deployment directory
-      - run: |
-          echo "Verifying deployment directory..."
+          echo "Verifying build output..."
           if [ ! -f "dist/apps/hatch_project/index.html" ]; then
-            echo "Error: index.html not found in deployment directory!"
+            echo "Error: index.html not found in build output!"
             exit 1
           fi
       
