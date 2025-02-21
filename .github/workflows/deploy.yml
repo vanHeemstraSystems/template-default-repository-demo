@@ -49,14 +49,11 @@ jobs:
           echo "Nx.json contents:"
           cat nx.json || true
       
-      # List available Nx targets
-      - run: npx nx show project hatch_project --web
-      
       # Build for production with verbose output
       - run: |
           echo "Running build command..."
           set -x  # Enable command echo
-          npx nx build hatch_project --prod --verbose
+          npx nx build hatch_project --configuration=production --verbose
           set +x  # Disable command echo
           
           echo "Build command completed. Checking for build files..."
