@@ -5,7 +5,7 @@
 > Slugline
 
 -   [DNS](./DNS.md)
--   [الوثائق](./DOCUMENTATION.md)
+-   [Documentation](./DOCUMENTATION.md)
 -   [مسرد](./GLOSSARY.md)
 -   [المضيفين](./HOSTS.md)
 -   [الصور](./IMAGES.md)
@@ -19,7 +19,7 @@
 
 نص
 
-ولدت مع[ريتر](https://app.rytr.me)
+Generated with [ريتر](https://app.rytr.me)
 
 ## 100 - مقدمة
 
@@ -31,7 +31,7 @@
 
 ## 300 - بناء تطبيقنا
 
-يرى[README.md](./300/README.md)
+See [README.md](./300/README.md)
 
 ## 400 - الخلاصة
 
