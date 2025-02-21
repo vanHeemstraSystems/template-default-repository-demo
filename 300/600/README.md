@@ -197,11 +197,11 @@ To set this up:
 
 - Confirm the configuration:
 
--- - Stack name: template-default-repository-demo
--- - Branch: main
--- - Runner image: node:20
--- - Administrative: false
--- - Autodeploy: true
+<br/>-- - Stack name: template-default-repository-demo
+<br/>-- - Branch: main
+<br/>-- - Runner image: node:20
+<br/>-- - Administrative: false
+<br/>-- - Autodeploy: true
 
 4. Configure GitHub permissions for Spacelift.
 
@@ -225,23 +225,23 @@ To set this up:
 
 - Spacelift will use your ```main.rego``` file.
 - This configures:
--- - Push permissions to main branch
--- - Pull request review requirements
--- - Production deployment rules
--- - Admin access controls
+<br/>-- - Push permissions to main branch
+<br/>-- - Pull request review requirements
+<br/>-- - Production deployment rules
+<br/>-- - Admin access controls
 
 8. Initialize Terraform.
 
 - Your ```main.tf``` will create:
--- - The Spacelift stack
--- - A shared configuration context
--- - Policy attachments
+<br/>-- - The Spacelift stack
+<br/>-- - A shared configuration context
+<br/>-- - Policy attachments
 - Spacelift will automatically manage the state
 
 9. Configure deployment.
 
 - The .spacelift/config.yml defines:
--- - Terraform version: 1.5.0
--- - Autoformatting: enabled
--- - Autodeployment: enabled
--- - Build and deployment steps
+<br/>-- - Terraform version: 1.5.0
+<br/>-- - Autoformatting: enabled
+<br/>-- - Autodeployment: enabled
+<br/>-- - Build and deployment steps
