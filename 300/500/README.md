@@ -66,9 +66,7 @@ jobs:
           echo "Creating temporary directory..."
           mkdir -p /tmp/nx-workspace
           cd /tmp/nx-workspace
-      
-      # Create new Nx workspace
-      - run: |
+          
           echo "Creating new Nx workspace..."
           npx create-nx-workspace@latest . \
             --preset=react \
@@ -77,10 +75,12 @@ jobs:
             --nxCloud=skip \
             --packageManager=npm \
             --no-interactive
-      
-      # Copy workspace files back to repository
-      - run: |
-          echo "Copying workspace files..."
+          
+          echo "Workspace contents:"
+          ls -la
+          
+          echo "Copying workspace files back..."
+          cd $GITHUB_WORKSPACE
           cp -r /tmp/nx-workspace/* .
           cp -r /tmp/nx-workspace/.* . 2>/dev/null || true
       
