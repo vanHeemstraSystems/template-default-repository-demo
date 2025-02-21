@@ -38,64 +38,71 @@ jobs:
           cp -r /tmp/nx-workspace/* .
           cp -r /tmp/nx-workspace/.* . 2>/dev/null || true
       
-      # Install additional dependencies
-      - run: |
-          echo "Installing additional dependencies..."
-          npm install --save react@18.2.0 react-dom@18.2.0
-          npm install --save-dev \
-            @types/react@18.2.0 @types/react-dom@18.2.0 \
-            @swc-node/register @swc/core \
-            @nx/webpack webpack-cli \
-            @nx/eslint-plugin eslint-plugin-playwright \
-            @playwright/test jest jest-environment-jsdom \
-            @nx/jest @nx/react @nx/eslint @nx/playwright \
-            typescript-eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin \
-            eslint ts-jest \
-            eslint-plugin-import eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y \
-            @testing-library/react @testing-library/jest-dom @testing-library/user-event
-      
       # Debug: Show project structure
       - run: |
-          echo "Project structure:"
+          echo "Project structure before build:"
           ls -la
+          echo "Apps directory contents:"
+          ls -la apps/
           echo "nx.json contents:"
           cat nx.json || true
-          echo "Available projects:"
-          npx nx list
       
-      # Build for production
+      # Build for production with verbose output
       - run: |
           echo "Running build command..."
+          set -x  # Enable command echo
           npx nx build hatch_project --configuration=production --verbose
+          set +x  # Disable command echo
+          
+          ls -R
+          
+          echo "Looking for build files:"
+          find . -type f \( -name "*.js" -o -name "*.html" -o -name "*.css" \) -not -path "./node_modules/*"
       
-      # Debug: Show build output
+      # Create and populate the output directory
       - run: |
-          echo "Build output structure:"
-          ls -R dist/ || true
-          echo "All files in workspace:"
-          find . -type f -not -path "./node_modules/*" -not -path "./.git/*"
-      
-      # Create deployment directory
-      - run: |
+          # Create output directory
           mkdir -p dist/apps/hatch_project
           
-          if [ -d "dist/hatch_project" ]; then
-            echo "Copying from dist/hatch_project"
-            cp -r dist/hatch_project/* dist/apps/hatch_project/
-          elif [ -d "dist/apps/hatch_project" ]; then
-            echo "Build files already in correct location"
+          # Find all build files
+          echo "Searching for build files..."
+          BUILD_FILES=$(find . -type f \( \
+            -name "*.js" -o \
+            -name "*.html" -o \
+            -name "*.css" -o \
+            -name "*.json" -o \
+            -name "*.ico" -o \
+            -name "*.png" -o \
+            -name "*.svg" \
+          \) -not -path "./node_modules/*" -not -path "./.git/*" -not -path "./dist/apps/hatch_project/*")
+          
+          if [ -n "$BUILD_FILES" ]; then
+            echo "Found build files:"
+            echo "$BUILD_FILES"
+            
+            # Copy each file to the deployment directory
+            while IFS= read -r file; do
+              if [ -f "$file" ]; then
+                echo "Copying $file to dist/apps/hatch_project/"
+                cp "$file" dist/apps/hatch_project/
+              fi
+            done <<< "$BUILD_FILES"
           else
-            echo "Error: Could not find build output"
+            echo "No build files found!"
+            echo "Contents of current directory:"
+            ls -la
+            echo "Contents of dist directory (if exists):"
+            ls -la dist/ || true
             exit 1
           fi
       
-      # Verify deployment directory
+      # Verify the output directory has files
       - run: |
-          echo "Deployment directory contents:"
+          echo "Final contents of dist/apps/hatch_project:"
           ls -la dist/apps/hatch_project/
           
           if [ -z "$(ls -A dist/apps/hatch_project/)" ]; then
-            echo "Error: Deployment directory is empty"
+            echo "Error: No files found in deployment directory!"
             exit 1
           fi
       
