@@ -44,6 +44,12 @@ stack:
 ```
 repository-name/stack.yml
 
+**Note**: To find your correct worker pool ID:
+- Go to Spacelift dashboard
+- Click on "Worker Pools" in the left menu
+- Note the ID of the available worker pool (e.g. ```public-worker-pool```)
+- Use that ID in both configuration files (```stack.yml```)
+
 2. Let's create a policy file for Spacelift (```main.rego```) inside the ```policies``` directory at the root of the repository:
 
 ```
@@ -134,12 +140,6 @@ resource "spacelift_policy_attachment" "main" {
 }
 ```
 repository-name/main.tf
-
-**Note**: To find your correct worker pool ID:
-- Go to Spacelift dashboard
-- Click on "Worker Pools" in the left menu
-- Note the ID of the available worker pool (e.g. ```public-worker-pool```)
-- Use that ID in both configuration files (```stack.yml``` and ```main.tf```)
 
 4. Add a .spacelift/config.yml file to your repository at the root:
 
