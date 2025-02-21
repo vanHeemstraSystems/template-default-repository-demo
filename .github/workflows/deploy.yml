@@ -17,7 +17,7 @@ jobs:
       
       # Install dependencies
       - run: npm cache clean --force
-      - run: npm ci
+      - run: npm install
       - run: npm install -g @nrwl/cli
       - run: |
           npm install --save-dev @swc-node/register @swc/core \
