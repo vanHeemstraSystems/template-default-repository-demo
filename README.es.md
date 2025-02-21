@@ -11,7 +11,7 @@ repositorio
 -   [Imágenes](./IMAGES.md)
 -   [Nx](./NX.md)
 -   [Submario](./PODMAN.md)
--   [References](./REFERENCES.md)
+-   [Referencias](./REFERENCES.md)
 -   [Requisitos](./REQUIREMENTS.md)
 -   [Telemetría](./TELEMETRY.md)
 
