@@ -34,12 +34,18 @@ jobs:
           eslint-plugin-import eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y \
           @testing-library/react @testing-library/jest-dom @testing-library/user-event
 
-      # Build for production
-      - run: npx nx build hatch_project --prod
+      # Debug: Show current directory and files
+      - run: pwd
+      - run: ls -la
       
-      # Debug: List build output directory
-      - run: ls -la dist/
-      - run: ls -la dist/apps/ || true
+      # Debug: Show project structure
+      - run: npx nx list
+      
+      # Build for production with verbose output
+      - run: npx nx build hatch_project --prod --verbose
+      
+      # Debug: List all directories
+      - run: find . -type d
       
       # Optional: Run tests before deploying
       - run: npx nx test hatch_project
