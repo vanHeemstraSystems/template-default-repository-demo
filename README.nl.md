@@ -13,15 +13,15 @@ repository-naam
 -   [Subman](./PODMAN.md)
 -   [Referenties](./REFERENCES.md)
 -   [Vereisten](./REQUIREMENTS.md)
--   [Telemetrie](./TELEMETRY.md)
+-   [Telemetry](./TELEMETRY.md)
 
 **Uitvoerende samenvatting**
 
 Tekst
 
-Generated with [Ritr](https://app.rytr.me)
+Gegenereerd met[Ritr](https://app.rytr.me)
 
-## 100 - Inleiding
+## 100 - Introduction
 
 Zien[README.md](./100/README.md)
 
