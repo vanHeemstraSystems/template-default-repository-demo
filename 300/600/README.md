@@ -16,7 +16,7 @@ stack:
   branch: main
   administrative: true
   autodeploy: true
-  worker_pool: default
+  worker_pool: "public-worker-pool"
 
   # Define the runner image
   runner_image: node:20
@@ -100,8 +100,6 @@ resource "spacelift_stack" "main" {
   
   administrative = true
   autodeploy     = true
-  
-  worker_pool_id = public-worker-pool
 
   labels = [
     "react",

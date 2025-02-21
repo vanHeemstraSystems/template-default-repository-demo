@@ -5,7 +5,7 @@ stack:
   branch: main
   administrative: true
   autodeploy: true
-  worker_pool: public-worker-pool
+  worker_pool: "public-worker-pool"
 
   # Define the runner image
   runner_image: node:20

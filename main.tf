@@ -23,7 +23,8 @@ resource "spacelift_stack" "main" {
   administrative = true
   autodeploy     = true
   
-  worker_pool_id = public-worker-pool
+  # Remove worker_pool_id completely as it might be managed by the UI
+  # worker_pool_id = "public-worker-pool"
 
   labels = [
     "react",
