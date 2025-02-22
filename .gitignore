@@ -159,6 +159,8 @@ cython_debug/
 
 .nx/
 
+# Terraform/OpenTofu
 .terraform/
 *.tfstate
 *.tfstate.*
+.terraform.lock.hcl
