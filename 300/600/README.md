@@ -111,10 +111,12 @@ resource "spacelift_stack" "main" {
   labels = [
     "react",
     "frontend",
-    "github-pages",
-    "nobackend",  # This label should disable the backend check
-    "state-local" # Add this label to indicate local state
+    "github-pages"
   ]
+
+  enable_well_known_secret_masking = true
+  terraform_smart_sanitization     = true
+  github_action_deploy             = false  # Keep false unless needed
 }
 
 # Create a context for shared configuration
