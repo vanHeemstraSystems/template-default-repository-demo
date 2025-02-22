@@ -13,9 +13,9 @@ repositorio
 -   [Submario](./PODMAN.md)
 -   [Referencias](./REFERENCES.md)
 -   [Requisitos](./REQUIREMENTS.md)
--   [Telemetry](./TELEMETRY.md)
+-   [Telemetría](./TELEMETRY.md)
 
-**Executive Summary**
+**Resumen ejecutivo**
 
 Texto
 
