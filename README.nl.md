@@ -2,7 +2,7 @@ repository-naam
 
 # Repository -naam
 
-> Sluglijn
+> Slugline
 
 -   [DNS](./DNS.md)
 -   [Documentatie](./DOCUMENTATION.md)
