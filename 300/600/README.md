@@ -112,7 +112,8 @@ resource "spacelift_stack" "main" {
     "react",
     "frontend",
     "github-pages",
-    "nobackend"  # Add this label to disable backend check
+    "nobackend",  # This label should disable the backend check
+    "state-local" # Add this label to indicate local state
   ]
 }
 
