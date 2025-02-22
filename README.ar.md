@@ -1,6 +1,6 @@
 اسم المستودع
 
-# Repository Name
+# اسم المستودع
 
 > Slugline
 
@@ -33,6 +33,6 @@
 
 يرى[README.md](./300/README.md)
 
-## 400 - Conclusion
+## 400 - الخلاصة
 
 يرى[README.md](./400/README.md)
