@@ -6,7 +6,7 @@ repository-name
 
 -   [DNS](./DNS.md)
 -   [文件](./DOCUMENTATION.md)
--   [Glossary](./GLOSSARY.md)
+-   [詞彙表](./GLOSSARY.md)
 -   [主持人](./HOSTS.md)
 -   [圖像](./IMAGES.md)
 -   [nx](./NX.md)
@@ -31,7 +31,7 @@ repository-name
 
 ## 300-構建我們的應用程序
 
-看[README.md](./300/README.md)
+See [README.md](./300/README.md)
 
 ## 400-結論
 
