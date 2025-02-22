@@ -15,9 +15,9 @@ repository-name
 -   [要求](./REQUIREMENTS.md)
 -   [遙測](./TELEMETRY.md)
 
-**Executive Summary**
+**執行摘要**
 
-Text
+文字
 
 生成[ritr](https://app.rytr.me)
 
