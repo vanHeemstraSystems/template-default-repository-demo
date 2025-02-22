@@ -6,7 +6,7 @@ repository-name
 
 -   [DNS](./DNS.md)
 -   [文件](./DOCUMENTATION.md)
--   [詞彙表](./GLOSSARY.md)
+-   [Glossary](./GLOSSARY.md)
 -   [主持人](./HOSTS.md)
 -   [圖像](./IMAGES.md)
 -   [nx](./NX.md)
