@@ -215,7 +215,7 @@ This is the appropriate choice because, your main.tf file is written in Terrafor
 
 - Smart Sanitization (recommended): Yes
 
-- Manage State (recommended): Yes
+- Manage State (recommended): No !!
 
 - External state access: No
 
