@@ -7,7 +7,7 @@ nom de référentiel
 -   [DNS](./DNS.md)
 -   [Documentation](./DOCUMENTATION.md)
 -   [Glossaire](./GLOSSARY.md)
--   [Hôtes](./HOSTS.md)
+-   [Hosts](./HOSTS.md)
 -   [Images](./IMAGES.md)
 -   [Nx](./NX.md)
 -   [Sous-homme](./PODMAN.md)
