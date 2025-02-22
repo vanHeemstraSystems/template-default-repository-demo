@@ -162,6 +162,11 @@ workspace_configs:
     autoformat: true
     autodeploy: true
     
+    # Add environment settings
+    environment:
+      - TF_CLI_ARGS_init: "-input=true"
+      - TF_IN_AUTOMATION: "true"
+    
     # Define the deployment process
     deployment:
       steps:
