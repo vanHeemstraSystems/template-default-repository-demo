@@ -9,10 +9,10 @@
 -   [مسرد](./GLOSSARY.md)
 -   [المضيفين](./HOSTS.md)
 -   [الصور](./IMAGES.md)
--   [NX](./NX.md)
+-   [Nx](./NX.md)
 -   [رجل فرعي](./PODMAN.md)
 -   [مراجع](./REFERENCES.md)
--   [متطلبات](./REQUIREMENTS.md)
+-   [Requirements](./REQUIREMENTS.md)
 -   [القياس عن بعد](./TELEMETRY.md)
 
 **ملخص تنفيذي**
@@ -21,7 +21,7 @@
 
 ولدت مع[ريتر](https://app.rytr.me)
 
-## 100 - مقدمة
+## 100 - Introduction
 
 يرى[README.md](./100/README.md)
 
