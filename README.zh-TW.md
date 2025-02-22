@@ -2,7 +2,7 @@ repository-name
 
 # 存儲庫名稱
 
-> 板條
+> Slugline
 
 -   [DNS](./DNS.md)
 -   [文件](./DOCUMENTATION.md)
@@ -17,7 +17,7 @@ repository-name
 
 **執行摘要**
 
-文字
+Text
 
 生成[ritr](https://app.rytr.me)
 
