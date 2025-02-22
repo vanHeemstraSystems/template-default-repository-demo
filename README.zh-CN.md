@@ -10,7 +10,7 @@ repository-name
 -   [主持人](./HOSTS.md)
 -   [图像](./IMAGES.md)
 -   [nx](./NX.md)
--   [Podman](./PODMAN.md)
+-   [Subman](./PODMAN.md)
 -   [参考](./REFERENCES.md)
 -   [要求](./REQUIREMENTS.md)
 -   [遥测](./TELEMETRY.md)
@@ -19,7 +19,7 @@ repository-name
 
 文本
 
-生成[ritr](https://app.rytr.me)
+生成[Rytr](https://app.rytr.me)
 
 ## 100-简介
 
