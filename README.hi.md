@@ -1,4 +1,4 @@
-भंडार-नाम
+repository-name
 
 # भंडार नाम
 
@@ -29,7 +29,7 @@
 
 देखना[README.md](./200/README.md)
 
-## 300 - हमारे आवेदन का निर्माण
+## 300 - Building Our Application
 
 देखना[README.md](./300/README.md)
 
