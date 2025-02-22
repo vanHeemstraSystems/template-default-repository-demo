@@ -1,4 +1,4 @@
-repository-name
+भंडार-नाम
 
 # भंडार नाम
 
@@ -12,7 +12,7 @@ repository-name
 -   [नोकदार](./NX.md)
 -   [सबमैन](./PODMAN.md)
 -   [संदर्भ](./REFERENCES.md)
--   [आवश्यकताएं](./REQUIREMENTS.md)
+-   [Requirements](./REQUIREMENTS.md)
 -   [टेलीमेटरी](./TELEMETRY.md)
 
 **कार्यकारी सारांश**
@@ -29,7 +29,7 @@ repository-name
 
 देखना[README.md](./200/README.md)
 
-## 300 - Building Our Application
+## 300 - हमारे आवेदन का निर्माण
 
 देखना[README.md](./300/README.md)
 
