@@ -4,6 +4,11 @@ terraform {
       source = "spacelift-io/spacelift"
     }
   }
+
+  # Add local backend configuration
+  backend "local" {
+    path = "terraform.tfstate"
+  }
 }
 
 # Configure the Spacelift provider
@@ -27,7 +32,8 @@ resource "spacelift_stack" "main" {
   labels = [
     "react",
     "frontend",
-    "github-pages"
+    "github-pages",
+    "nobackend"  # Add this label to disable backend check
   ]
 }
 
