@@ -21,7 +21,7 @@ Texto
 
 Generado con[Ritro](https://app.rytr.me)
 
-## 100 - Introducción
+## 100 - Introduction
 
 Ver[README.md](./100/README.md)
 
