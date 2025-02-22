@@ -27,7 +27,7 @@ repository-name
 
 ## 200-要求
 
-See [README.md](./200/README.md)
+看[README.md](./200/README.md)
 
 ## 300-构建我们的应用程序
 
