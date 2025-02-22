@@ -11,7 +11,7 @@ provider "spacelift" {}
 
 # Create the stack
 resource "spacelift_stack" "main" {
-  name        = "template-default-repository-demo-v3"
+  name        = "template-default-repository-demo"
   repository  = "template-default-repository-demo"
   branch      = "main"
   description = "React application deployment stack"
@@ -35,7 +35,7 @@ resource "spacelift_stack" "main" {
 
 # Create a context for shared configuration
 resource "spacelift_context" "main" {
-  name        = "template-default-repository-demo-context-v3"
+  name        = "template-default-repository-demo-context"
   description = "Shared configuration for React application"
 }
 
@@ -47,7 +47,7 @@ resource "spacelift_context_attachment" "main" {
 
 # Create policies
 resource "spacelift_policy" "main" {
-  name = "template-default-repository-demo-policy-v3"
+  name = "template-default-repository-demo-policy"
   body = file("${path.module}/policies/main.rego")
   type = "PLAN"
 }
