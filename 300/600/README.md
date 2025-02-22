@@ -164,10 +164,15 @@ workspace_configs:
     autoformat: true
     autodeploy: true
     
+    # Add project root and workspace settings
+    project_root: "."
+    workspace: "default"
+    
     # Add environment settings
     environment:
       - TF_CLI_ARGS_init: "-backend=false"
       - TF_IN_AUTOMATION: "true"
+      - TF_WORKSPACE: "default"
     
     # Define the deployment process
     deployment:
