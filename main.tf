@@ -4,9 +4,6 @@ terraform {
       source = "spacelift-io/spacelift"
     }
   }
-
-  # Add required version constraint
-  required_version = ">= 1.0.0"
 }
 
 # Configure the Spacelift provider
