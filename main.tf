@@ -4,11 +4,6 @@ terraform {
       source = "spacelift-io/spacelift"
     }
   }
-
-  # Add local backend configuration
-  backend "local" {
-    path = "terraform.tfstate"
-  }
 }
 
 # Configure the Spacelift provider

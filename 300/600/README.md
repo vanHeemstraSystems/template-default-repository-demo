@@ -88,11 +88,6 @@ terraform {
       source = "spacelift-io/spacelift"
     }
   }
-
-  # Add local backend configuration
-  backend "local" {
-    path = "terraform.tfstate"
-  }
 }
 
 # Configure the Spacelift provider
@@ -170,7 +165,7 @@ workspace_configs:
     
     # Add environment settings
     environment:
-      - TF_CLI_ARGS_init: "-input=true"
+      - TF_CLI_ARGS_init: "-backend=false"
       - TF_IN_AUTOMATION: "true"
     
     # Define the deployment process
