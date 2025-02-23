@@ -208,7 +208,7 @@ To set this up:
 
 - Go to [Spacelift](https://spacelift.io)
 - Sign up for an account: Click "Sign Up" or "Get Started". We have account [vanheemstrasystems.app.spacelift.io](https://vanheemstrasystems.app.spacelift.io/dashboard). Choose GitHub as your authentication method.
-- Connect it to your GitHub repository (e.g., template-default-repository-demo): After logging in, click "Create Stack" button in the [dashboard](https://vanheemstrasystems.app.spacelift.io/dashboard). For Stack Details use name: ```template-default-repository-demo```, Space: ```root```, Labels: leave blank for now, Description: ```Template Default repository Demo```. Click **Continue**. Select GitHub as your VCS provider. Choose the ```vanHeemstraSystems/template-default-repository-demo``` repository. Choose Branch: ```main```. Leave Project root empty (it is optional and it will take the default). Click **Continue**. 
+- Connect it to your GitHub repository (e.g., template-default-repository-demo): After logging in, click "Create Stack" button in the [dashboard](https://vanheemstrasystems.app.spacelift.io/dashboard). For Stack Details use name: ```template-default-repository-demo```, Space: ```root```, Labels: ""react", "frontend", "github-pages", Description: ```Template Default Repository Demo```. Click **Continue**. Select GitHub as your VCS provider. Choose the ```vanHeemstraSystems/template-default-repository-demo``` repository. Choose Branch: ```main```. Leave Project root empty (it is optional and it will take the default). Click **Continue**. 
 
 - Choose vendor:
 
@@ -264,10 +264,6 @@ Click **Confirm**.
 
 Grant the requested permissions to Spacelift.
 
-
-
-
-
 We need to configure the Spacelift provider with credentials. You'll need:
 
 - Get your Spacelift API credentials:
@@ -282,10 +278,6 @@ export SPACELIFT_API_KEY_ENDPOINT="https://vanheemstrasystems.app.spacelift.io"
 export SPACELIFT_API_KEY_ID="your-api-key-id"
 export SPACELIFT_API_KEY_SECRET="your-api-key-secret"
 ```
-
-
-
-
 
 - **IMPORTANT**: Click **Trigger** for the ```template-default-repository-demo``` to force a lookup of the repository on GitHub.
 
@@ -311,6 +303,27 @@ export SPACELIFT_API_KEY_SECRET="your-api-key-secret"
 - It will use the policies defined in ```main.rego```.
 - The Terraform configuration in ```main.tf``` will manage your Spacelift resources
 - The deployment process will follow ```.spacelift/config.yml```.
+
+Now that the stack is created, let's trigger a run to create the context and policy:
+1. Go to the stack
+2. Go to Stack Settings > Environment
+- Add these variables:
+<br/>NODE_ENV=production
+<br/>PUBLIC_URL=/template-default-repository-demo
+<br/>SPACELIFT_API_KEY_ENDPOINT=https://vanheemstrasystems.app.spacelift.io
+<br/>SPACELIFT_API_KEY_ID=01JMMMBYVHKJP25KE6QHVXM2PY
+<br/>SPACELIFT_API_KEY_SECRET=[your-secret-value]
+<br/>Mark as Sensitive:
+<br/>SPACELIFT_API_KEY_SECRET should be marked as sensitive
+2. Click "Trigger"
+
+This should:
+- Create the context (template-default-repository-demo-context)
+- Create the policy (template-default-repository-demo-policy)
+- Attach both to the stack
+- The environment variables are ready, so the deployment process should work correctly.
+
+The run will use our main.tf configuration to set everything up.
 
 To check if Spacelift has detected your configuration files:
 
