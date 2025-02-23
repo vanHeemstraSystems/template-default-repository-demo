@@ -208,7 +208,7 @@ To set this up:
 
 - Go to [Spacelift](https://spacelift.io)
 - Sign up for an account: Click "Sign Up" or "Get Started". We have account [vanheemstrasystems.app.spacelift.io](https://vanheemstrasystems.app.spacelift.io/dashboard). Choose GitHub as your authentication method.
-- Connect it to your GitHub repository (e.g., template-default-repository-demo): After logging in, click "Create Stack" button in the [dashboard](https://vanheemstrasystems.app.spacelift.io/dashboard). For Stack Details use name: ```template-default-repository-demo```, Space: ```root```, Labels: ""react", "frontend", "github-pages", Description: ```Template Default Repository Demo```. Click **Continue**. Select GitHub as your VCS provider. Choose the ```vanHeemstraSystems/template-default-repository-demo``` repository. Choose Branch: ```main```. Leave Project root empty (it is optional and it will take the default). Click **Continue**. 
+- Connect it to your GitHub repository (e.g., template-default-repository-demo): After logging in, click "Create Stack" button in the [dashboard](https://vanheemstrasystems.app.spacelift.io/dashboard). For Stack Details use name: ```template-default-repository-demo```, Space: ```root```, Labels: ""react", "frontend", "github-pages", Description: ```Template Default Repository Demo```. Click **Continue**. Select GitHub as your VCS provider. Choose the ```vanHeemstraSystems/template-default-repository-demo``` repository. Choose Branch: ```main```. Set Project root to "." (it is optional, but we want to set it to root). Click **Continue**. 
 
 - Choose vendor:
 
@@ -324,6 +324,19 @@ This should:
 - The environment variables are ready, so the deployment process should work correctly.
 
 The run will use our main.tf configuration to set everything up.
+
+**NOTE**: If you see Blocked by ######################.
+
+This means we need to approve the run first. The run is blocked because:
+1. Policy Check: The run needs administrative approval
+2. Run ID: 01JMRXG67G9ARXZXZ6NGKVQJ78
+
+To approve:
+1. Click on the run
+2. Look for the "Approve" button
+3. Click "Approve" to allow the run to proceed
+
+This is a security feature to ensure changes are reviewed before being applied.
 
 To check if Spacelift has detected your configuration files:
 
