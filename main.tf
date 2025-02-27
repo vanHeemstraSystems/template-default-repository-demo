@@ -31,7 +31,7 @@ variable "spacelift_api_key_id" {
 }
 
 variable "spacelift_api_key_secret" {
-  type = string
+  type      = string
   sensitive = true
 }
 
