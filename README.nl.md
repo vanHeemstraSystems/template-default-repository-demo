@@ -1,6 +1,6 @@
 repository-naam
 
-# Repository -naam
+# Repository Name
 
 > Sluglijn
 
@@ -8,10 +8,10 @@ repository-naam
 -   [Documentatie](./DOCUMENTATION.md)
 -   [Glossarium](./GLOSSARY.md)
 -   [Gastheren](./HOSTS.md)
--   [Beelden](./IMAGES.md)
+-   [Images](./IMAGES.md)
 -   [Nx](./NX.md)
 -   [Subman](./PODMAN.md)
--   [Referenties](./REFERENCES.md)
+-   [References](./REFERENCES.md)
 -   [Vereisten](./REQUIREMENTS.md)
 -   [Telemetrie](./TELEMETRY.md)
 
