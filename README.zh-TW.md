@@ -9,7 +9,7 @@ repository-name
 -   [詞彙表](./GLOSSARY.md)
 -   [Hosts](./HOSTS.md)
 -   [圖像](./IMAGES.md)
--   [Nx](./NX.md)
+-   [nx](./NX.md)
 -   [Subman](./PODMAN.md)
 -   [參考](./REFERENCES.md)
 -   [要求](./REQUIREMENTS.md)
@@ -23,7 +23,7 @@ repository-name
 
 ## 100-簡介
 
-See [README.md](./100/README.md)
+看[README.md](./100/README.md)
 
 ## 200-要求
 
@@ -31,7 +31,7 @@ See [README.md](./100/README.md)
 
 ## 300-構建我們的應用程序
 
-See [README.md](./300/README.md)
+看[README.md](./300/README.md)
 
 ## 400-結論
 
