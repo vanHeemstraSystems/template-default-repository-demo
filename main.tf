@@ -50,12 +50,8 @@ resource "spacelift_stack" "main" {
   # Add path settings
   project_root = "."
   
-  # Use tracked_files instead of trigger_paths
-  tracked_files = [
-    "main.tf",
-    ".spacelift/**",
-    "policies/**"
-  ]
+  # Use workspace_root to specify paths
+  workspace_root = "."
 }
 
 resource "spacelift_context" "main" {
