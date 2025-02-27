@@ -9,17 +9,6 @@ is_spacelift_file(file) {
     ])
 }
 
-# Allow pushes for Spacelift-related changes
-allow_push[msg] {
-    # Get the list of changed files
-    files := input.push.changed_files
-
-    # Allow if ANY file is Spacelift-related
-    any([is_spacelift_file(files[_])])
-
-    msg := "Changes include Spacelift-managed files"
-}
-
 # Skip runs for documentation and translation changes
 skip_run {
     # Skip based on commit message
@@ -47,9 +36,24 @@ is_doc_or_translation(file) {
     ])
 }
 
-# Require pull request reviews
-require_review {
-    input.pull_request.reviews_count < 1
+# Allow pushes ONLY for Spacelift-related changes
+allow[msg] {
+    # Get the list of changed files
+    files := input.push.changed_files
+
+    # Allow if ANY file is Spacelift-related
+    any([is_spacelift_file(files[_])])
+
+    # And ensure we're not skipping this run
+    not skip_run
+
+    msg := "Changes include Spacelift-managed files"
+}
+
+# Block all other changes
+deny[msg] {
+    not allow
+    msg := "Only Spacelift-related changes are allowed"
 }
 
 # Define deployment environments
