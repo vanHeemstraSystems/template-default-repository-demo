@@ -2,7 +2,7 @@ repositorio
 
 # Nombre de repositorio
 
-> Línea de babosa
+> Slugline
 
 -   [DNS](./DNS.md)
 -   [Documentación](./DOCUMENTATION.md)
@@ -11,15 +11,15 @@ repositorio
 -   [Imágenes](./IMAGES.md)
 -   [Nx](./NX.md)
 -   [Submario](./PODMAN.md)
--   [Referencias](./REFERENCES.md)
+-   [References](./REFERENCES.md)
 -   [Requisitos](./REQUIREMENTS.md)
 -   [Telemetría](./TELEMETRY.md)
 
-**Executive Summary**
+**Resumen ejecutivo**
 
 Texto
 
-Generado con[Rytr](https://app.rytr.me)
+Generado con[Ritro](https://app.rytr.me)
 
 ## 100 - Introducción
 
