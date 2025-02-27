@@ -1,5 +1,37 @@
 # 600 - Deploy to Spacelift
 
+```
+Step-by-step procedure:
+
+Prerequisites Check:
+[ ] GitHub repository exists
+[ ] main.tf is in repository
+[ ] policies/main.rego exists
+[ ] Spacelift API credentials are available
+
+Local Environment Setup:
+[ ] Run cleanup.sh to:
+[ ] Clean local files
+[ ] Initialize OpenTofu
+[ ] Remove state entries
+[ ] Verify credentials
+
+Spacelift UI Cleanup:
+[ ] Delete stack (choose "Keep resources")
+[ ] Delete context
+[ ] Delete policy
+[ ] Cancel any blocking runs
+
+Resource Management:
+[ ] Apply updated main.tf with data sources
+[ ] Verify in Spacelift UI
+
+Stack Configuration:
+[ ] Add environment variables
+[ ] Verify context attachment
+[ ] Verify policy attachment
+```
+
 Set up Spacelift for our application. 
 
 First, let's create a Spacelift configuration. 
