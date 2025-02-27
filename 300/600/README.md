@@ -661,26 +661,20 @@ Next steps:
 <br/>SPACELIFT_API_KEY_ID=01JMMMBYVHKJP25KE6QHVXM2PY
 <br/>SPACELIFT_API_KEY_SECRET=[your-secret-value] (mark as sensitive)
 
+For the blocking runs, we can:
 
-You can clear previous runs in Spacelift. Here's how:
-
-I. In Spacelift UI:
+I. Cancel any pending runs:
 - Go to your stack
-- Click "Settings"
-- Scroll down to "Danger Zone"
-- Look for "Clear run history"
-- Click "Clear history"
+- Find any "Blocked" or "Pending" runs
+- Click on each run
+- Click "Cancel" button
 
-II. What this does:
-- Removes all previous runs
-- Keeps your stack configuration
-- Keeps your environment variables
-- Gives you a clean slate
+II. Or retry failed runs:
+- Go to blocked/failed runs
+- Click "Retry" if available
+- Or click "Discard" if the run is no longer needed
 
-III. After clearing:
-- Your run history will be empty
-- You can trigger a fresh run
-- No old failed runs will be visible
+This will help clear the queue and allow new runs to proceed.
 
 - **IMPORTANT**: Click **Trigger** for the ```template-default-repository-demo``` to force a lookup of the repository on GitHub.
 
