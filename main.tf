@@ -42,7 +42,7 @@ variable "spacelift_workspace_root" {
 
 # Create resources (not data sources)
 resource "spacelift_stack" "main" {
-  name        = "template-default-repository-demo-spacelift"
+  name        = "template-default-repository-demo-spacelift-${formatdate("YYYYMMDDhhmmss", timestamp())}"
   repository  = "template-default-repository-demo"
   branch      = "main"
   description = "React application deployment stack (Spacelift managed)"
@@ -68,7 +68,7 @@ resource "spacelift_stack" "main" {
 }
 
 resource "spacelift_context" "main" {
-  name        = "template-default-repository-demo-context-spacelift"
+  name        = "template-default-repository-demo-context-spacelift-${formatdate("YYYYMMDDhhmmss", timestamp())}"
   description = "Shared configuration for React application (Spacelift managed)"
 }
 
