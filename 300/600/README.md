@@ -191,8 +191,12 @@ resource "spacelift_stack" "main" {
     "spacelift-managed"
   ]
 
-  # Add path setting
+  # Add path setting and recursive flag
   project_root = "."
+  manage_state = true
+  
+  # Enable local preview
+  enable_local_preview = true
 }
 
 resource "spacelift_context" "main" {
