@@ -423,10 +423,127 @@ Note: You didn't use the -out option to save this plan, so OpenTofu can't guaran
 exactly these actions if you run "tofu apply" now.
 ```
 
+Now lets apply the plan to see what our debug output shows:
 
+```
+$ tofu apply
+```
 
+And here is the feedback:
 
+```
+OpenTofu used the selected providers to generate the following execution plan. Resource
+actions are indicated with the following symbols:
+  + create
 
+OpenTofu will perform the following actions:
+
+  # spacelift_context.main will be created
+  + resource "spacelift_context" "main" {
+      + description = "Shared configuration for React application"
+      + id          = (known after apply)
+      + name        = "template-default-repository-demo-context"
+      + space_id    = (known after apply)
+    }
+
+  # spacelift_context_attachment.main will be created
+  + resource "spacelift_context_attachment" "main" {
+      + context_id = (known after apply)
+      + id         = (known after apply)
+      + priority   = 0
+      + stack_id   = (known after apply)
+    }
+
+  # spacelift_policy.main will be created
+  + resource "spacelift_policy" "main" {
+      + body     = <<-EOT
+            package spacelift
+            
+            # Allow all pushes to main branch
+            allow_push[msg] {
+                input.push.ref == "refs/heads/main"
+                msg := "Allowing push to main branch"
+            }
+            
+            # Require pull request reviews
+            require_review {
+                input.pull_request.reviews_count < 1
+            }
+            
+            # Define deployment environments
+            deployment_environment(stack) = "production" {
+                stack.branch == "main"
+            }
+            
+            # Define access controls
+            allow_access[msg] {
+                input.user.role == "admin"
+                msg := "Admin access granted"
+            }
+        EOT
+      + id       = (known after apply)
+      + name     = "template-default-repository-demo-policy"
+      + space_id = (known after apply)
+      + type     = "PLAN"
+    }
+
+  # spacelift_policy_attachment.main will be created
+  + resource "spacelift_policy_attachment" "main" {
+      + id        = (known after apply)
+      + policy_id = (known after apply)
+      + stack_id  = (known after apply)
+    }
+
+  # spacelift_stack.main will be created
+  + resource "spacelift_stack" "main" {
+      + administrative                   = true
+      + autodeploy                       = true
+      + autoretry                        = false
+      + aws_assume_role_policy_statement = (known after apply)
+      + branch                           = "main"
+      + description                      = "React application deployment stack"
+      + enable_local_preview             = false
+      + enable_well_known_secret_masking = false
+      + github_action_deploy             = true
+      + id                               = (known after apply)
+      + labels                           = [
+          + "frontend",
+          + "github-pages",
+          + "react",
+        ]
+      + manage_state                     = true
+      + name                             = "template-default-repository-demo"
+      + protect_from_deletion            = false
+      + repository                       = "template-default-repository-demo"
+      + runner_image                     = "node:20"
+      + slug                             = (known after apply)
+      + space_id                         = (known after apply)
+      + terraform_external_state_access  = false
+      + terraform_smart_sanitization     = false
+      + terraform_workflow_tool          = (known after apply)
+    }
+
+Plan: 5 to add, 0 to change, 0 to destroy.
+
+Do you want to perform these actions?
+  OpenTofu will perform the actions described above.
+  Only 'yes' will be accepted to approve.
+
+  Enter a value: yes
+
+spacelift_context.main: Creating...
+spacelift_policy.main: Creating...
+spacelift_stack.main: Creating...
+spacelift_context.main: Creation complete after 1s [id=template-default-repository-demo-context]
+spacelift_policy.main: Creation complete after 1s [id=template-default-repository-demo-policy]
+spacelift_stack.main: Creation complete after 2s [id=template-default-repository-demo]
+spacelift_context_attachment.main: Creating...
+spacelift_policy_attachment.main: Creating...
+spacelift_context_attachment.main: Creation complete after 0s [id=template-default-repository-demo-context/01JN390YY674FY787BGJRDJXZC]
+spacelift_policy_attachment.main: Creation complete after 0s [id=template-default-repository-demo-policy/01JN390YXTBG6N9JZYF1VP3674]
+
+Apply complete! Resources: 5 added, 0 changed, 0 destroyed.
+```
 
 - **IMPORTANT**: Click **Trigger** for the ```template-default-repository-demo``` to force a lookup of the repository on GitHub.
 
