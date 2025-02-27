@@ -1,6 +1,6 @@
 repository-naam
 
-# Repository Name
+# Repository -naam
 
 > Sluglijn
 
@@ -19,9 +19,9 @@ repository-naam
 
 Tekst
 
-Gegenereerd met[Rytr](https://app.rytr.me)
+Gegenereerd met[Ritr](https://app.rytr.me)
 
-## 100 - Introduction
+## 100 - Inleiding
 
 Zien[README.md](./100/README.md)
 
