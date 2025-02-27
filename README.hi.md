@@ -1,4 +1,4 @@
-repository-name
+भंडार-नाम
 
 # भंडार नाम
 
@@ -7,7 +7,7 @@ repository-name
 -   [डीएनएस](./DNS.md)
 -   [प्रलेखन](./DOCUMENTATION.md)
 -   [शब्दकोष](./GLOSSARY.md)
--   [Hosts](./HOSTS.md)
+-   [मेजबान](./HOSTS.md)
 -   [इमेजिस](./IMAGES.md)
 -   [नोकदार](./NX.md)
 -   [सबमैन](./PODMAN.md)
