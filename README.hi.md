@@ -21,7 +21,7 @@
 
 के साथ उत्पन्न[रिट्र](https://app.rytr.me)
 
-## 100 - परिचय
+## 100 - Introduction
 
 देखना[README.md](./100/README.md)
 
@@ -31,8 +31,8 @@
 
 ## 300 - हमारे आवेदन का निर्माण
 
-See [README.md](./300/README.md)
+देखना[README.md](./300/README.md)
 
-## 400 - Conclusion
+## 400 - निष्कर्ष
 
 देखना[README.md](./400/README.md)
