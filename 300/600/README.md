@@ -305,7 +305,27 @@ To set this up:
 
 - Go to [Spacelift](https://spacelift.io)
 - Sign up for an account: Click "Sign Up" or "Get Started". We have account [vanheemstrasystems.app.spacelift.io](https://vanheemstrasystems.app.spacelift.io/dashboard). Choose GitHub as your authentication method.
-- Connect it to your GitHub repository (e.g., template-default-repository-demo): After logging in, click "Create Stack" button in the [dashboard](https://vanheemstrasystems.app.spacelift.io/dashboard). For Stack Details use name: ```template-default-repository-demo```, Space: ```root```, Labels: ""react", "frontend", "github-pages", "spacelift-managed", Description: ```Template Default Repository Demo```. Click **Continue**. Select GitHub as your VCS provider. Choose the ```vanHeemstraSystems/template-default-repository-demo``` repository. Choose Branch: ```main```. Set Project root to "." (it is optional, but we want to set it to root). Click **Continue**. 
+- Connect it to your GitHub repository (e.g., template-default-repository-demo): After logging in, click "Create Stack" button in the [dashboard](https://vanheemstrasystems.app.spacelift.io/dashboard). 
+For Stack Details use name: ```template-default-repository-demo```, Space: ```root```, Labels: "react", "frontend", "github-pages", "spacelift-managed", Description: ```Template Default Repository Demo```. 
+
+Click **Continue**. 
+
+Select GitHub as your VCS provider. 
+
+Choose the ```vanHeemstraSystems/template-default-repository-demo``` repository. 
+
+Choose Branch: ```main```. 
+
+Set Project root to "." (it is optional, but we want to set it to root). 
+
+Add these Additional project globs:
+```
+main.tf
+policies/**
+.spacelift/**
+```
+
+Click **Continue**. 
 
 - Choose vendor:
 
