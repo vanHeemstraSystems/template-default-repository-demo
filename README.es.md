@@ -1,4 +1,4 @@
-repository-name
+repositorio
 
 # Nombre de repositorio
 
@@ -11,7 +11,7 @@ repository-name
 -   [Imágenes](./IMAGES.md)
 -   [Nx](./NX.md)
 -   [Submario](./PODMAN.md)
--   [Referencias](./REFERENCES.md)
+-   [References](./REFERENCES.md)
 -   [Requisitos](./REQUIREMENTS.md)
 -   [Telemetría](./TELEMETRY.md)
 
@@ -19,7 +19,7 @@ repository-name
 
 Texto
 
-Generado con[Ritro](https://app.rytr.me)
+Generado con[Rytr](https://app.rytr.me)
 
 ## 100 - Introducción
 
