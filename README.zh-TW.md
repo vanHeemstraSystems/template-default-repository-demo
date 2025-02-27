@@ -8,7 +8,7 @@ repository-name
 -   [文件](./DOCUMENTATION.md)
 -   [詞彙表](./GLOSSARY.md)
 -   [主持人](./HOSTS.md)
--   [Images](./IMAGES.md)
+-   [圖像](./IMAGES.md)
 -   [nx](./NX.md)
 -   [Subman](./PODMAN.md)
 -   [參考](./REFERENCES.md)
@@ -33,6 +33,6 @@ repository-name
 
 看[README.md](./300/README.md)
 
-## 400 - Conclusion
+## 400-結論
 
 看[README.md](./400/README.md)
