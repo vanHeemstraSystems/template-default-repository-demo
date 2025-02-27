@@ -7,7 +7,7 @@ repository-name
 -   [DNS](./DNS.md)
 -   [文件](./DOCUMENTATION.md)
 -   [詞彙表](./GLOSSARY.md)
--   [主持人](./HOSTS.md)
+-   [Hosts](./HOSTS.md)
 -   [圖像](./IMAGES.md)
 -   [nx](./NX.md)
 -   [Subman](./PODMAN.md)
@@ -21,7 +21,7 @@ repository-name
 
 生成[ritr](https://app.rytr.me)
 
-## 100-簡介
+## 100 - Introduction
 
 看[README.md](./100/README.md)
 
