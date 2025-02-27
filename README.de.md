@@ -5,9 +5,9 @@ Repository-Namen
 > Slugline
 
 -   [DNS](./DNS.md)
--   [Dokumentation](./DOCUMENTATION.md)
+-   [Documentation](./DOCUMENTATION.md)
 -   [Glossar](./GLOSSARY.md)
--   [Gastgeber](./HOSTS.md)
+-   [Hosts](./HOSTS.md)
 -   [Bilder](./IMAGES.md)
 -   [NX](./NX.md)
 -   [Subman](./PODMAN.md)
@@ -21,11 +21,11 @@ Text
 
 Erzeugt mit[Ritr](https://app.rytr.me)
 
-## 100 - Introduction
+## 100 - Einführung
 
 Sehen[README.md](./100/README.md)
 
-## 200 - Anforderungen
+## 200 - Requirements
 
 Sehen[README.md](./200/README.md)
 
