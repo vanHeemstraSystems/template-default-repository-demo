@@ -429,6 +429,8 @@ Now lets apply the plan to see what our debug output shows:
 $ tofu apply
 ```
 
+When prompted, type ```yes``` to confirm.
+
 And here is the feedback:
 
 ```
