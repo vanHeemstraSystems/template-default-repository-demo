@@ -1,44 +1,21 @@
 package spacelift
 
-# Debug helper to print file paths
-debug_files[msg] {
-    files := input.push.changed_files
-    msg := sprintf("Changed files: %v", [files])
+# Skip ALL manual triggers if there are pending translation commits
+skip_run {
+    # Skip if ANY recent commit is a translation
+    any([
+        contains(input.push.commit_message, "translation via"),
+        input.push.commit_author == "github-actions[bot]"
+    ])
 }
 
 # First, check if this is a Spacelift-related change
 is_spacelift_file(file) {
     any([
-        file == "main.tf",
-        file == "policies/main.rego",
-        startswith(file, ".spacelift/")
-    ])
-}
-
-# Skip runs for documentation and translation changes
-skip_run {
-    # Skip based on commit message
-    contains(input.push.commit_message, "translation via")
-}
-
-skip_run {
-    # Skip based on commit author
-    input.push.commit_author == "github-actions[bot]"
-}
-
-skip_run {
-    # Skip based on file patterns
-    files := input.push.changed_files
-    all([is_doc_or_translation(files[_])])
-}
-
-# Helper to identify documentation or translation files
-is_doc_or_translation(file) {
-    any([
-        endswith(file, ".md"),
-        contains(file, "README."),
-        contains(file, "DOCUMENTATION."),
-        contains(file, "translation")
+        endswith(file, "main.tf"),
+        startswith(file, ".spacelift/"),
+        startswith(file, "policies/"),
+        endswith(file, "main.rego")
     ])
 }
 
