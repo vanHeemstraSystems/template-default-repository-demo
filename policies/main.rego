@@ -1,12 +1,17 @@
 package spacelift
 
+# Debug helper to print file paths
+debug_files[msg] {
+    files := input.push.changed_files
+    msg := sprintf("Changed files: %v", [files])
+}
+
 # First, check if this is a Spacelift-related change
 is_spacelift_file(file) {
     any([
-        endswith(file, "main.tf"),
-        startswith(file, ".spacelift/"),
-        startswith(file, "policies/"),
-        endswith(file, "main.rego")  # Explicitly allow policy file changes
+        file == "main.tf",
+        file == "policies/main.rego",
+        startswith(file, ".spacelift/")
     ])
 }
 
