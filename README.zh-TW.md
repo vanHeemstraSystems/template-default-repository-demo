@@ -8,7 +8,7 @@ repository-name
 -   [文件](./DOCUMENTATION.md)
 -   [詞彙表](./GLOSSARY.md)
 -   [主持人](./HOSTS.md)
--   [圖像](./IMAGES.md)
+-   [Images](./IMAGES.md)
 -   [nx](./NX.md)
 -   [Subman](./PODMAN.md)
 -   [參考](./REFERENCES.md)
@@ -23,7 +23,7 @@ repository-name
 
 ## 100-簡介
 
-看[README.md](./100/README.md)
+See [README.md](./100/README.md)
 
 ## 200-要求
 
