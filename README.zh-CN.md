@@ -11,7 +11,7 @@ repository-name
 -   [图像](./IMAGES.md)
 -   [nx](./NX.md)
 -   [Subman](./PODMAN.md)
--   [References](./REFERENCES.md)
+-   [参考](./REFERENCES.md)
 -   [要求](./REQUIREMENTS.md)
 -   [遥测](./TELEMETRY.md)
 
@@ -25,7 +25,7 @@ repository-name
 
 看[README.md](./100/README.md)
 
-## 200-要求
+## 200 - Requirements
 
 看[README.md](./200/README.md)
 
