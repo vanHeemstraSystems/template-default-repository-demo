@@ -12,8 +12,8 @@ nom de référentiel
 -   [Nx](./NX.md)
 -   [Sous-homme](./PODMAN.md)
 -   [Références](./REFERENCES.md)
--   [Requirements](./REQUIREMENTS.md)
--   [Telemetry](./TELEMETRY.md)
+-   [Exigences](./REQUIREMENTS.md)
+-   [Télémétrie](./TELEMETRY.md)
 
 **Résumé exécutif**
 
@@ -27,7 +27,7 @@ Voir[README.md](./100/README.md)
 
 ## 200 - exigences
 
-See [README.md](./200/README.md)
+Voir[README.md](./200/README.md)
 
 ## 300 - Construire notre application
 
