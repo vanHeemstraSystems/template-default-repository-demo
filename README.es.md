@@ -15,9 +15,9 @@ repositorio
 -   [Requisitos](./REQUIREMENTS.md)
 -   [Telemetría](./TELEMETRY.md)
 
-**Resumen ejecutivo**
+**Executive Summary**
 
-Text
+Texto
 
 Generado con[Ritro](https://app.rytr.me)
 
