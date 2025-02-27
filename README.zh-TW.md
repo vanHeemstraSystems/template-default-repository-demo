@@ -15,7 +15,7 @@ repository-name
 -   [要求](./REQUIREMENTS.md)
 -   [遙測](./TELEMETRY.md)
 
-**執行摘要**
+**Executive Summary**
 
 文字
 
@@ -23,7 +23,7 @@ repository-name
 
 ## 100-簡介
 
-See [README.md](./100/README.md)
+看[README.md](./100/README.md)
 
 ## 200-要求
 
