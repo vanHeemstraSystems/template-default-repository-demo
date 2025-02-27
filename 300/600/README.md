@@ -163,6 +163,24 @@ resource "spacelift_stack" "main" {
     "github-pages",
     "spacelift-managed"
   ]
+
+  # Add path triggers to only watch relevant files
+  project_root = "."
+  
+  # Specify which files should trigger a run
+  trigger_paths = [
+    "main.tf",
+    ".spacelift/**",
+    "policies/**"
+  ]
+  
+  # Specify which files to ignore
+  ignored_paths = [
+    "README*.md",
+    "DOCUMENTATION*.md",
+    ".github/workflows/readme.yml",
+    ".github/workflows/documentation.yml"
+  ]
 }
 
 resource "spacelift_context" "main" {
