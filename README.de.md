@@ -6,12 +6,12 @@ Repository-Namen
 
 -   [DNS](./DNS.md)
 -   [Dokumentation](./DOCUMENTATION.md)
--   [Glossary](./GLOSSARY.md)
+-   [Glossar](./GLOSSARY.md)
 -   [Gastgeber](./HOSTS.md)
 -   [Bilder](./IMAGES.md)
 -   [NX](./NX.md)
 -   [Subman](./PODMAN.md)
--   [Referenzen](./REFERENCES.md)
+-   [References](./REFERENCES.md)
 -   [Anforderungen](./REQUIREMENTS.md)
 -   [Telemetrie](./TELEMETRY.md)
 
