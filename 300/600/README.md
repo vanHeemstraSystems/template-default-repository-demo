@@ -105,23 +105,20 @@ is_doc_or_translation(file) {
         endswith(file, ".md"),
         contains(file, "README."),
         contains(file, "DOCUMENTATION."),
-        contains(input.push.commit_message, "[skip spacelift]")
+        contains(input.push.commit_message, "[skip spacelift]"),
+        contains(input.push.commit_message, "translation via")
     ])
 }
 
-# Allow pushes only for specific file changes
+# Allow pushes for any changes that are not documentation/translation
 allow_push[msg] {
     # Get the list of changed files
     files := input.push.changed_files
 
-    # Check if any of the changed files match our patterns
-    any([
-        startswith(files[_], "main.tf"),
-        startswith(files[_], ".spacelift/"),
-        startswith(files[_], "policies/")
-    ])
+    # Allow if ANY file is not documentation/translation
+    not skip_run
 
-    msg := "Changes affect Spacelift-managed files"
+    msg := "Changes include non-documentation files"
 }
 
 # Require pull request reviews
