@@ -335,6 +335,24 @@ echo "TF_LOG_PATH=$TF_LOG_PATH"
 
 ---------- END: Optional ----------------
 
+Update Stack Settings:
+- Go to stack template-default-repository-demo-spacelift
+- Go to "Settings"
+- Add these commands:
+Before Init:
+```npm install -g nx@latest```
+Before Apply:
+```
+npm ci
+npx nx build hatch_project --configuration=production
+```
+
+Configure GitHub Pages:
+- Go to repository settings
+- Enable GitHub Pages
+- Set branch to gh-pages
+- Set folder to / (root)
+
 Now run the ```cleanup.sh``` script locally to ensure there are no outdated settings or residu of previous rounds.
 
 ```
