@@ -6,9 +6,7 @@ skip_run {
     files := input.push.changed_files
 
     # Skip if ALL changes are documentation or translation related
-    all([
-        is_doc_or_translation(file)
-    ]) { file := files[_] }
+    all([is_doc_or_translation(files[_])])
 }
 
 # Helper to identify documentation or translation files
