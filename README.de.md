@@ -13,7 +13,7 @@ Repository-Namen
 -   [Subman](./PODMAN.md)
 -   [Referenzen](./REFERENCES.md)
 -   [Anforderungen](./REQUIREMENTS.md)
--   [Telemetrie](./TELEMETRY.md)
+-   [Telemetry](./TELEMETRY.md)
 
 **Zusammenfassung**
 
@@ -27,11 +27,11 @@ Sehen[README.md](./100/README.md)
 
 ## 200 - Anforderungen
 
-Sehen[README.md](./200/README.md)
+See [README.md](./200/README.md)
 
-## 300 - Aufbau unserer Bewerbung
+## 300 - Building Our Application
 
-Sehen[README.md](./300/README.md)
+See [README.md](./300/README.md)
 
 ## 400 - Schlussfolgerung
 
