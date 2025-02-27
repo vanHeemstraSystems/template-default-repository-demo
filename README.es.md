@@ -6,9 +6,9 @@ repositorio
 
 -   [DNS](./DNS.md)
 -   [Documentación](./DOCUMENTATION.md)
--   [Glosario](./GLOSSARY.md)
+-   [Glossary](./GLOSSARY.md)
 -   [Anfitriones](./HOSTS.md)
--   [Images](./IMAGES.md)
+-   [Imágenes](./IMAGES.md)
 -   [Nx](./NX.md)
 -   [Submario](./PODMAN.md)
 -   [Referencias](./REFERENCES.md)
@@ -19,7 +19,7 @@ repositorio
 
 Texto
 
-Generado con[Ritro](https://app.rytr.me)
+Generated with [Ritro](https://app.rytr.me)
 
 ## 100 - Introducción
 
@@ -29,7 +29,7 @@ Ver[README.md](./100/README.md)
 
 Ver[README.md](./200/README.md)
 
-## 300 - Building Our Application
+## 300 - Construyendo nuestra aplicación
 
 Ver[README.md](./300/README.md)
 
