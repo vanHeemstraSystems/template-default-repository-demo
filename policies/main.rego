@@ -5,7 +5,8 @@ is_spacelift_file(file) {
     any([
         endswith(file, "main.tf"),
         startswith(file, ".spacelift/"),
-        startswith(file, "policies/")
+        startswith(file, "policies/"),
+        endswith(file, "main.rego")  # Explicitly allow policy file changes
     ])
 }
 
@@ -47,7 +48,7 @@ allow[msg] {
     # And ensure we're not skipping this run
     not skip_run
 
-    msg := "Changes include Spacelift-managed files"
+    msg := sprintf("Changes include Spacelift-managed files: %v", [files])
 }
 
 # Block all other changes
