@@ -204,7 +204,7 @@ The content of this file (```config.yml```):
 version: 1
 
 workspace_configs:
-  - name: template-default-repository-demo
+  - name: template-default-repository-demo-spacelift
     terraform_version: "1.5.0"
     autoformat: true
     autodeploy: true
