@@ -8,24 +8,24 @@ Repository-Namen
 -   [Dokumentation](./DOCUMENTATION.md)
 -   [Glossar](./GLOSSARY.md)
 -   [Gastgeber](./HOSTS.md)
--   [Bilder](./IMAGES.md)
+-   [Images](./IMAGES.md)
 -   [NX](./NX.md)
 -   [Subman](./PODMAN.md)
 -   [Referenzen](./REFERENCES.md)
--   [Requirements](./REQUIREMENTS.md)
--   [Telemetrie](./TELEMETRY.md)
+-   [Anforderungen](./REQUIREMENTS.md)
+-   [Telemetry](./TELEMETRY.md)
 
-**Zusammenfassung**
+**Executive Summary**
 
 Text
 
-Generated with [Ritr](https://app.rytr.me)
+Erzeugt mit[Ritr](https://app.rytr.me)
 
 ## 100 - Einführung
 
 Sehen[README.md](./100/README.md)
 
-## 200 - Requirements
+## 200 - Anforderungen
 
 Sehen[README.md](./200/README.md)
 
