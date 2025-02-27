@@ -6,12 +6,12 @@ repository-name
 
 -   [DNS](./DNS.md)
 -   [文档](./DOCUMENTATION.md)
--   [词汇表](./GLOSSARY.md)
+-   [Glossary](./GLOSSARY.md)
 -   [主持人](./HOSTS.md)
 -   [图像](./IMAGES.md)
 -   [nx](./NX.md)
 -   [Subman](./PODMAN.md)
--   [References](./REFERENCES.md)
+-   [参考](./REFERENCES.md)
 -   [要求](./REQUIREMENTS.md)
 -   [遥测](./TELEMETRY.md)
 
@@ -29,7 +29,7 @@ repository-name
 
 看[README.md](./200/README.md)
 
-## 300-构建我们的应用程序
+## 300 - Building Our Application
 
 看[README.md](./300/README.md)
 
