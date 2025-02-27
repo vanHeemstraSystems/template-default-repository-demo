@@ -8,12 +8,12 @@ repository-name
 -   [文档](./DOCUMENTATION.md)
 -   [词汇表](./GLOSSARY.md)
 -   [主持人](./HOSTS.md)
--   [图像](./IMAGES.md)
+-   [Images](./IMAGES.md)
 -   [nx](./NX.md)
 -   [Subman](./PODMAN.md)
 -   [参考](./REFERENCES.md)
 -   [要求](./REQUIREMENTS.md)
--   [遥测](./TELEMETRY.md)
+-   [Telemetry](./TELEMETRY.md)
 
 **执行摘要**
 
@@ -21,7 +21,7 @@ repository-name
 
 生成[ritr](https://app.rytr.me)
 
-## 100-简介
+## 100 - Introduction
 
 看[README.md](./100/README.md)
 
