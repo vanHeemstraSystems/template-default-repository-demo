@@ -11,10 +11,10 @@ Prerequisites Check:
 
 Local Environment Setup:
 [ ] Run cleanup.sh to:
-[ ] Clean local files
-[ ] Initialize OpenTofu
-[ ] Remove state entries
-[ ] Verify credentials
+    - Clean local files
+    - Initialize OpenTofu
+    - Remove state entries
+    - Verify credentials
 
 Spacelift UI Cleanup:
 [ ] Delete stack (choose "Keep resources")
