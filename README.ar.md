@@ -9,7 +9,7 @@
 -   [مسرد](./GLOSSARY.md)
 -   [المضيفين](./HOSTS.md)
 -   [الصور](./IMAGES.md)
--   [Nx](./NX.md)
+-   [NX](./NX.md)
 -   [رجل فرعي](./PODMAN.md)
 -   [مراجع](./REFERENCES.md)
 -   [متطلبات](./REQUIREMENTS.md)
@@ -19,7 +19,7 @@
 
 نص
 
-ولدت مع[Rytr](https://app.rytr.me)
+ولدت مع[ريتر](https://app.rytr.me)
 
 ## 100 - مقدمة
 
@@ -27,11 +27,11 @@
 
 ## 200 - المتطلبات
 
-See [README.md](./200/README.md)
+يرى[README.md](./200/README.md)
 
 ## 300 - بناء تطبيقنا
 
-See [README.md](./300/README.md)
+يرى[README.md](./300/README.md)
 
 ## 400 - الخلاصة
 
