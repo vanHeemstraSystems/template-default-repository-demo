@@ -10,8 +10,8 @@ repository-naam
 -   [Gastheren](./HOSTS.md)
 -   [Beelden](./IMAGES.md)
 -   [Nx](./NX.md)
--   [Subman](./PODMAN.md)
--   [Referenties](./REFERENCES.md)
+-   [Podman](./PODMAN.md)
+-   [References](./REFERENCES.md)
 -   [Vereisten](./REQUIREMENTS.md)
 -   [Telemetrie](./TELEMETRY.md)
 
@@ -33,6 +33,6 @@ Zien[README.md](./200/README.md)
 
 Zien[README.md](./300/README.md)
 
-## 400 - Conclusion
+## 400 - Conclusie
 
 Zien[README.md](./400/README.md)
