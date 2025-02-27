@@ -163,4 +163,4 @@ cython_debug/
 .terraform/
 *.tfstate
 *.tfstate.*
-.terraform.lock.hcl
+# .terraform.lock.hcl # Do NOT ignore this file!
