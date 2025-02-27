@@ -1,5 +1,25 @@
 package spacelift
 
+# First, check if this is a Spacelift-related change
+is_spacelift_file(file) {
+    any([
+        endswith(file, "main.tf"),
+        startswith(file, ".spacelift/"),
+        startswith(file, "policies/")
+    ])
+}
+
+# Allow pushes for Spacelift-related changes
+allow_push[msg] {
+    # Get the list of changed files
+    files := input.push.changed_files
+
+    # Allow if ANY file is Spacelift-related
+    any([is_spacelift_file(files[_])])
+
+    msg := "Changes include Spacelift-managed files"
+}
+
 # Skip runs for documentation and translation changes
 skip_run {
     # Skip based on commit message
@@ -25,17 +45,6 @@ is_doc_or_translation(file) {
         contains(file, "DOCUMENTATION."),
         contains(file, "translation")
     ])
-}
-
-# Allow pushes for any changes that are not documentation/translation
-allow_push[msg] {
-    # Get the list of changed files
-    files := input.push.changed_files
-
-    # Allow if ANY file is not documentation/translation
-    not skip_run
-
-    msg := "Changes include non-documentation files"
 }
 
 # Require pull request reviews
