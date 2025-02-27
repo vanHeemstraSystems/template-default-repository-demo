@@ -1,14 +1,14 @@
-repository-name
+repository-naam
 
 # Repository -naam
 
-> Slugline
+> Sluglijn
 
 -   [DNS](./DNS.md)
 -   [Documentatie](./DOCUMENTATION.md)
 -   [Glossarium](./GLOSSARY.md)
--   [Hosts](./HOSTS.md)
--   [Beelden](./IMAGES.md)
+-   [Gastheren](./HOSTS.md)
+-   [Images](./IMAGES.md)
 -   [Nx](./NX.md)
 -   [Subman](./PODMAN.md)
 -   [Referenties](./REFERENCES.md)
@@ -25,13 +25,13 @@ Gegenereerd met[Ritr](https://app.rytr.me)
 
 Zien[README.md](./100/README.md)
 
-## 200 - Vereisten
+## 200 - Requirements
 
-Zien[README.md](./200/README.md)
+See [README.md](./200/README.md)
 
 ## 300 - onze applicatie bouwen
 
-Zien[README.md](./300/README.md)
+See [README.md](./300/README.md)
 
 ## 400 - Conclusie
 
