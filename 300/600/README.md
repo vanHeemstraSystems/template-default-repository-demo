@@ -219,15 +219,17 @@ workspace_configs:
       - TF_IN_AUTOMATION: "true"
       - TF_WORKSPACE: "default"
     
+    # Define the build and deployment process
+    before_init:
+      - npm install -g nx@latest
+    
+    before_apply:
+      - npm ci
+      - npx nx build hatch_project --configuration=production
+    
     # Define the deployment process
     deployment:
       steps:
-        - name: Install dependencies
-          run: npm ci
-          
-        - name: Build application
-          run: npx nx build hatch_project --configuration=production
-          
         - name: Deploy to GitHub Pages
           run: |
             REPO_NAME=$(echo "$GITHUB_REPOSITORY" | cut -d'/' -f2)
@@ -334,18 +336,6 @@ echo "TF_LOG=$TF_LOG"
 echo "TF_LOG_PATH=$TF_LOG_PATH"
 
 ---------- END: Optional ----------------
-
-Update Stack Settings:
-- Go to stack template-default-repository-demo-spacelift
-- Go to "Settings"
-- Add these commands:
-Before Init:
-```npm install -g nx@latest```
-Before Apply:
-```
-npm ci
-npx nx build hatch_project --configuration=production
-```
 
 Configure GitHub Pages:
 - Go to repository settings
@@ -519,9 +509,9 @@ OpenTofu will perform the following actions:
 
   # spacelift_context.main will be created
   + resource "spacelift_context" "main" {
-      + description = "Shared configuration for React application"
+      + description = "Shared configuration for React application (Spacelift managed)"
       + id          = (known after apply)
-      + name        = "template-default-repository-demo-context"
+      + name        = "template-default-repository-demo-context-spacelift"
       + space_id    = (known after apply)
     }
 
@@ -561,7 +551,7 @@ OpenTofu will perform the following actions:
             }
         EOT
       + id       = (known after apply)
-      + name     = "template-default-repository-demo-policy"
+      + name     = "template-default-repository-demo-policy-spacelift"
       + space_id = (known after apply)
       + type     = "PLAN"
     }
@@ -580,7 +570,7 @@ OpenTofu will perform the following actions:
       + autoretry                        = false
       + aws_assume_role_policy_statement = (known after apply)
       + branch                           = "main"
-      + description                      = "React application deployment stack"
+      + description                      = "React application deployment stack (Spacelift managed)"
       + enable_local_preview             = false
       + enable_well_known_secret_masking = false
       + github_action_deploy             = true
@@ -589,9 +579,10 @@ OpenTofu will perform the following actions:
           + "frontend",
           + "github-pages",
           + "react",
+          + "spacelift-managed",
         ]
       + manage_state                     = true
-      + name                             = "template-default-repository-demo"
+      + name                             = "template-default-repository-demo-spacelift"
       + protect_from_deletion            = false
       + repository                       = "template-default-repository-demo"
       + runner_image                     = "node:20"
@@ -603,6 +594,12 @@ OpenTofu will perform the following actions:
     }
 
 Plan: 5 to add, 0 to change, 0 to destroy.
+
+Changes to Outputs:
+  + debug_info = {
+      + api_endpoint = "default"
+      + workspace    = "default"
+    }
 
 ──────────────────────────────────────────────────────────────────────────────────────────────
 
@@ -629,9 +626,9 @@ OpenTofu will perform the following actions:
 
   # spacelift_context.main will be created
   + resource "spacelift_context" "main" {
-      + description = "Shared configuration for React application"
+      + description = "Shared configuration for React application (Spacelift managed)"
       + id          = (known after apply)
-      + name        = "template-default-repository-demo-context"
+      + name        = "template-default-repository-demo-context-spacelift"
       + space_id    = (known after apply)
     }
 
@@ -671,7 +668,7 @@ OpenTofu will perform the following actions:
             }
         EOT
       + id       = (known after apply)
-      + name     = "template-default-repository-demo-policy"
+      + name     = "template-default-repository-demo-policy-spacelift"
       + space_id = (known after apply)
       + type     = "PLAN"
     }
@@ -690,7 +687,7 @@ OpenTofu will perform the following actions:
       + autoretry                        = false
       + aws_assume_role_policy_statement = (known after apply)
       + branch                           = "main"
-      + description                      = "React application deployment stack"
+      + description                      = "React application deployment stack (Spacelift managed)"
       + enable_local_preview             = false
       + enable_well_known_secret_masking = false
       + github_action_deploy             = true
@@ -699,9 +696,10 @@ OpenTofu will perform the following actions:
           + "frontend",
           + "github-pages",
           + "react",
+          + "spacelift-managed",
         ]
       + manage_state                     = true
-      + name                             = "template-default-repository-demo"
+      + name                             = "template-default-repository-demo-spacelift"
       + protect_from_deletion            = false
       + repository                       = "template-default-repository-demo"
       + runner_image                     = "node:20"
@@ -714,24 +712,37 @@ OpenTofu will perform the following actions:
 
 Plan: 5 to add, 0 to change, 0 to destroy.
 
+Changes to Outputs:
+  + debug_info = {
+      + api_endpoint = "default"
+      + workspace    = "default"
+    }
+
 Do you want to perform these actions?
   OpenTofu will perform the actions described above.
   Only 'yes' will be accepted to approve.
 
   Enter a value: yes
 
-spacelift_context.main: Creating...
 spacelift_policy.main: Creating...
+spacelift_context.main: Creating...
 spacelift_stack.main: Creating...
-spacelift_context.main: Creation complete after 1s [id=template-default-repository-demo-context]
-spacelift_policy.main: Creation complete after 1s [id=template-default-repository-demo-policy]
-spacelift_stack.main: Creation complete after 2s [id=template-default-repository-demo]
-spacelift_context_attachment.main: Creating...
+spacelift_policy.main: Creation complete after 0s [id=template-default-repository-demo-policy-spacelift]
+spacelift_context.main: Creation complete after 0s [id=template-default-repository-demo-context-spacelift]
+spacelift_stack.main: Creation complete after 1s [id=template-default-repository-demo-spacelift]
 spacelift_policy_attachment.main: Creating...
-spacelift_context_attachment.main: Creation complete after 0s [id=template-default-repository-demo-context/01JN390YY674FY787BGJRDJXZC]
-spacelift_policy_attachment.main: Creation complete after 0s [id=template-default-repository-demo-policy/01JN390YXTBG6N9JZYF1VP3674]
+spacelift_context_attachment.main: Creating...
+spacelift_policy_attachment.main: Creation complete after 0s [id=template-default-repository-demo-policy-spacelift/01JN3MHGERDSWQ9BHTCCGTNX0K]
+spacelift_context_attachment.main: Creation complete after 1s [id=template-default-repository-demo-context-spacelift/01JN3MHGFYZTDBQ2964DNNS4JV]
 
 Apply complete! Resources: 5 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+debug_info = {
+  "api_endpoint" = "default"
+  "workspace" = "default"
+}
 ```
 
 Next steps:

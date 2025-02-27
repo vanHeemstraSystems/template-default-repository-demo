@@ -16,15 +16,17 @@ workspace_configs:
       - TF_IN_AUTOMATION: "true"
       - TF_WORKSPACE: "default"
     
+    # Define the build and deployment process
+    before_init:
+      - npm install -g nx@latest
+    
+    before_apply:
+      - npm ci
+      - npx nx build hatch_project --configuration=production
+    
     # Define the deployment process
     deployment:
       steps:
-        - name: Install dependencies
-          run: npm ci
-          
-        - name: Build application
-          run: npx nx build hatch_project --configuration=production
-          
         - name: Deploy to GitHub Pages
           run: |
             REPO_NAME=$(echo "$GITHUB_REPOSITORY" | cut -d'/' -f2)
