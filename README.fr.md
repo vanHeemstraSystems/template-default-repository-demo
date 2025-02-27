@@ -1,4 +1,4 @@
-nom de référentiel
+repository-name
 
 # Nom de référentiel
 
@@ -10,7 +10,7 @@ nom de référentiel
 -   [Hôtes](./HOSTS.md)
 -   [Images](./IMAGES.md)
 -   [Nx](./NX.md)
--   [Sous-homme](./PODMAN.md)
+-   [Podman](./PODMAN.md)
 -   [Références](./REFERENCES.md)
 -   [Exigences](./REQUIREMENTS.md)
 -   [Télémétrie](./TELEMETRY.md)
@@ -23,7 +23,7 @@ Généré avec[Ritr](https://app.rytr.me)
 
 ## 100 - Introduction
 
-See [README.md](./100/README.md)
+Voir[README.md](./100/README.md)
 
 ## 200 - exigences
 
