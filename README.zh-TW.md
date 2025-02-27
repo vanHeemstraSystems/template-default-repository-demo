@@ -9,7 +9,7 @@ repository-name
 -   [詞彙表](./GLOSSARY.md)
 -   [Hosts](./HOSTS.md)
 -   [圖像](./IMAGES.md)
--   [nx](./NX.md)
+-   [Nx](./NX.md)
 -   [Subman](./PODMAN.md)
 -   [參考](./REFERENCES.md)
 -   [要求](./REQUIREMENTS.md)
@@ -19,7 +19,7 @@ repository-name
 
 文字
 
-Generated with [ritr](https://app.rytr.me)
+生成[ritr](https://app.rytr.me)
 
 ## 100-簡介
 
@@ -29,10 +29,10 @@ Generated with [ritr](https://app.rytr.me)
 
 看[README.md](./200/README.md)
 
-## 300 - Building Our Application
+## 300-構建我們的應用程序
 
 看[README.md](./300/README.md)
 
 ## 400-結論
 
-See [README.md](./400/README.md)
+看[README.md](./400/README.md)
