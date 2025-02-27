@@ -2,10 +2,18 @@ package spacelift
 
 # Skip runs for documentation and translation changes
 skip_run {
-    # Get the list of changed files
-    files := input.push.changed_files
+    # Skip based on commit message
+    contains(input.push.commit_message, "translation via")
+}
 
-    # Skip if ALL changes are documentation or translation related
+skip_run {
+    # Skip based on commit author
+    input.push.commit_author == "github-actions[bot]"
+}
+
+skip_run {
+    # Skip based on file patterns
+    files := input.push.changed_files
     all([is_doc_or_translation(files[_])])
 }
 
@@ -15,8 +23,7 @@ is_doc_or_translation(file) {
         endswith(file, ".md"),
         contains(file, "README."),
         contains(file, "DOCUMENTATION."),
-        contains(input.push.commit_message, "[skip spacelift]"),
-        contains(input.push.commit_message, "translation via")
+        contains(file, "translation")
     ])
 }
 
