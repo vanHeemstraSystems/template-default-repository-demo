@@ -7,10 +7,10 @@ allow_push[msg] {
 
     # Check if any of the changed files match our patterns
     any([
-        startswith(file, "main.tf"),
-        startswith(file, ".spacelift/"),
-        startswith(file, "policies/")
-    ]) { file := files[_] }
+        startswith(files[_], "main.tf"),
+        startswith(files[_], ".spacelift/"),
+        startswith(files[_], "policies/")
+    ])
 
     msg := "Changes affect Spacelift-managed files"
 }
@@ -19,8 +19,8 @@ allow_push[msg] {
 skip_run {
     files := input.push.changed_files
     all([
-        file_is_doc(file)
-    ]) { file := files[_] }
+        file_is_doc(files[_])
+    ])
 }
 
 # Helper to identify documentation files
