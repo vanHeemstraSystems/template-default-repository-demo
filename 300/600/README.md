@@ -316,6 +316,108 @@ tofu plan    # to see changes
 tofu apply   # to apply changes
 ```
 
+Now let's import the existing resources:
+
+A. First, import the stack:
+
+```
+$ tofu import spacelift_stack.main template-default-repository-demo
+```
+
+You will be prompted as follows:
+
+```
+spacelift_stack.main: Importing from ID "template-default-repository-demo"...
+spacelift_stack.main: Import prepared!
+  Prepared spacelift_stack for import
+spacelift_stack.main: Refreshing state... [id=template-default-repository-demo]
+
+Import successful!
+
+The resources that were imported are shown above. These resources are now in
+your OpenTofu state and will henceforth be managed by OpenTofu.
+```
+
+B. Now let's import the context:
+
+```
+$ tofu import spacelift_context.main template-default-repository-demo-context
+```
+
+Its prompt is:
+
+```
+spacelift_context.main: Importing from ID "template-default-repository-demo-context"...
+spacelift_context.main: Import prepared!
+  Prepared spacelift_context for import
+spacelift_context.main: Refreshing state... [id=template-default-repository-demo-context]
+
+Import successful!
+
+The resources that were imported are shown above. These resources are now in
+your OpenTofu state and will henceforth be managed by OpenTofu.
+```
+
+C. Now let's import the policy:
+
+```
+$ tofu import spacelift_policy.main template-default-repository-demo-policy
+```
+
+And again a prompt:
+
+```
+spacelift_policy.main: Importing from ID "template-default-repository-demo-policy"...
+spacelift_policy.main: Import prepared!
+  Prepared spacelift_policy for import
+spacelift_policy.main: Refreshing state... [id=template-default-repository-demo-policy]
+
+Import successful!
+
+The resources that were imported are shown above. These resources are now in
+your OpenTofu state and will henceforth be managed by OpenTofu.
+```
+
+D. Now let's import the context attachment:
+
+```
+$ tofu import spacelift_context_attachment.main "template-default-repository-demo-context/template-default-repository-demo"
+```
+
+You'll be prompted so:
+
+```
+spacelift_context_attachment.main: Importing from ID "template-default-repository-demo-context/template-default-repository-demo"...
+spacelift_context_attachment.main: Import prepared!
+  Prepared spacelift_context_attachment for import
+spacelift_context_attachment.main: Refreshing state... [id=template-default-repository-demo-context/01JN39S1PY8AD6EQWV2WE9AD7B]
+
+Import successful!
+
+The resources that were imported are shown above. These resources are now in
+your OpenTofu state and will henceforth be managed by OpenTofu.
+```
+
+E. Now let's import the final piece - the policy attachment:
+
+```
+$ tofu import spacelift_policy_attachment.main "template-default-repository-demo-policy/template-default-repository-demo"
+```
+
+With as a result:
+
+```
+spacelift_policy_attachment.main: Importing from ID "template-default-repository-demo-policy/template-default-repository-demo"...
+spacelift_policy_attachment.main: Import prepared!
+  Prepared spacelift_policy_attachment for import
+spacelift_policy_attachment.main: Refreshing state... [id=template-default-repository-demo-policy/01JN39S1PMJ6QDA0ZKWBSCEZBP]
+
+Import successful!
+
+The resources that were imported are shown above. These resources are now in
+your OpenTofu state and will henceforth be managed by OpenTofu.
+```
+
 Now lets run a plan to see what our debug output shows:
 
 ```
