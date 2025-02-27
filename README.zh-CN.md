@@ -21,7 +21,7 @@ repository-name
 
 生成[ritr](https://app.rytr.me)
 
-## 100 - Introduction
+## 100-简介
 
 看[README.md](./100/README.md)
 
