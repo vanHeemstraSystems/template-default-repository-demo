@@ -19,7 +19,7 @@ repositorio
 
 Texto
 
-Generated with [Ritro](https://app.rytr.me)
+Generado con[Ritro](https://app.rytr.me)
 
 ## 100 - Introducción
 
