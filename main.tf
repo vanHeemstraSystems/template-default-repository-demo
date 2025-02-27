@@ -47,11 +47,8 @@ resource "spacelift_stack" "main" {
     "spacelift-managed"
   ]
 
-  # Add path settings
+  # Add path setting
   project_root = "."
-  
-  # Use workspace_root to specify paths
-  workspace_root = "."
 }
 
 resource "spacelift_context" "main" {
