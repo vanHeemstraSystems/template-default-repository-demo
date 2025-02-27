@@ -309,6 +309,7 @@ should now work.
 If you ever set or change modules or backend configuration for OpenTofu,
 rerun this command to reinitialize your working directory. If you forget, other
 commands will detect it and remind you to do so if necessary.
+Removing resources from state if they exist...
 Verifying Spacelift credentials...
 ✅ Cleanup complete! You can now run:
 tofu plan    # to see changes
