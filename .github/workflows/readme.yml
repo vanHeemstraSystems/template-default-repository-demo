@@ -20,31 +20,39 @@ jobs:
         uses: dephraiim/translate-readme@main
         with:
           LANG: zh-CN
+          COMMIT_MESSAGE: "docs: Added README.zh-CN.md translation [skip spacelift]"
       - name: Adding README - Chinese Traditional
         uses: dephraiim/translate-readme@main
         with:
           LANG: zh-TW
+          COMMIT_MESSAGE: "docs: Added README.zh-TW.md translation [skip spacelift]"
       - name: Adding README - Hindi
         uses: dephraiim/translate-readme@main
         with:
           LANG: hi
+          COMMIT_MESSAGE: "docs: Added README.hi.md translation [skip spacelift]"
       - name: Adding README - Arabic
         uses: dephraiim/translate-readme@main
         with:
           LANG: ar
+          COMMIT_MESSAGE: "docs: Added README.ar.md translation [skip spacelift]"
       - name: Adding README - French
         uses: dephraiim/translate-readme@main
         with:
           LANG: fr
+          COMMIT_MESSAGE: "docs: Added README.fr.md translation [skip spacelift]"
       - name: Adding README - German
         uses: dephraiim/translate-readme@main
         with:
           LANG: de
+          COMMIT_MESSAGE: "docs: Added README.de.md translation [skip spacelift]"
       - name: Adding README - Dutch
         uses: dephraiim/translate-readme@main
         with:
           LANG: nl
+          COMMIT_MESSAGE: "docs: Added README.nl.md translation [skip spacelift]"
       - name: Adding README - Spanish
         uses: dephraiim/translate-readme@main
         with:
           LANG: es
+          COMMIT_MESSAGE: "docs: Added README.es.md translation [skip spacelift]"

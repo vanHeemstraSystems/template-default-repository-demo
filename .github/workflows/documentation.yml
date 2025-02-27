@@ -34,3 +34,4 @@ jobs:
         uses: vanHeemstraSystems/translate-documentation@main
         with:
           LANG: ${{ matrix.language.code }}
+          COMMIT_MESSAGE: "docs: Added DOCUMENTATION.${{ matrix.language.code }}.md translation [skip spacelift]"
