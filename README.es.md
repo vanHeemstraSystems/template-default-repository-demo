@@ -1,6 +1,6 @@
 repositorio
 
-# Nombre de repositorio
+# Repository Name
 
 > Línea de babosa
 
@@ -8,7 +8,7 @@ repositorio
 -   [Documentación](./DOCUMENTATION.md)
 -   [Glosario](./GLOSSARY.md)
 -   [Anfitriones](./HOSTS.md)
--   [Imágenes](./IMAGES.md)
+-   [Images](./IMAGES.md)
 -   [Nx](./NX.md)
 -   [Submario](./PODMAN.md)
 -   [Referencias](./REFERENCES.md)
