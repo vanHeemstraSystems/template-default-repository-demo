@@ -19,13 +19,13 @@ nom de référentiel
 
 Texte
 
-Généré avec[Ritr](https://app.rytr.me)
+Generated with [Rytr](https://app.rytr.me)
 
 ## 100 - Introduction
 
 Voir[README.md](./100/README.md)
 
-## 200 - Requirements
+## 200 - exigences
 
 Voir[README.md](./200/README.md)
 
