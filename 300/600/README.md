@@ -218,9 +218,10 @@ resource "spacelift_context" "main" {
 }
 
 resource "spacelift_policy" "main" {
-  name  = "template-default-repository-demo-policy-spacelift"
-  body  = file("${path.module}/policies/main.rego")
-  type  = "PLAN"
+  name        = "template-default-repository-demo-policy-spacelift-${formatdate("YYYYMMDDhhmmss", timestamp())}"
+  description = "Shared configuration for React application (Spacelift managed)"
+  body        = file("${path.module}/policies/main.rego")
+  type        = "PLAN"
 }
 
 resource "spacelift_context_attachment" "main" {
