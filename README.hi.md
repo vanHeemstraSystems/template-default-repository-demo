@@ -1,6 +1,6 @@
-repository-name
+भंडार-नाम
 
-# Repository Name
+# भंडार नाम
 
 > स्लगलाइन
 
@@ -11,7 +11,7 @@ repository-name
 -   [इमेजिस](./IMAGES.md)
 -   [नोकदार](./NX.md)
 -   [सबमैन](./PODMAN.md)
--   [References](./REFERENCES.md)
+-   [संदर्भ](./REFERENCES.md)
 -   [आवश्यकताएं](./REQUIREMENTS.md)
 -   [टेलीमेटरी](./TELEMETRY.md)
 
@@ -23,7 +23,7 @@ repository-name
 
 ## 100 - परिचय
 
-See [README.md](./100/README.md)
+देखना[README.md](./100/README.md)
 
 ## 200 - आवश्यकताएँ
 
