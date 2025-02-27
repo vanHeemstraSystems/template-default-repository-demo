@@ -2,7 +2,7 @@ repositorio
 
 # Repository Name
 
-> Slugline
+> Línea de babosa
 
 -   [DNS](./DNS.md)
 -   [Documentación](./DOCUMENTATION.md)
@@ -19,13 +19,13 @@ repositorio
 
 Texto
 
-Generated with [Ritro](https://app.rytr.me)
+Generado con[Ritro](https://app.rytr.me)
 
 ## 100 - Introducción
 
 Ver[README.md](./100/README.md)
 
-## 200 - Requisitos
+## 200 - Requirements
 
 Ver[README.md](./200/README.md)
 
