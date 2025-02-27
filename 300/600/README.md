@@ -7,6 +7,7 @@ Prerequisites Check:
 [ ] GitHub repository exists
 [ ] main.tf is in repository
 [ ] policies/main.rego exists
+[ ] .terraform.lock.hcl is committed
 [ ] Spacelift API credentials are available
 
 Local Environment Setup:
