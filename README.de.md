@@ -23,7 +23,7 @@ Erzeugt mit[Ritr](https://app.rytr.me)
 
 ## 100 - Einführung
 
-See [README.md](./100/README.md)
+Sehen[README.md](./100/README.md)
 
 ## 200 - Anforderungen
 
@@ -31,7 +31,7 @@ Sehen[README.md](./200/README.md)
 
 ## 300 - Aufbau unserer Bewerbung
 
-See [README.md](./300/README.md)
+Sehen[README.md](./300/README.md)
 
 ## 400 - Schlussfolgerung
 
