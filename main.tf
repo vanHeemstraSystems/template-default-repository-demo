@@ -28,12 +28,12 @@ variable "spacelift_workspace_root" {
   default = null
 }
 
-# Create resources
+# Create resources with Spacelift suffix
 resource "spacelift_stack" "main" {
-  name        = "template-default-repository-demo"
+  name        = "template-default-repository-demo-spacelift"
   repository  = "template-default-repository-demo"
   branch      = "main"
-  description = "React application deployment stack"
+  description = "React application deployment stack (Spacelift managed)"
 
   runner_image = "node:20"
   
@@ -43,17 +43,18 @@ resource "spacelift_stack" "main" {
   labels = [
     "react",
     "frontend",
-    "github-pages"
+    "github-pages",
+    "spacelift-managed"
   ]
 }
 
 resource "spacelift_context" "main" {
-  name        = "template-default-repository-demo-context"
-  description = "Shared configuration for React application"
+  name        = "template-default-repository-demo-context-spacelift"
+  description = "Shared configuration for React application (Spacelift managed)"
 }
 
 resource "spacelift_policy" "main" {
-  name  = "template-default-repository-demo-policy"
+  name  = "template-default-repository-demo-policy-spacelift"
   body  = file("${path.module}/policies/main.rego")
   type  = "PLAN"
 }
