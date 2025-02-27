@@ -126,12 +126,9 @@ terraform {
 # Configure the Spacelift provider
 provider "spacelift" {}
 
-# Debug data sources
-data "spacelift_current_stack" "this" {}
-
+# Debug outputs (without current_stack)
 output "debug_info" {
   value = {
-    current_stack = data.spacelift_current_stack.this
     api_endpoint  = coalesce(var.spacelift_api_endpoint, "default")
     workspace     = coalesce(var.spacelift_workspace_root, "default")
   }
