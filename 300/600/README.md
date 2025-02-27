@@ -545,6 +545,17 @@ spacelift_policy_attachment.main: Creation complete after 0s [id=template-defaul
 Apply complete! Resources: 5 added, 0 changed, 0 destroyed.
 ```
 
+Next steps:
+
+- Go to Spacelift UI
+- From "Stacks" choose "template-default-repository-demo"
+- Add the environment variables to the stack:
+<br/>NODE_ENV=production
+<br/>PUBLIC_URL=/template-default-repository-demo
+<br/>SPACELIFT_API_KEY_ENDPOINT=https://vanheemstrasystems.app.spacelift.io
+<br/>SPACELIFT_API_KEY_ID=01JMMMBYVHKJP25KE6QHVXM2PY
+<br/>SPACELIFT_API_KEY_SECRET=[your-secret-value] (mark as sensitive)
+
 - **IMPORTANT**: Click **Trigger** for the ```template-default-repository-demo``` to force a lookup of the repository on GitHub.
 
 3. Configure Spacelift to use these files.
