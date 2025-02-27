@@ -35,4 +35,4 @@
 
 ## 400 - الخلاصة
 
-See [README.md](./400/README.md)
+يرى[README.md](./400/README.md)
