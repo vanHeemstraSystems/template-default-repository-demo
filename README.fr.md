@@ -17,7 +17,7 @@ nom de référentiel
 
 **Résumé exécutif**
 
-Text
+Texte
 
 Généré avec[Ritr](https://app.rytr.me)
 
