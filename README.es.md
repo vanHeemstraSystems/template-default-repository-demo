@@ -1,6 +1,6 @@
 repositorio
 
-# Repository Name
+# Nombre de repositorio
 
 > Línea de babosa
 
@@ -17,15 +17,15 @@ repositorio
 
 **Resumen ejecutivo**
 
-Texto
+Text
 
 Generado con[Ritro](https://app.rytr.me)
 
 ## 100 - Introducción
 
-Ver[README.md](./100/README.md)
+See [README.md](./100/README.md)
 
-## 200 - Requirements
+## 200 - Requisitos
 
 Ver[README.md](./200/README.md)
 
