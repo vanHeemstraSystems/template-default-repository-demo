@@ -8,7 +8,7 @@ terraform {
 
 # Configure the Spacelift provider
 provider "spacelift" {
-  api_key_endpoint = var.spacelift_api_endpoint
+  api_key_endpoint = var.spacelift_api_key_endpoint
   api_key_id      = var.spacelift_api_key_id
   api_key_secret  = var.spacelift_api_key_secret
 }
@@ -16,13 +16,13 @@ provider "spacelift" {
 # Debug outputs (without current_stack)
 output "debug_info" {
   value = {
-    api_endpoint  = coalesce(var.spacelift_api_endpoint, "default")
+    api_endpoint  = coalesce(var.spacelift_api_key_endpoint, "default")
     workspace     = coalesce(var.spacelift_workspace_root, "default")
   }
 }
 
 # Add variables for debugging
-variable "spacelift_api_endpoint" {
+variable "spacelift_api_key_endpoint" {
   type = string
 }
 
