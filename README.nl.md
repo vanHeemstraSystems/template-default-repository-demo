@@ -15,11 +15,11 @@ repository-naam
 -   [Vereisten](./REQUIREMENTS.md)
 -   [Telemetrie](./TELEMETRY.md)
 
-**Executive Summary**
+**Uitvoerende samenvatting**
 
 Tekst
 
-Gegenereerd met[Rytr](https://app.rytr.me)
+Gegenereerd met[Ritr](https://app.rytr.me)
 
 ## 100 - Inleiding
 
@@ -31,8 +31,8 @@ Zien[README.md](./200/README.md)
 
 ## 300 - onze applicatie bouwen
 
-See [README.md](./300/README.md)
+Zien[README.md](./300/README.md)
 
 ## 400 - Conclusie
 
-See [README.md](./400/README.md)
+Zien[README.md](./400/README.md)
