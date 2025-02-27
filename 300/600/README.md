@@ -90,37 +90,10 @@ terraform {
   }
 }
 
-# Configure the Spacelift provider with debug logging
+# Configure the Spacelift provider
 provider "spacelift" {}
 
-# Data source to check if stack exists
-data "spacelift_stack" "existing" {
-  count = can(spacelift_stack.main) ? 0 : 1
-  name  = "template-default-repository-demo"
-}
-
-# Data source to check if context exists
-data "spacelift_context" "existing" {
-  count = can(spacelift_context.main) ? 0 : 1
-  name  = "template-default-repository-demo-context"
-}
-
-# Data source to check if policy exists
-data "spacelift_policy" "existing" {
-  count = can(spacelift_policy.main) ? 0 : 1
-  name  = "template-default-repository-demo-policy"
-}
-
-# Output debug information
-output "debug_info" {
-  value = {
-    stack_exists   = length(data.spacelift_stack.existing) > 0
-    context_exists = length(data.spacelift_context.existing) > 0
-    policy_exists  = length(data.spacelift_policy.existing) > 0
-  }
-}
-
-# Create the stack with existence check
+# Create resources
 resource "spacelift_stack" "main" {
   name        = "template-default-repository-demo"
   repository  = "template-default-repository-demo"
@@ -131,62 +104,31 @@ resource "spacelift_stack" "main" {
   
   administrative = true
   autodeploy     = true
-  
-  # Remove worker_pool_id completely as it might be managed by the UI
-  # worker_pool_id = "public-worker-pool"
 
   labels = [
     "react",
     "frontend",
     "github-pages"
   ]
-
-  enable_well_known_secret_masking = true
-  terraform_smart_sanitization     = true
-  github_action_deploy             = false  # Keep false unless needed
-
-  lifecycle {
-    precondition {
-      condition     = length(data.spacelift_stack.existing) == 0
-      error_message = "Stack already exists"
-    }
-  }
 }
 
-# Create a context with existence check
 resource "spacelift_context" "main" {
   name        = "template-default-repository-demo-context"
   description = "Shared configuration for React application"
-
-  lifecycle {
-    precondition {
-      condition     = length(data.spacelift_context.existing) == 0
-      error_message = "Context already exists"
-    }
-  }
 }
 
-# Attach the context to the stack
+resource "spacelift_policy" "main" {
+  name  = "template-default-repository-demo-policy"
+  body  = file("${path.module}/policies/main.rego")
+  type  = "PLAN"
+}
+
+# Attachments
 resource "spacelift_context_attachment" "main" {
   context_id = spacelift_context.main.id
   stack_id   = spacelift_stack.main.id
 }
 
-# Create policies with existence check
-resource "spacelift_policy" "main" {
-  name = "template-default-repository-demo-policy"
-  body = file("${path.module}/policies/main.rego")
-  type = "PLAN"
-
-  lifecycle {
-    precondition {
-      condition     = length(data.spacelift_policy.existing) == 0
-      error_message = "Policy already exists"
-    }
-  }
-}
-
-# Attach the policy to the stack
 resource "spacelift_policy_attachment" "main" {
   policy_id = spacelift_policy.main.id
   stack_id  = spacelift_stack.main.id
@@ -264,7 +206,7 @@ For your React application deployment, since we have a ```main.tf``` file that u
 
 - OpenTofu / Terraform
 
-This is the appropriate choice because, your main.tf file is written in Terraform/OpenTofu syntax. We're using the spacelift Terraform provider in the configuration. We need to manage Spacelift resources (stack, context, policies) using Infrastructure as Code
+This is the appropriate choice because, your ```main.tf``` file is written in Terraform/OpenTofu syntax. We're using the spacelift Terraform provider in the configuration. We need to manage Spacelift resources (stack, context, policies) using Infrastructure as Code
 
 - Workflowtool: OpenTofu
 
@@ -327,12 +269,164 @@ export SPACELIFT_API_KEY_ID="your-api-key-id"
 export SPACELIFT_API_KEY_SECRET="your-api-key-secret"
 ```
 
-
 Now run the ```cleanup.sh``` script locally to ensure there are no outdated settings or residu of previous rounds.
 
 ```
+$ chmod +x cleanup.sh # Optional, to make the script executionable
 $ ./cleanup.sh
 ```
+
+You will see something like below:
+
+```
+🧹 Starting cleanup...
+Cleaning local OpenTofu files...
+Initializing OpenTofu...
+
+Initializing the backend...
+
+Initializing provider plugins...
+- Finding latest version of spacelift-io/spacelift...
+- Installing spacelift-io/spacelift v1.20.0...
+[WARN] Provider spacelift-io/spacelift (registry.opentofu.org) gpg key expired, this will fail in future versions of OpenTofu
+- Installed spacelift-io/spacelift v1.20.0 (signed, key ID E302FB5AA29D88F7)
+
+Providers are signed by their developers.
+If you'd like to know more about provider signing, you can read about it here:
+https://opentofu.org/docs/cli/plugins/signing/
+
+OpenTofu has created a lock file .terraform.lock.hcl to record the provider
+selections it made above. Include this file in your version control repository
+so that OpenTofu can guarantee to make the same selections by default when
+you run "tofu init" in the future.
+
+OpenTofu has been successfully initialized!
+
+You may now begin working with OpenTofu. Try running "tofu plan" to see
+any changes that are required for your infrastructure. All OpenTofu commands
+should now work.
+
+If you ever set or change modules or backend configuration for OpenTofu,
+rerun this command to reinitialize your working directory. If you forget, other
+commands will detect it and remind you to do so if necessary.
+Verifying Spacelift credentials...
+✅ Cleanup complete! You can now run:
+tofu plan    # to see changes
+tofu apply   # to apply changes
+```
+
+Now lets run a plan to see what our debug output shows:
+
+```
+$ tofu plan
+```
+
+You will be prompted somewhat like this:
+
+```
+OpenTofu used the selected providers to generate the following execution plan. Resource
+actions are indicated with the following symbols:
+  + create
+
+OpenTofu will perform the following actions:
+
+  # spacelift_context.main will be created
+  + resource "spacelift_context" "main" {
+      + description = "Shared configuration for React application"
+      + id          = (known after apply)
+      + name        = "template-default-repository-demo-context"
+      + space_id    = (known after apply)
+    }
+
+  # spacelift_context_attachment.main will be created
+  + resource "spacelift_context_attachment" "main" {
+      + context_id = (known after apply)
+      + id         = (known after apply)
+      + priority   = 0
+      + stack_id   = (known after apply)
+    }
+
+  # spacelift_policy.main will be created
+  + resource "spacelift_policy" "main" {
+      + body     = <<-EOT
+            package spacelift
+            
+            # Allow all pushes to main branch
+            allow_push[msg] {
+                input.push.ref == "refs/heads/main"
+                msg := "Allowing push to main branch"
+            }
+            
+            # Require pull request reviews
+            require_review {
+                input.pull_request.reviews_count < 1
+            }
+            
+            # Define deployment environments
+            deployment_environment(stack) = "production" {
+                stack.branch == "main"
+            }
+            
+            # Define access controls
+            allow_access[msg] {
+                input.user.role == "admin"
+                msg := "Admin access granted"
+            }
+        EOT
+      + id       = (known after apply)
+      + name     = "template-default-repository-demo-policy"
+      + space_id = (known after apply)
+      + type     = "PLAN"
+    }
+
+  # spacelift_policy_attachment.main will be created
+  + resource "spacelift_policy_attachment" "main" {
+      + id        = (known after apply)
+      + policy_id = (known after apply)
+      + stack_id  = (known after apply)
+    }
+
+  # spacelift_stack.main will be created
+  + resource "spacelift_stack" "main" {
+      + administrative                   = true
+      + autodeploy                       = true
+      + autoretry                        = false
+      + aws_assume_role_policy_statement = (known after apply)
+      + branch                           = "main"
+      + description                      = "React application deployment stack"
+      + enable_local_preview             = false
+      + enable_well_known_secret_masking = false
+      + github_action_deploy             = true
+      + id                               = (known after apply)
+      + labels                           = [
+          + "frontend",
+          + "github-pages",
+          + "react",
+        ]
+      + manage_state                     = true
+      + name                             = "template-default-repository-demo"
+      + protect_from_deletion            = false
+      + repository                       = "template-default-repository-demo"
+      + runner_image                     = "node:20"
+      + slug                             = (known after apply)
+      + space_id                         = (known after apply)
+      + terraform_external_state_access  = false
+      + terraform_smart_sanitization     = false
+      + terraform_workflow_tool          = (known after apply)
+    }
+
+Plan: 5 to add, 0 to change, 0 to destroy.
+
+──────────────────────────────────────────────────────────────────────────────────────────────
+
+Note: You didn't use the -out option to save this plan, so OpenTofu can't guarantee to take
+exactly these actions if you run "tofu apply" now.
+```
+
+
+
+
+
 
 - **IMPORTANT**: Click **Trigger** for the ```template-default-repository-demo``` to force a lookup of the repository on GitHub.
 
