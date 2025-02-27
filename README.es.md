@@ -1,6 +1,6 @@
 repositorio
 
-# Repository Name
+# Nombre de repositorio
 
 > Línea de babosa
 
@@ -8,18 +8,18 @@ repositorio
 -   [Documentación](./DOCUMENTATION.md)
 -   [Glosario](./GLOSSARY.md)
 -   [Anfitriones](./HOSTS.md)
--   [Images](./IMAGES.md)
+-   [Imágenes](./IMAGES.md)
 -   [Nx](./NX.md)
 -   [Submario](./PODMAN.md)
 -   [Referencias](./REFERENCES.md)
 -   [Requisitos](./REQUIREMENTS.md)
--   [Telemetría](./TELEMETRY.md)
+-   [Telemetry](./TELEMETRY.md)
 
 **Resumen ejecutivo**
 
 Texto
 
-Generado con[Ritro](https://app.rytr.me)
+Generado con[Rytr](https://app.rytr.me)
 
 ## 100 - Introducción
 
