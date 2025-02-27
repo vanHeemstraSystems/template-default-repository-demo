@@ -126,6 +126,28 @@ terraform {
 # Configure the Spacelift provider
 provider "spacelift" {}
 
+# Debug data sources
+data "spacelift_current_stack" "this" {}
+
+output "debug_info" {
+  value = {
+    current_stack = data.spacelift_current_stack.this
+    api_endpoint  = coalesce(var.spacelift_api_endpoint, "default")
+    workspace     = coalesce(var.spacelift_workspace_root, "default")
+  }
+}
+
+# Add variables for debugging
+variable "spacelift_api_endpoint" {
+  type    = string
+  default = null
+}
+
+variable "spacelift_workspace_root" {
+  type    = string
+  default = null
+}
+
 # Create resources
 resource "spacelift_stack" "main" {
   name        = "template-default-repository-demo"
@@ -301,6 +323,19 @@ export SPACELIFT_API_KEY_ENDPOINT="https://vanheemstrasystems.app.spacelift.io"
 export SPACELIFT_API_KEY_ID="your-api-key-id"
 export SPACELIFT_API_KEY_SECRET="your-api-key-secret"
 ```
+---------- START: Optional --------------
+
+# Enable DEBUG level logging
+export TF_LOG=DEBUG
+
+# Set log file path
+export TF_LOG_PATH=./terraform.log
+
+# Verify the environment variables are set
+echo "TF_LOG=$TF_LOG"
+echo "TF_LOG_PATH=$TF_LOG_PATH"
+
+---------- END: Optional ----------------
 
 Now run the ```cleanup.sh``` script locally to ensure there are no outdated settings or residu of previous rounds.
 

@@ -9,6 +9,28 @@ terraform {
 # Configure the Spacelift provider
 provider "spacelift" {}
 
+# Debug data sources
+data "spacelift_current_stack" "this" {}
+
+output "debug_info" {
+  value = {
+    current_stack = data.spacelift_current_stack.this
+    api_endpoint  = coalesce(var.spacelift_api_endpoint, "default")
+    workspace     = coalesce(var.spacelift_workspace_root, "default")
+  }
+}
+
+# Add variables for debugging
+variable "spacelift_api_endpoint" {
+  type    = string
+  default = null
+}
+
+variable "spacelift_workspace_root" {
+  type    = string
+  default = null
+}
+
 # Create resources
 resource "spacelift_stack" "main" {
   name        = "template-default-repository-demo"
