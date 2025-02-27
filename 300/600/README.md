@@ -401,12 +401,6 @@ We need to configure the Spacelift provider with credentials. You'll need:
 <br/>- Select "API Keys"
 <br/>- Create a new API key if you don't have one
 
-- Set environment variables:
-```
-export SPACELIFT_API_KEY_ENDPOINT="https://vanheemstrasystems.app.spacelift.io"
-export SPACELIFT_API_KEY_ID="your-api-key-id"
-export SPACELIFT_API_KEY_SECRET="your-api-key-secret"
-```
 ---------- START: Optional --------------
 
 # Enable DEBUG level logging
@@ -833,12 +827,12 @@ Next steps:
 
 - Go to Spacelift UI
 - From "Stacks" choose "template-default-repository-demo"
-- Add the environment variables to the stack:
+- Add the environment variables to the stack (Case-sensitive !!):
 <br/>NODE_ENV=production
 <br/>PUBLIC_URL=/template-default-repository-demo
-<br/>SPACELIFT_API_KEY_ENDPOINT=https://vanheemstrasystems.app.spacelift.io
-<br/>SPACELIFT_API_KEY_ID=01JMMMBYVHKJP25KE6QHVXM2PY
-<br/>SPACELIFT_API_KEY_SECRET=[your-secret-value] (mark as sensitive)
+<br/>TF_VAR_spacelift_api_key_endpoint=https://vanheemstrasystems.app.spacelift.io
+<br/>TF_VAR_spacelift_api_key_id=01JMMMBYVHKJP25KE6QHVXM2PY
+<br/>TF_VAR_spacelift_api_key_secret=[your-secret-value] (mark as sensitive)
 
 For the blocking runs, we can:
 
@@ -883,12 +877,12 @@ This will help clear the queue and allow new runs to proceed.
 Now that the stack is created, let's trigger a run to create the context and policy:
 1. Go to the stack
 2. Go to Stack Settings > Environment
-- Add these variables:
+- Add these variables (Case-sensitive !!):
 <br/>NODE_ENV=production
 <br/>PUBLIC_URL=/template-default-repository-demo
-<br/>SPACELIFT_API_KEY_ENDPOINT=https://vanheemstrasystems.app.spacelift.io
-<br/>SPACELIFT_API_KEY_ID=01JMMMBYVHKJP25KE6QHVXM2PY
-<br/>SPACELIFT_API_KEY_SECRET=[your-secret-value]
+<br/>TF_VAR_spacelift_api_key_endpoint=https://vanheemstrasystems.app.spacelift.io
+<br/>TF_VAR_spacelift_api_key_id=01JMMMBYVHKJP25KE6QHVXM2PY
+<br/>TF_VAR_spacelift_api_key_secret=[your-secret-value] (mark as sensitive)
 <br/>Mark as Sensitive:
 <br/>SPACELIFT_API_KEY_SECRET should be marked as sensitive
 2. Click "Trigger"
