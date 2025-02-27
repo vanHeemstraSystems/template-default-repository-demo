@@ -573,7 +573,7 @@ your OpenTofu state and will henceforth be managed by OpenTofu.
 Now lets run a plan to see what our debug output shows:
 
 ```
-$ tofu plan
+$ tofu plan -var-file="terraform.tfvars"
 ```
 
 You will be prompted somewhat like this:
@@ -688,7 +688,7 @@ exactly these actions if you run "tofu apply" now.
 Now lets apply the plan to see what our debug output shows:
 
 ```
-$ tofu apply
+$ tofu apply -var-file="terraform.tfvars"
 ```
 
 When prompted, type ```yes``` to confirm.
