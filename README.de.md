@@ -7,11 +7,11 @@ Repository-Namen
 -   [DNS](./DNS.md)
 -   [Dokumentation](./DOCUMENTATION.md)
 -   [Glossar](./GLOSSARY.md)
--   [Hosts](./HOSTS.md)
--   [Images](./IMAGES.md)
+-   [Gastgeber](./HOSTS.md)
+-   [Bilder](./IMAGES.md)
 -   [NX](./NX.md)
 -   [Subman](./PODMAN.md)
--   [References](./REFERENCES.md)
+-   [Referenzen](./REFERENCES.md)
 -   [Anforderungen](./REQUIREMENTS.md)
 -   [Telemetrie](./TELEMETRY.md)
 
@@ -23,16 +23,16 @@ Erzeugt mit[Ritr](https://app.rytr.me)
 
 ## 100 - Einführung
 
-See [README.md](./100/README.md)
+Sehen[README.md](./100/README.md)
 
 ## 200 - Anforderungen
 
-See [README.md](./200/README.md)
+Sehen[README.md](./200/README.md)
 
-## 300 - Aufbau unserer Bewerbung
+## 300 - Building Our Application
 
 Sehen[README.md](./300/README.md)
 
 ## 400 - Schlussfolgerung
 
-See [README.md](./400/README.md)
+Sehen[README.md](./400/README.md)
