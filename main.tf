@@ -7,7 +7,11 @@ terraform {
 }
 
 # Configure the Spacelift provider
-provider "spacelift" {}
+provider "spacelift" {
+  api_key_endpoint = var.spacelift_api_endpoint
+  api_key_id      = var.spacelift_api_key_id
+  api_key_secret  = var.spacelift_api_key_secret
+}
 
 # Debug outputs (without current_stack)
 output "debug_info" {
@@ -19,8 +23,16 @@ output "debug_info" {
 
 # Add variables for debugging
 variable "spacelift_api_endpoint" {
-  type    = string
-  default = null
+  type = string
+}
+
+variable "spacelift_api_key_id" {
+  type = string
+}
+
+variable "spacelift_api_key_secret" {
+  type = string
+  sensitive = true
 }
 
 variable "spacelift_workspace_root" {
