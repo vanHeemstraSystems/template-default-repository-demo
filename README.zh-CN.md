@@ -13,7 +13,7 @@ repository-name
 -   [Subman](./PODMAN.md)
 -   [参考](./REFERENCES.md)
 -   [要求](./REQUIREMENTS.md)
--   [Telemetry](./TELEMETRY.md)
+-   [遥测](./TELEMETRY.md)
 
 **执行摘要**
 
@@ -31,7 +31,7 @@ repository-name
 
 ## 300-构建我们的应用程序
 
-See [README.md](./300/README.md)
+看[README.md](./300/README.md)
 
 ## 400-结论
 
