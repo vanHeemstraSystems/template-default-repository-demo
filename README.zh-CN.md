@@ -19,7 +19,7 @@ repository-name
 
 文本
 
-Generated with [ritr](https://app.rytr.me)
+生成[ritr](https://app.rytr.me)
 
 ## 100-简介
 
@@ -29,10 +29,10 @@ Generated with [ritr](https://app.rytr.me)
 
 看[README.md](./200/README.md)
 
-## 300-构建我们的应用程序
+## 300 - Building Our Application
 
 看[README.md](./300/README.md)
 
 ## 400-结论
 
-看[README.md](./400/README.md)
+See [README.md](./400/README.md)
