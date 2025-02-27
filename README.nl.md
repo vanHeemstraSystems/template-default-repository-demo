@@ -8,7 +8,7 @@ repository-naam
 -   [Documentatie](./DOCUMENTATION.md)
 -   [Glossarium](./GLOSSARY.md)
 -   [Gastheren](./HOSTS.md)
--   [Beelden](./IMAGES.md)
+-   [Images](./IMAGES.md)
 -   [Nx](./NX.md)
 -   [Subman](./PODMAN.md)
 -   [Referenties](./REFERENCES.md)
@@ -25,7 +25,7 @@ Gegenereerd met[Ritr](https://app.rytr.me)
 
 Zien[README.md](./100/README.md)
 
-## 200 - Requirements
+## 200 - Vereisten
 
 Zien[README.md](./200/README.md)
 
