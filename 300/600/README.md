@@ -88,6 +88,27 @@ repository-name/stack.yml
 ```
 package spacelift
 
+# Skip runs for documentation and translation changes
+skip_run {
+    # Get the list of changed files
+    files := input.push.changed_files
+
+    # Skip if ALL changes are documentation or translation related
+    all([
+        is_doc_or_translation(file)
+    ]) { file := files[_] }
+}
+
+# Helper to identify documentation or translation files
+is_doc_or_translation(file) {
+    any([
+        endswith(file, ".md"),
+        contains(file, "README."),
+        contains(file, "DOCUMENTATION."),
+        contains(input.push.commit_message, "[skip spacelift]")
+    ])
+}
+
 # Allow pushes only for specific file changes
 allow_push[msg] {
     # Get the list of changed files
@@ -101,19 +122,6 @@ allow_push[msg] {
     ])
 
     msg := "Changes affect Spacelift-managed files"
-}
-
-# Skip runs for documentation changes
-skip_run {
-    files := input.push.changed_files
-    all([
-        file_is_doc(files[_])
-    ])
-}
-
-# Helper to identify documentation files
-file_is_doc(file) {
-    endswith(file, ".md")
 }
 
 # Require pull request reviews
