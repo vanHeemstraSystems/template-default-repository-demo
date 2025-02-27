@@ -15,7 +15,7 @@
 -   [متطلبات](./REQUIREMENTS.md)
 -   [القياس عن بعد](./TELEMETRY.md)
 
-**ملخص تنفيذي**
+**Executive Summary**
 
 نص
 
