@@ -23,7 +23,7 @@
 
 ## 100 - परिचय
 
-See [README.md](./100/README.md)
+देखना[README.md](./100/README.md)
 
 ## 200 - आवश्यकताएँ
 
