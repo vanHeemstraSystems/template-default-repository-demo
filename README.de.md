@@ -12,20 +12,20 @@ Repository-Namen
 -   [NX](./NX.md)
 -   [Subman](./PODMAN.md)
 -   [Referenzen](./REFERENCES.md)
--   [Anforderungen](./REQUIREMENTS.md)
+-   [Requirements](./REQUIREMENTS.md)
 -   [Telemetrie](./TELEMETRY.md)
 
 **Zusammenfassung**
 
 Text
 
-Erzeugt mit[Ritr](https://app.rytr.me)
+Generated with [Ritr](https://app.rytr.me)
 
 ## 100 - Einführung
 
 Sehen[README.md](./100/README.md)
 
-## 200 - Anforderungen
+## 200 - Requirements
 
 Sehen[README.md](./200/README.md)
 
