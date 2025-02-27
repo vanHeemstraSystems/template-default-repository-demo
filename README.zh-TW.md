@@ -7,9 +7,9 @@ repository-name
 -   [DNS](./DNS.md)
 -   [文件](./DOCUMENTATION.md)
 -   [詞彙表](./GLOSSARY.md)
--   [主持人](./HOSTS.md)
+-   [Hosts](./HOSTS.md)
 -   [圖像](./IMAGES.md)
--   [nx](./NX.md)
+-   [Nx](./NX.md)
 -   [Subman](./PODMAN.md)
 -   [參考](./REFERENCES.md)
 -   [要求](./REQUIREMENTS.md)
@@ -23,7 +23,7 @@ repository-name
 
 ## 100-簡介
 
-看[README.md](./100/README.md)
+See [README.md](./100/README.md)
 
 ## 200-要求
 
@@ -31,7 +31,7 @@ repository-name
 
 ## 300-構建我們的應用程序
 
-看[README.md](./300/README.md)
+See [README.md](./300/README.md)
 
 ## 400-結論
 
