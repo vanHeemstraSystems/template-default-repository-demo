@@ -5,7 +5,7 @@ repositorio
 > Línea de babosa
 
 -   [DNS](./DNS.md)
--   [Documentación](./DOCUMENTATION.md)
+-   [Documentation](./DOCUMENTATION.md)
 -   [Glosario](./GLOSSARY.md)
 -   [Anfitriones](./HOSTS.md)
 -   [Imágenes](./IMAGES.md)
@@ -19,7 +19,7 @@ repositorio
 
 Texto
 
-Generado con[Ritro](https://app.rytr.me)
+Generated with [Rytr](https://app.rytr.me)
 
 ## 100 - Introducción
 
