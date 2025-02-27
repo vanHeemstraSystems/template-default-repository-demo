@@ -9,11 +9,11 @@ Repository-Namen
 -   [Glossar](./GLOSSARY.md)
 -   [Gastgeber](./HOSTS.md)
 -   [Bilder](./IMAGES.md)
--   [Nx](./NX.md)
+-   [NX](./NX.md)
 -   [Subman](./PODMAN.md)
 -   [Referenzen](./REFERENCES.md)
 -   [Anforderungen](./REQUIREMENTS.md)
--   [Telemetry](./TELEMETRY.md)
+-   [Telemetrie](./TELEMETRY.md)
 
 **Zusammenfassung**
 
@@ -27,7 +27,7 @@ Sehen[README.md](./100/README.md)
 
 ## 200 - Anforderungen
 
-See [README.md](./200/README.md)
+Sehen[README.md](./200/README.md)
 
 ## 300 - Aufbau unserer Bewerbung
 
