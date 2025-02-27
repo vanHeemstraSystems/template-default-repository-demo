@@ -12,7 +12,7 @@
 -   [NX](./NX.md)
 -   [رجل فرعي](./PODMAN.md)
 -   [مراجع](./REFERENCES.md)
--   [متطلبات](./REQUIREMENTS.md)
+-   [Requirements](./REQUIREMENTS.md)
 -   [القياس عن بعد](./TELEMETRY.md)
 
 **ملخص تنفيذي**
@@ -25,7 +25,7 @@
 
 يرى[README.md](./100/README.md)
 
-## 200 - Requirements
+## 200 - المتطلبات
 
 يرى[README.md](./200/README.md)
 
@@ -33,6 +33,6 @@
 
 يرى[README.md](./300/README.md)
 
-## 400 - الخلاصة
+## 400 - Conclusion
 
 يرى[README.md](./400/README.md)
