@@ -54,14 +54,60 @@ Make sure you have a project.json file in your hatch-project/src/hatch_project d
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "outputPath": "dist/hatch_project"
+        "outputPath": "dist/hatch_project",
+        "compiler": "babel",
+        "main": "hatch-project/src/hatch_project/src/main.ts",
+        "tsConfig": "hatch-project/src/hatch_project/tsconfig.app.json",
+        "webpackConfig": "hatch-project/src/hatch_project/webpack.config.js",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "hatch-project/src/hatch_project/src/assets",
+            "output": "assets"
+          }
+        ],
+        "index": "hatch-project/src/hatch_project/src/index.html"
+      },
+      "configurations": {
+        "production": {
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "extractCss": true,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false,
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "2mb",
+              "maximumError": "5mb"
+            }
+          ]
+        },
+        "development": {
+          "optimization": false,
+          "sourceMap": true,
+          "extractCss": false
+        }
       }
     },
     "serve": {
       "executor": "@nx/webpack:dev-server",
       "options": {
-        "buildTarget": "hatch_project:build"
-      }
+        "buildTarget": "hatch_project:build",
+        "hmr": true,
+        "port": 4200
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "hatch_project:build:production"
+        },
+        "development": {
+          "buildTarget": "hatch_project:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
     }
   }
 }
