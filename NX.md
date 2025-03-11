@@ -113,6 +113,19 @@ Make sure you have a project.json file in your hatch-project/src/hatch_project d
 }
 ```
 
+Create a basic webpack.config.js file in your project:
+
+```javascript
+const { composePlugins, withNx } = require('@nx/webpack');
+
+// Nx plugins for webpack.
+module.exports = composePlugins(withNx(), (config) => {
+  // Update the webpack config as needed here.
+  // e.g. `config.plugins.push(new MyPlugin())`
+  return config;
+});
+```
+
 4. To serve the application in development mode:
 ```bash
 npx nx serve hatch_project
