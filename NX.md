@@ -40,6 +40,50 @@ npm ci  # This installs dependencies exactly as specified in package-lock.json
 npm install -g @nrwl/cli
 ```
 
+Make sure you have a tsconfig.base.json file in your hatch-project/src/hatch_project directory. If not, create one:
+
+```json
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {}
+  },
+  "exclude": ["node_modules", "tmp"]
+}
+```
+
+Make sure you have a tsconfig.app.json file in your hatch-project/src/hatch_project directory. If not, create one:
+
+```json
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "../../dist/out-tsc",
+    "types": ["node"],
+    "module": "esnext",
+    "target": "es2015",
+    "lib": ["es2020", "dom"],
+    "sourceMap": true,
+    "declaration": false
+  },
+  "exclude": ["**/*.spec.ts", "**/*.test.ts"],
+  "include": ["**/*.ts"]
+}
+```
+
 Make sure you have a project.json file in your hatch-project/src/hatch_project directory. If not, create one:
 
 ```json
