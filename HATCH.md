@@ -51,7 +51,7 @@ pip install hatch-project
 
 `hatch-project` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
 ```
-hatch_project/README.md
+hatch-project/README.md
 
 ```
 [build-system]
@@ -116,7 +116,7 @@ exclude_lines = [
   "if TYPE_CHECKING:",
 ]
 ```
-hatch_project/pyproject.toml
+hatch-project/pyproject.toml
 
 ```
 MIT License
@@ -141,7 +141,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
-hatch_project/LICENSE.txt
+hatch-project/LICENSE.txt
 
 ```
 # SPDX-FileCopyrightText: 2025-present Willem van Heemstra <wvanheemstra@icloud.com>
@@ -149,21 +149,21 @@ hatch_project/LICENSE.txt
 # SPDX-License-Identifier: MIT
 __version__ = "0.0.1"
 ```
-hatch_project/src/hatch_project/\_\_about__.py
+hatch-project/src/hatch_project/\_\_about__.py
 
 ```
 # SPDX-FileCopyrightText: 2025-present Willem van Heemstra <wvanheemstra@icloud.com>
 #
 # SPDX-License-Identifier: MIT
 ```
-hatch_project/src/hatch_project/\_\_init__.py
+hatch-project/src/hatch_project/\_\_init__.py
 
 ```
 # SPDX-FileCopyrightText: 2025-present Willem van Heemstra <wvanheemstra@icloud.com>
 #
 # SPDX-License-Identifier: MIT
 ```
-hatch_project/tests/hatch_project/\_\_init__.py
+hatch-project/tests/hatch_project/\_\_init__.py
 
 Once you’ve created your Python application, open the ```pyproject.toml``` file. You should see that a lot of your project configuration values, such as dependencies and the Python version, are prefilled by Hatch. You’ll also notice other sections with the pattern ```[tool.hatch.*]```, which is where you’ll configure your project to use different Python dependencies, environments, and Python versions.
 
