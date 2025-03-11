@@ -189,6 +189,12 @@ This will:
 - Configure webpack, TypeScript, and other dependencies
 - Create default components and configuration files
 
+After creation, you can run it with:
+
+```
+$ npx nx serve my-app
+```
+
 4. To serve the application in development mode:
 ```bash
 npx nx serve hatch_project

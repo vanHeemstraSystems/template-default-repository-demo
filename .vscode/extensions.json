@@ -1,7 +1,7 @@
 {
     "recommendations": [
         "ckolkman.vscode-postgres"
-    ]
+    ],
     "yaml.schemas": {
         "./.threagile/schema.json": ["threagile.yaml"]
     }
