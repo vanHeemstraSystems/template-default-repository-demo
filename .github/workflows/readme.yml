@@ -6,6 +6,11 @@ on:
     branches:
       - main
       - master
+      paths:
+        - 'README.md'  # Only trigger on README.md changes
+      paths-ignore:
+        - 'docs/**'    # Ignore changes in docs directory
+              
 jobs:
   build:
     runs-on: ubuntu-latest

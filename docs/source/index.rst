@@ -1,22 +1,17 @@
-Welcome to PROJECT_NAME's documentation!
-===================================
-
-**PROJECT_NAME** (/pro'ject/) is a NOUN for PURPOSE
-that LIST_OF_FEATURES.
-See EXTERNAL_RELATIONS at `LINK_TITLE <https://www.example.com/>`_
-and offers a *ADJECTIVE* and *ADJECTIVE* BENEFIT.
-
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
-
-.. note::
-
-   This project is under active development.
-
-Contents
---------
+Welcome to Your Project Documentation
+======================================
 
 .. toctree::
+   :maxdepth: 2
+   :caption: Contents
 
-   usage
-   api
+   100/index
+   200/index
+   300/index
+   400/index
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`search`
