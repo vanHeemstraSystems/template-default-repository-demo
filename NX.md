@@ -40,6 +40,33 @@ npm ci  # This installs dependencies exactly as specified in package-lock.json
 npm install -g @nrwl/cli
 ```
 
+Make sure you have a project.json file in your hatch-project/src/hatch_project directory. If not, create one:
+
+```json
+{
+  "name": "hatch_project",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "hatch-project/src/hatch_project/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/webpack:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/hatch_project"
+      }
+    },
+    "serve": {
+      "executor": "@nx/webpack:dev-server",
+      "options": {
+        "buildTarget": "hatch_project:build"
+      }
+    }
+  }
+}
+```
+
 4. To serve the application in development mode:
 ```bash
 npx nx serve hatch_project
@@ -49,6 +76,12 @@ This will:
 - Start a development server
 - Usually be available at http://localhost:4200
 - Auto-reload when you make changes
+
+If that doesn't work, we might need to check if Nx recognizes the project:
+
+```bash
+npx nx show project hatch_project
+```
 
 5. Alternatively, if you want to build the application:
 ```bash
