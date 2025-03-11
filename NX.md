@@ -189,6 +189,11 @@ This will:
 - Configure webpack, TypeScript, and other dependencies
 - Create default components and configuration files
 
+All the necessary files were created in hatch-project/src/hatch_project/apps/my-app/. You can start developing by editing:
+- apps/my-app/src/app/app.tsx - Main application component
+- apps/my-app/src/styles.css - Global styles
+- apps/my-app/src/main.tsx - Application entry point
+
 After creation, you can run it with:
 
 ```
