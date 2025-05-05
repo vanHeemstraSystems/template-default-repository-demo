@@ -65,7 +65,7 @@ emotion           [ https://emotion.sh                       ]
 styled-jsx        [ https://www.npmjs.com/package/styled-jsx ]
 ```
 
-Highlight **tailwindcss** with the arrow keys and click ENTER.
+Highlight **tailwind** with the arrow keys and click ENTER.
 
 ```
 ? Which unit test runner would you like to use? ...
@@ -75,6 +75,15 @@ None
 ```
 
 Highlight **Jest** with the arrow keys and click ENTER.
+
+? Would you like to use Prettier for code formatting? ...
+
+```
+Yes
+No
+```
+
+Highlight **Yes** with the arrow keys and click ENTER.
 
 ```
 ? Which CI provider would you like to use? ...
