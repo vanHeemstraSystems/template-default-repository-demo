@@ -9,5 +9,5 @@
 
 You can also install Hatch as an application on [Windows and Mac](https://hatch.pypa.io/latest/install/#installers) operating systems. [Conda](https://hatch.pypa.io/latest/install/#conda), [pipx](https://hatch.pypa.io/latest/install/#pipx), [Homebrew](https://hatch.pypa.io/latest/install/#homebrew), [MacPorts](https://hatch.pypa.io/latest/install/#macports), [Fedora](https://hatch.pypa.io/latest/install/#fedora), and [Void Linux](https://hatch.pypa.io/latest/install/#void-linux) installation methods are also available.
 
-We'll **not** add ```hatch``` to the ```requirements.txt``` file, as it is used purely to manage the development and build of the application but is not part of the aplication.
+We'll **not** add ```hatch``` to the ```requirements.txt``` file, as it is used purely to manage the development and build of the application but is not part of the application.
 
