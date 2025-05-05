@@ -166,5 +166,3 @@ hatch-project/src/hatch_project/\_\_init__.py
 hatch-project/tests/hatch_project/\_\_init__.py
 
 Once you’ve created your Python application, open the ```pyproject.toml``` file. You should see that a lot of your project configuration values, such as dependencies and the Python version, are prefilled by Hatch. You’ll also notice other sections with the pattern ```[tool.hatch.*]```, which is where you’ll configure your project to use different Python dependencies, environments, and Python versions.
-
-More ...
