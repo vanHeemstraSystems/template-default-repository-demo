@@ -67,6 +67,14 @@ styled-jsx        [ https://www.npmjs.com/package/styled-jsx ]
 
 Highlight **tailwindcss** with the arrow keys and click ENTER.
 
+```
+? Which unit test runner would you like to use? ...
+Jest   [https://jestjs.io/ ]
+Vitest [https://vitest.dev/ ]
+None
+```
+
+Highlight **Jest** with the arrow keys and click ENTER.
 
 ```
 ? Which CI provider would you like to use? ...
