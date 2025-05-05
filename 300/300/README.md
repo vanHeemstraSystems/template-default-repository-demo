@@ -359,7 +359,7 @@ Your directory structure might look like this:
 │        └── hatch_project/
 │            ├── REMOVE: nx.json
 │            ├── REMOVE: workspace.json
-│            ├── REMOVE: tsconfig.base.json
+│            ├── tsconfig.base.json
 │            ├── app1/
 │            │   └── src/
 │            │       └── main.tsx
