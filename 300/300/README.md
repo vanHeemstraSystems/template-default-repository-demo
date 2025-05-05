@@ -35,6 +35,15 @@ Rspack  [ https://www.rspack.dev/ ]
 Highlight **Webpack** with the arrow keys and click ENTER.
 
 ```
+? Unit test runner to use ...
+jest
+vitest
+None
+```
+
+Highlight **jest** with the arrow keys and click ENTER.
+
+```
 ? Test runner to use for end to end (E2E) tests ...
 Playwright [ https://playwright.dev/ ]
 Cypress [ https://www.cypress.io/ ]
