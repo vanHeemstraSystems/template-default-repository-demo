@@ -158,7 +158,7 @@ This will generate the following file and directory structure underneath the ```
 
 ### Key Points:
 - **`hatch_project/nx.json`**: Configuration for the Nx workspace.
-- **`hatch_project/package.json`**: Dependencies and scripts specific to the project.
+- **`hatch_project/package.json`**: Dependencies and scripts specific to the project. Rename "name": "@hatch-project/source", to "name": "@hatch-project/hatch_project" inside package.json.
 - **`hatch_project/tsconfig.json`**: TypeScript configuration for the project.
 - **`hatch_project/workspace.json` or `project.json`**: Defines the structure and projects within the workspace.
 
