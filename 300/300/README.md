@@ -1,5 +1,7 @@
 # 300 - Creating a New React Monorepo
 
+**Important**: Temporarily rename the directory ```hatch-project/src/hatch_project``` to ```hatch-project/src/original_hatch_project```. We will be moving its content to a newly created directory at ```hatch-project/src/hatch_project``` later on.
+
 Create a new React monorepo with the following command:
 
 ```
