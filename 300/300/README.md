@@ -37,13 +37,13 @@ Rspack  [ https://www.rspack.dev/ ]
 Highlight **Webpack** with the arrow keys and click ENTER.
 
 ```
-? Unit test runner to use ...
-jest
-vitest
+? Which unit test runner would you like to use? ...
+Jest   [https://jestjs.io/ ]
+Vitest [https://vitest.dev/ ]
 None
 ```
 
-Highlight **jest** with the arrow keys and click ENTER.
+Highlight **Jest** with the arrow keys and click ENTER.
 
 ```
 ? Test runner to use for end to end (E2E) tests ...
